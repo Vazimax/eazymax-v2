@@ -14,7 +14,7 @@ def register(request):
             form.save()
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
-            messages.success(request,'Your account has been CREATED :)')
+            messages.success(request,'Votre compte a été créé / لقد تم إنشاء حسابك ')
             user = authenticate(username=username,password=password)
             login(request,user)
             return redirect(f'/profile/{user.profile.id}/edit')

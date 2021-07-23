@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-23 12:58+0100\n"
+"POT-Creation-Date: 2021-07-23 13:27+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1326,7 +1326,7 @@ msgstr "Tanger, Maroc"
 #: .\post\templates\categories\dishwasher.html:39
 #: .\post\templates\home.html:157
 msgid "Housekeeping"
-msgstr "Tanger, Maroc"
+msgstr "Entretien ménager"
 
 #: .\post\templates\categories\electrician.html:39
 msgid "Electricians"
@@ -1451,7 +1451,8 @@ msgid "SORRY ! There is no result"
 msgstr "PARDON ! Il n'y a pas de résultat"
 
 #: .\post\templates\post_confirm_delete.html:17
-#: .\post\templates\post_confirm_delete.html:23 .\user\templates\login.html:17
+#: .\post\templates\post_confirm_delete.html:23
+#: .\templates\parts\footer.html:119 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "Connexion"
@@ -1532,6 +1533,64 @@ msgstr "Remplir toutes les informations"
 msgid "Post"
 msgstr "Publier"
 
+#: .\templates\parts\footer.html:79
+msgid "Who wants a worker"
+msgstr "Qui veut un travailleur"
+
+#: .\templates\parts\footer.html:81
+msgid "Browse Jobs"
+msgstr "Parcourir tous les emplois"
+
+#: .\templates\parts\footer.html:89
+msgid "Who wants to work"
+msgstr "Qui veut travailler"
+
+#: .\templates\parts\footer.html:91
+msgid "Membership"
+msgstr "L'abonnement"
+
+#: .\templates\parts\footer.html:92
+msgid "Post a Job"
+msgstr "Publier une travail"
+
+#: .\templates\parts\footer.html:101
+msgid "Helpful Links"
+msgstr "Liens utiles"
+
+#: .\templates\parts\footer.html:103
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\parts\footer.html:104
+msgid "Privacy Policy"
+msgstr "politique de confidentialité"
+
+#: .\templates\parts\footer.html:105
+msgid "Terms of Use"
+msgstr "Conditions d'utilisation"
+
+#: .\templates\parts\footer.html:114
+msgid "Account"
+msgstr "Le compte"
+
+#: .\templates\parts\footer.html:117 .\user\templates\profile_edit.html:72
+msgid "My Account"
+msgstr "Mon compte"
+
+#: .\templates\parts\footer.html:127
+msgid "Sign Up For a Newsletter"
+msgstr "Inscrivez-vous à une newsletter"
+
+#: .\templates\parts\footer.html:129 .\templates\parts\navbar.html:138
+#: .\user\templates\login.html:45 .\user\templates\register.html:17
+#: .\user\templates\register.html:56
+msgid "Register"
+msgstr "S'inscrire"
+
+#: .\templates\parts\footer.html:141
+msgid "© 2021 <strong>EazyMax</strong>. All Rights Reserved."
+msgstr "© 2021 <strong>EazyMax</strong>. Tous les droits sont réservés."
+
 #: .\templates\parts\navbar.html:29
 msgid "Find Work"
 msgstr "Trouver un travailleur"
@@ -1569,11 +1628,6 @@ msgstr "Se déconnecter"
 #: .\templates\parts\navbar.html:137 .\user\templates\register.html:44
 msgid "Login"
 msgstr "Connexion"
-
-#: .\templates\parts\navbar.html:138 .\user\templates\login.html:45
-#: .\user\templates\register.html:17 .\user\templates\register.html:56
-msgid "Register"
-msgstr "S'inscrire"
 
 #: .\user\forms.py:10
 msgid "firstname"
@@ -1669,10 +1723,6 @@ msgstr "Posté sur"
 #: .\user\templates\profile.html:109
 msgid "Remove"
 msgstr "Supprimer"
-
-#: .\user\templates\profile_edit.html:72
-msgid "My Account"
-msgstr "Mon compte"
 
 #: .\user\templates\profile_edit.html:97
 msgid "SAVE"

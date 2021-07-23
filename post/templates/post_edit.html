@@ -41,6 +41,11 @@
 				<!-- Welcome Text -->
 				<div class="welcome-text">
 					<h3>{% trans "You can edit anything you want" %} ;)</h3>
+					{% if messages %}
+						{% for message in messages%}
+							<div style="color: red;">{{message}}</div>
+						{% endfor %}
+				  	{% endif %}
 				</div>
 					
 				<!-- Form -->

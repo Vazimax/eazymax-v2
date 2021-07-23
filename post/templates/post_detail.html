@@ -44,6 +44,12 @@
       <div class="col-xl-8 col-lg-8 content-right-offset">
 
         <div class="single-page-section">
+            {% if messages %}
+              {% for message in messages%}
+                <h2 style="color: green;">{{message}}</h2>
+                <br>
+              {% endfor %}
+            {% endif %}
           <h3 class="margin-bottom-25">{% trans "Description" %}</h3>
           <p>{{object.description}}</p>
         </div>

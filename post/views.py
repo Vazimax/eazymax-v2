@@ -1,6 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin , UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
 from django.views.generic import UpdateView , DeleteView
+from django.core.exceptions import PermissionDenied
 from django.shortcuts import render , redirect
 from django.core.paginator import Paginator
 from django.contrib import messages
@@ -9,7 +10,7 @@ from user.models import Profile
 from .forms import PostForm
 from .models import Post
 from .filters import *
-import random
+import random 
 
 
 def home(request):
@@ -61,10 +62,13 @@ def post_job(request):
             my_form = form.save(commit=False)
             my_form.poster = request.user
             my_form.save()
-            messages.success(request,'You created a post successefully')
+            messages.success(request,"Vous avez créé un post avec succès / قمت بإنشاء منشور بنجاح")
             return redirect(f'/post/{my_form.id}')
+        else :
+            messages.error(request,"le numéro de téléphone n'est pas correct / رقم الهاتف غير صحيح")
     else :
         form = PostForm()
+
 
     context = {
         'form' : PostForm(),
@@ -84,20 +88,26 @@ def post_detail(request,pk):
 
     return render(request,'post_detail.html',context)
 
-class PostUpdateView(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
-    model = Post
-    fields = ['title','image','description','category','phone_number']
 
-    def form_valid(self,form):
-        form.instance.poster = self.request.user
-        return super().form_valid(form)
+@login_required
+def UpdatePost(request,pk):
+    post = Post.objects.get(id=pk)
+    form = PostForm(instance=post)
 
-    def test_func(self):
-        post = self.get_object()
-        if self.request.user == post.poster:
-            return True
+    if request.method == 'POST':
+        form = PostForm(request.POST,instance=post)
+        if form.is_valid():
+            form.save()
+            messages.success(request,'Votre post a été mis à jour avec succès / تم تحديث منشورك بنجاح')
+            return redirect(f'/post/{post.id}')
         else :
-            return False
+            messages.error(request,"le numéro de téléphone n'est pas correct / رقم الهاتف غير صحيح")
+            
+    context = {
+        'form':form
+    }
+
+    return render(request,'post_edit.html',context)
 
 class PostDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
     model = Post

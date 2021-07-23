@@ -55,12 +55,7 @@
 							<!-- Language Switcher -->
 							<div class="footer-row">
 								<div class="footer-row-inner">
-									<select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5">
-										<option selected>English</option>
-										<option>Français</option>
-										<option>Español</option>
-										<option>Deutsch</option>
-									</select>
+									<h2> <span style="color:rgb(255, 255, 73)">0694920029</span> </h2>
 								</div>
 							</div>
 						</div>
@@ -81,9 +76,9 @@
 				<!-- Links -->
 				<div class="col-xl-2 col-lg-2 col-md-3">
 					<div class="footer-links">
-						<h3>For Employers</h3>
+						<h3>{% trans "Who wants a worker" %}</h3>
 						<ul>
-							<li><a href="{% url 'jobs' %}"><span>Browse Jobs</span></a></li>
+							<li><a href="{% url 'jobs' %}"><span>{% trans "Browse Jobs" %}</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -91,10 +86,10 @@
 				<!-- Links -->
 				<div class="col-xl-2 col-lg-2 col-md-3">
 					<div class="footer-links">
-						<h3>For Candidates</h3>
+						<h3>{% trans "Who wants to work" %}</h3>
 						<ul>
-							<li><a href="#"><span>Membership</span></a></li>
-							<li><a href="{% url 'post_job' %}"><span>Post a Job</span></a></li>
+							<li><a href="#"><span>{% trans "Membership" %}</span></a></li>
+							<li><a href="{% url 'post_job' %}"><span>{% trans "Post a Job" %}</span></a></li>
 
 						</ul>
 					</div>
@@ -103,11 +98,11 @@
 				<!-- Links -->
 				<div class="col-xl-2 col-lg-2 col-md-3">
 					<div class="footer-links">
-						<h3>Helpful Links</h3>
+						<h3>{% trans "Helpful Links" %}</h3>
 						<ul>
-							<li><a href="#"><span>Contact</span></a></li>
-							<li><a href="#"><span>Privacy Policy</span></a></li>
-							<li><a href="#"><span>Terms of Use</span></a></li>
+							<li><a href="#"><span>{% trans "Contact" %}</span></a></li>
+							<li><a href="#"><span>{% trans "Privacy Policy" %}</span></a></li>
+							<li><a href="#"><span>{% trans "Terms of Use" %}</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -116,12 +111,12 @@
 				
 				<div class="col-xl-2 col-lg-2 col-md-3">
 					<div class="footer-links">
-						<h3>Account</h3>
+						<h3>{% trans 'Account' %}</h3>
 						<ul>
 							{% if user.is_authenticated %}
-								<li><a href="[% url 'profile' user.profile.id %}"><span>My Account</span></a></li>
+								<li><a href="[% url 'profile' user.profile.id %}"><span>{% trans "My Account" %}</span></a></li>
 							{% else %}
-								<li><a href="{% url 'login' %}"><span>Log In</span></a></li>
+								<li><a href="{% url 'login' %}"><span>{% trans "Log In" %}</span></a></li>
 							{% endif %}
 						</ul>
 					</div>
@@ -129,9 +124,9 @@
 
 				<!-- Newsletter -->
 				<div class="col-xl-4 col-lg-4 col-md-12">
-					<h3><i class="icon-feather-mail"></i> Sign Up For a Newsletter</h3>
+					<h3><i class="icon-feather-mail"></i> {% trans "Sign Up For a Newsletter" %}</h3>
 					<p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
-					<a href="{% url 'register' %}" class="button full-width button-sliding-icon ripple-effect margin-top-10">Register</i></a>
+					<a href="{% url 'register' %}" class="button full-width button-sliding-icon ripple-effect margin-top-10">{% trans "Register" %}</i></a>
 				</div>
 			</div>
 		</div>
@@ -143,7 +138,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
-					© 2021 <strong>EazyMax</strong>. All Rights Reserved.
+					{% trans "© 2021 <strong>EazyMax</strong>. All Rights Reserved." %}
 				</div>
 			</div>
 		</div>

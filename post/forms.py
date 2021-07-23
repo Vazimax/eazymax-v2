@@ -2,6 +2,7 @@ from django.utils.translation import ugettext_lazy
 from django import forms
 from .models import Post
 
+import datetime , timedelta , timezones
 
 class PostForm(forms.ModelForm):
     title = forms.CharField(max_length="100",label= ugettext_lazy('post title'))
@@ -12,6 +13,12 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = '__all__'
         exclude = ['poster','featured']
+        
+        # def has_posted_today(self):
+        #   yesterday = timezones.now() - timezones.timedelta(hours=24)
+        #   poster = self.cleaned_data.get('poster')
+        #   if Post.objects.filter(poster=poster, post_date__gt=yesterday).exists():
+        #       raise forms.ValidationError("You have already posted today, Come back tomorrow!")
 
     def save(self, commit=True):
         post = super(PostForm, self).save(commit=False)

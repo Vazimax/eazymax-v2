@@ -70,6 +70,11 @@
 						<!-- Headline -->
 						<div class="headline">
 							<h3><i class="icon-material-outline-account-circle"></i> {% trans 'My Account' %}</h3>
+							{% if messages %}
+								{% for message in messages%}
+									<div style="color: green;">{{message}}</div>
+								{% endfor %}
+						  	{% endif %}
 						</div>
 
 						<div class="content with-padding padding-bottom-0">
