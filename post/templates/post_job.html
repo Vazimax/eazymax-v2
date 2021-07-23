@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+    <!-- Spacer -->
+<div class="margin-top-20"></div>
+<!-- Spacer / End-->
+    <!-- Titlebar
+================================================== -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>{% trans "Post A Job" %}</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+						<li>{% trans "Posting" %}</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Page Content
+================================================== -->
+<div class="container">
+	<div class="row">
+		<div class="col-xl-5 offset-xl-3">
+			<div class="login-register-page">
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>{% trans "Fill Out All Information" %} ;)</h3>
+				</div>
+				<!-- Form -->
+				<form method="post" id="login-form" enctype="multipart/form-data">
+                    {% csrf_token %}
+					<div class="">
+                        {{form|crispy}}
+                    </div>
+				</form>
+				
+				
+				<br>
+				<!-- Button -->
+				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">{% trans "Post" %}<i class="icon-material-outline-arrow-right-alt"></i></button>
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Spacer -->
+<div class="margin-top-70"></div>
+<!-- Spacer / End-->
+
+{% endblock %}

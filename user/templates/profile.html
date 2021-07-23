@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+  <div class="margin-top-60"></div>
+
+  <div class="dashboard-container">
+
+    <!-- Dashboard Sidebar
+    ================================================== -->
+    <div class="dashboard-sidebar">
+      <div class="dashboard-sidebar-inner" data-simplebar>
+        <div class="dashboard-nav-container">
+  
+          <!-- Responsive Navigation Trigger -->
+          <a href="#" class="dashboard-responsive-nav-trigger">
+            <span class="hamburger hamburger--collapse" >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </span>
+            <span class="trigger-title">{% trans 'My posts' %}</span>
+          </a>
+          
+          <!-- Navigation -->
+          <div class="dashboard-nav">
+            <div class="dashboard-nav-inner">
+              <ul data-submenu-title="Account">
+                <li class="active"><a href="{% url 'profile' user.profile.id %}"><i class="far fa-address-book"></i>{% trans 'My posts' %}</a></li>
+                {% if user.profile.id == profile.id %}
+                  <li><a href="{% url 'profile_edit' user.profile.id %}"><i class="fas fa-cog"></i> {% trans 'Settings' %}</a></li>
+                  <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>{% trans 'Logout' %}</a></li>
+                {% endif %}
+              </ul>
+              
+            </div>
+          </div>
+          <!-- Navigation / End -->
+  
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Sidebar / End -->
+    
+	<div class="dashboard-content-container" data-simplebar>
+		<div class="dashboard-content-inner" >
+			
+			<!-- Dashboard Headline -->
+			<div class="dashboard-headline">
+				<h3>{% trans 'Posts of' %} {{profile.user.username}} :</h3>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+						<li><a href="{% url 'profile' profile.id %}">{% trans 'My posts' %}</a></li>
+					</ul>
+				</nav>
+			</div>
+	
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Dashboard Box -->
+				<div class="col-xl-12">
+					<div class="dashboard-box margin-top-0">
+
+						<!-- Headline -->
+						<div class="headline">
+							<h3><i class="icon-material-outline-business-center"></i>{% trans 'Post Listings' %}</h3>
+						</div>
+
+						<div class="content">
+							<ul class="dashboard-box-list">
+                {% for post in posts %}
+                  <li>
+                    <!-- Job Listing -->
+                    <div class="job-listing">
+
+                      <!-- Job Listing Details -->
+                      <div class="job-listing-details">
+
+                        <!-- Logo -->
+  <!-- 											<a href="#" class="job-listing-company-logo">
+                          <img src="images/company-logo-05.png" alt="">
+                        </a> -->
+
+                        <!-- Details -->
+                        <div class="job-listing-description">
+                          <h3 class="job-listing-title"><a href="{% url 'post-detail' post.id %}">{{post.title}}</a> </h3>
+
+                          <!-- Job Listing Footer -->
+                          <div class="job-listing-footer">
+                            <ul>
+                              <li><i class="icon-material-outline-date-range"></i> {% trans 'Posted on' %} {{post.date_posted|date:"F d, Y"}}</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="buttons-to-right always-visible">
+                      <a href="{% url 'post-detail' post.id %}" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i>{% trans 'View' %}</a>
+                      {% if request.user.profile.id == profile.id %}  
+                      <a href="{% url 'post-update' post.id %}" class="button gray ripple-effect ico" title="{% trans 'Edit' %}" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
+                      <a href="{% url 'post-delete' post.id %}" class="button gray ripple-effect ico" title="{% trans 'Remove' %}" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                    {% endif %}
+                    </div>
+                  </li>
+                {% endfor %}
+
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Row / End -->
+      <br><br> <br>
+		</div>
+	</div>
+  </div>
+
+  
+  <!-- Dashboard Container / End -->
+  
+  {% endblock %}

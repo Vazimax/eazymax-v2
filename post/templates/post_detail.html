@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+     
+      <div class="margin-top-60"></div>
+      <!-- Titlebar
+  ================================================== -->
+  <div class="single-page-header" data-background-image="{{object.image.url}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="single-page-header-inner">
+            <div class="left-side">
+              <div class="header-image"><img src="{{object.image.url}}" alt=""></div>
+              <div class="header-details">
+                <h1><b>{{object.title}}</b></h1>
+                <br>
+                <ul>
+                  <li><a href="{% url 'profile' object.poster.id %}"><i class="icon-material-outline-business"></i>{{object.poster}}</a></li>
+                  <li><img class="flag" src="images/flags/gb.svg" alt="">{% trans "Morocco , Tangier" %}</li>
+                  {% if object.featured %}<li><div class="verified-badge-with-title">{% trans "Verified" %}</div></li>{% endif %}
+                  {% if object.poster == user %}
+                        <a href="{% url 'post-update' object.id %}" style="color: white;background-color:rgb(4, 192, 4) ; padding: 3px; border-radius: 5px;">{% trans "Update" %}</a>
+                        <a href="{% url 'post-delete' object.id %}" style="color: white;background-color: red; padding: 3px; border-radius: 5px;">{% trans "Delete" %}</a>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Page Content
+  ================================================== -->
+  <div class="container">
+    <div class="row">
+      
+      <!-- Content -->
+      <div class="col-xl-8 col-lg-8 content-right-offset">
+
+        <div class="single-page-section">
+          <h3 class="margin-bottom-25">{% trans "Description" %}</h3>
+          <p>{{object.description}}</p>
+        </div>
+        <a class="apply-now-button popup-with-zoom-anim">{{object.phone_number}} <i class="fa fa-phone"></i></a>
+        <hr>
+        <br>
+        <div class="single-page-section">
+          <h2 class="margin-bottom-25">{% trans "Other Jobs" %} :</h2>
+
+          <!-- Listings Container -->
+          <div class="listings-container grid-layout">
+
+              <!-- Job Listing -->
+              {% for post in featured_posts %}
+                <a href="#" class="job-listing">
+
+                  <!-- Job Listing Details -->
+                  <div class="job-listing-details">
+                    <!-- Logo -->
+                    <div class="job-listing-company-logo">
+                      <img src="{{post.image.url}}" alt="">
+                    </div>
+
+                    <!-- Details -->
+                    <div class="job-listing-description">
+                      <h4 class="job-listing-company">{{post.category}}</h4>
+                      <h2 class="job-listing-title"><b>{{post.title}}</b></h2>
+                    </div>
+                  </div>
+
+                  <!-- Job Listing Footer -->
+                  <div class="job-listing-footer">
+                    <ul>
+                      <li><i class="icon-material-outline-location-on"></i>{% trans "Tangier , Morocco" %}</li>
+                      <li><i class="icon-material-outline-access-time"></i> {{post.date_posted|date:"F d, Y"}}</li>
+                    </ul>
+                  </div>
+                </a>
+              {% endfor %}
+            </div>
+            <!-- Listings Container / End -->
+
+          </div>
+      </div>
+      
+
+      <!-- Sidebar -->
+      <div class="col-xl-4 col-lg-4">
+        <div class="sidebar-container">            
+          <!-- Sidebar Widget -->
+          <div class="sidebar-widget">
+            <div class="job-overview">
+              <div class="job-overview-headline">{% trans "Job Summary" %}</div>
+              <div class="job-overview-inner">
+                <ul>
+                  <li>
+                    <i class="icon-material-outline-business-center"></i>
+                    <span>{% trans "Poster" %}</span>
+                    <h3><a href="{% url 'profile' object.poster.id %}">{{object.poster}}</a></h3>
+                  </li>
+                  <li>
+                    <i class="icon-material-outline-location-on"></i>
+                    <span>{% trans "Location" %}</span>
+                    <h5>{% trans "Tangier , Morocco" %}</h5>
+                  </li>
+                  <li>
+                    <i class="icon-material-outline-access-time"></i>
+                    <span>{% trans "Date Posted" %}</span>
+                    <h5>{{object.date_posted|date:"F d, Y"}}</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

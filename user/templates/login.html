@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+    <!-- Spacer -->
+<div class="margin-top-30"></div>
+<!-- Spacer / End-->
+    <!-- Titlebar
+================================================== -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>{% trans 'Log In' %}</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+						<li>{% trans 'Log In' %}</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Page Content
+================================================== -->
+<div class="container">
+	<div class="row">
+		<div class="col-xl-5 offset-xl-3">
+
+
+			<div class="login-register-page">
+				<!-- Welcome Text -->
+				{% if not user.is_authenticated %}
+				<div class="welcome-text">
+					<h3>{% trans "We're glad to see you again" %}!</h3>
+					<span>{% trans "Don't have an account?" %} <a href="{% url 'register' %}">{% trans 'Register' %} ;)</a></span>
+				</div>
+				{% endif %}
+					
+				<!-- Form -->
+				{% if user.is_authenticated %}
+					<h1 style="color: red;"> - {% trans "You're already logged in" %}! -</h1>
+			  	{% else %}
+				<form method="post" id="login-form">
+                    {% csrf_token %}
+					<div class="">
+                        {{form|crispy}}
+                    </div>
+					<a href="#" class="forgot-password">{% trans 'Forgot Password' %} ?</a>
+				</form>
+				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">{% trans 'Log In' %} <i class="icon-material-outline-arrow-right-alt"></i></button>
+				{% endif %}
+				<!-- Button -->
+		
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Spacer -->
+<div class="margin-top-70"></div>
+<!-- Spacer / End-->
+
+{% endblock %}

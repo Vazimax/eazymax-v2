@@ -1,0 +1,355 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<!-- Intro Banner
+================================================== -->
+<!-- add class "disable-gradient" to enable consistent background overlay -->
+<div class="intro-banner" data-background-image="{% static 'img/bg.jpeg' %}">
+	<div class="container">
+		
+		<!-- Intro Headline -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="banner-headline">
+					<h3>
+						<strong>{% trans "Hire experts or be hired for any job, any time"%} .</strong>
+						<br>
+						<span> {% trans "Use <strong class='color'>EazyMaX</strong> to save your Time and Money" %}</span>
+					</h3>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Search Bar -->
+		<div class="row">
+			<div class="col-md-12">
+				<form action="{% url 'jobs' %}" method="GET">
+					<div class="intro-banner-search-form margin-top-95">
+
+						<!-- Search Field -->
+						<div class="intro-search-field with-autocomplete">
+							<label for="autocomplete-input" class="field-title ripple-effect">{% trans "Find Any Worker" %}</label>
+							<div class="input-with-icon">
+								<div class="input-with-icon">
+									{{filter.form.category}}
+								</div>
+							</div>
+						</div>
+
+						<!-- Search Field -->
+						<div class="intro-search-field">
+								<div class="input-with-icon">
+									{{filter.form.title}}
+								</div>
+						</div>
+
+						<!-- Button -->
+						<div class="intro-search-button">
+							<button class="button ripple-effect" >{% trans "Search" %}</button>
+						</div>
+					</div>
+				</form>
+
+				
+
+			</div>
+		</div>
+
+		<!-- Stats -->
+		<!-- <div class="row">
+			<div class="col-md-12">
+				<ul class="intro-stats margin-top-45 hide-under-992px">
+					<li>
+						<strong class="counter">1,586</strong>
+						<span>Jobs Posted</span>
+					</li>
+					<li>
+						<strong class="counter">3,543</strong>
+						<span>Tasks Posted</span>
+					</li>
+					<li>
+						<strong class="counter">1,232</strong>
+						<span>Freelancers</span>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+
+	</div>
+</div>
+
+<!-- Content
+================================================== -->
+<!-- Features Jobs -->
+<div class="section gray padding-bottom-75">
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				
+				<!-- Section Headline -->
+				<div class="section-headline margin-top-0 margin-bottom-35">
+					<h3>{% trans "Featured Jobs" %}</h3>
+					<a href="{% url 'jobs' %}" class="headline-link">{% trans "Browse All Jobs" %}</a>
+				</div>
+				
+				<!-- Jobs Container -->
+				<div class="listings-container compact-list-layout margin-top-35">
+
+					{% for post in featured_posts %}
+						<a href="{% url 'post-detail' post.id %}" class="job-listing with-apply-button">
+
+						<!-- Job Listing Details -->
+						<div class="job-listing-details">
+
+							<!-- Logo -->
+							<div class="job-listing-company-logo">
+							<img src="{{post.image.url}}" alt="">
+							</div>
+
+							<!-- Details -->
+							<div class="job-listing-description">
+							<h3 class="job-listing-title">{{post.title}}</h3>
+
+							<!-- Job Listing Footer -->
+							<div class="job-listing-footer">
+								<ul>
+								<li><i class="icon-material-outline-business"></i> {{post.poster}} {% if post.poster.profile.featured %} <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div> {% endif %} </li>
+								<li><i class="icon-material-outline-location-on"></i> {% trans "Tangier , Morocco" %}</li>
+								<li><i class="icon-material-outline-access-time"></i>{{post.date_posted|date:"F d, Y"}}</li>
+								</ul>
+							</div>
+							</div>
+
+							<!-- Apply Button -->
+							<span class="list-apply-button ripple-effect">{% trans "View" %}</span>
+						</div>
+						</a>
+					{% endfor %}
+
+				</div>
+				<!-- Jobs Container / End -->
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Featured Jobs / End -->
+
+
+<!-- Features Ctegories -->
+<div class="section margin-top-65 margin-bottom-65">
+	<div class="container">
+		<div class="section-headline centered margin-top-0 margin-bottom-45">
+			<h3>{% trans "CATEGORIES" %}</h3>
+		</div>
+		<div class="row jcc">
+
+			<!-- Section Headline -->
+
+
+			<div class="col-xl-2 col-md-6">
+				<!-- Photo Box -->
+				<a href="{% url 'dishwasher' %}" class="photo-box" data-background-image="{% static 'img/dishwasher.jpg' %}">
+					<div class="photo-box-content">
+						<h4 style="color: white">{% trans "Housekeeping" %}</h4>
+						
+					</div>
+				</a>
+			</div>
+
+			<div class="col-xl-2 col-md-6">
+				<!-- Photo Box -->
+				<a href="{% url 'painter' %}" class="photo-box" data-background-image="{% static 'img/painter.jpg' %}">
+					<div class="photo-box-content">
+						<h3>{% trans "Painter" %}</h3>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-xl-2 col-md-6">
+				<!-- Photo Box -->
+				<a href="{% url 'electrician' %}" class="photo-box" data-background-image="{% static 'img/electrician.jpeg' %}">
+					<div class="photo-box-content">
+						<h3>{% trans "Electrician" %}</h3>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-xl-2 col-md-6">
+				<!-- Photo Box -->
+				<a href="{% url 'plumber' %}" class="photo-box" data-background-image="{% static 'img/plumber.jpeg' %}">
+					<div class="photo-box-content">
+						<h3>{% trans "Plumber" %}</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-xl-2 col-md-6">
+				<!-- Photo Box -->
+				<a href="{% url 'carpenter' %}" class="photo-box" data-background-image="{% static 'img/carpenter.jpg' %}">
+					<div class="photo-box-content">
+						<h3>{% trans "Carpenter" %}</h3>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Features Cities / End -->
+
+
+<!-- Featured Clients -->
+<div class="section gray padding-top-65 padding-bottom-70 full-width-carousel-fix">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+				<div class="section-headline margin-top-0 margin-bottom-25">
+					<h2><b>{% trans "Special workers" %} :</b></h2>
+				</div>
+			</div>
+
+			<div class="col-xl-12">
+				<div class="default-slick-carousel freelancers-container freelancers-grid-layout">
+
+					<!--Freelancer -->
+					{% for profile in profiles %}
+						{% if profile.featured == True %}
+							<div class="freelancer">
+								<!-- Overview -->
+								<div class="freelancer-overview">
+									<div class="freelancer-overview-inner">
+										
+										<!-- Bookmark Icon -->
+
+										
+										<!-- Avatar -->
+										<div class="freelancer-avatar">
+											<div class="verified-badge"></div>
+											<a href="single-freelancer-profile.html"><img src="{{profile.image.url}}" alt=""></a>
+										</div>
+
+										<!-- Name -->
+										<div class="freelancer-name">
+											<h4><a href="{% url 'profile' profile.id %}">{{profile.user.username}}<img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
+											<span>{{profile.category}}</span>
+										</div>
+
+										<!-- Rating -->
+										<div class="freelancer-rating">
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Details -->
+								<div class="freelancer-details">
+									<div class="freelancer-details-list">
+										<ul>
+											<li>{% trans "Location" %} <strong><i class="icon-material-outline-location-on"></i> {% trans "Tangier , Morocco" %} </strong></li>
+										</ul>
+									</div>
+									<a href="{% url 'profile' profile.id %}" class="button button-sliding-icon ripple-effect"> {% trans "View Profile" %} <i class="icon-material-outline-arrow-right-alt"></i></a>
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}
+					<!-- Freelancer / End -->
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Featured Clients / End-->
+
+
+<!-- Membership Plans -->
+<div class="section padding-top-60 padding-bottom-75">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+				<div class="section-headline centered margin-top-0 margin-bottom-35">
+					<h3>{% trans "Membership Plans" %}</h3>
+				</div>
+			</div>
+
+
+			<div class="col-xl-12">
+
+				<!-- Billing Cycle  -->
+				<div class="billing-cycle-radios margin-bottom-70">
+				</div>
+
+				<!-- Pricing Plans Container -->
+				<div class="pricing-plans-container">
+
+					<!-- Plan -->
+					<div class="pricing-plan">
+						<h3>{% trans "Basic Plan" %}</h3>
+						<p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
+						<div class="pricing-plan-label billed-monthly-label"><strong>$19</strong>/ monthly</div>
+						<div class="pricing-plan-label billed-yearly-label"><strong>$205</strong>/ yearly</div>
+						<div class="pricing-plan-features">
+							<strong>{% trans "Features of Basic Plan" %}</strong>
+							<ul>
+								<li>1 Listing</li>
+								<li>30 Days Visibility</li>
+								<li>Highlighted in Search Results</li>
+							</ul>
+						</div>
+						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
+					</div>
+
+					<!-- Plan -->
+					<div class="pricing-plan recommended">
+						<div class="recommended-badge">{% trans "Recommended" %}</div>
+						<h3>{% trans "Standard Plan" %}</h3>
+						<p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
+						<div class="pricing-plan-label billed-monthly-label"><strong>$49</strong>/ monthly</div>
+						<div class="pricing-plan-label billed-yearly-label"><strong>$529</strong>/ yearly</div>
+						<div class="pricing-plan-features">
+							<strong>{% trans "Features of Standard Plan" %}</strong>
+							<ul>
+								<li>5 Listings</li>
+								<li>60 Days Visibility</li>
+								<li>Highlighted in Search Results</li>
+							</ul>
+						</div>
+						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
+					</div>
+
+					<!-- Plan -->
+					<div class="pricing-plan">
+						<h3>{% trans "Extended Plan" %}</h3>
+						<p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
+						<div class="pricing-plan-label billed-monthly-label"><strong>$99</strong>/ monthly</div>
+						<div class="pricing-plan-label billed-yearly-label"><strong>$1069</strong>/ yearly</div>
+						<div class="pricing-plan-features">
+							<strong>{% trans "Features of Extended Plan" %}</strong>
+							<ul>
+								<li>Unlimited Listings Listing</li>
+								<li>90 Days Visibility</li>
+								<li>Highlighted in Search Results</li>
+							</ul>
+						</div>
+						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Membership Plans / End-->
+
+{% endblock %}

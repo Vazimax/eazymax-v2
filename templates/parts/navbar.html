@@ -1,0 +1,161 @@
+{% load static %}
+{% load i18n %}
+  <!-- Header Container
+================================================== -->
+
+<header id="header-container" class="fullwidth">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+			
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+				</div>
+
+				<!-- Main Navigation -->
+				<nav id="navigation">
+					<ul id="responsive">
+
+						<li class="nav-item">
+							<a class="nav-link  current active" href="{% url 'home' %}">{% trans 'Home' %}</a>
+						  </li>
+
+						  <li class="nav-item">
+							<a class="nav-link" href="{% url 'jobs' %}">{% trans 'Find Work'%}</a>
+						  </li>
+
+						  <li class="nav-item">
+							<a class="nav-link " href="/html/contactUs.html">{% trans 'Contact Us' %}</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link " href="{% url 'about' %}">{% trans 'About us' %}</a>
+						  </li>
+            </ul>
+
+				</nav>
+				<div class="clearfix"></div>
+				<!-- Main Navigation / End -->
+				
+			</div>
+			<!-- Left Side Content / End -->
+
+
+			<!-- Right Side Content / End -->
+			<div class="right-side">
+				<nav id="navigation">
+					<ul id="responsive">
+						{% if user.is_authenticated %}
+						<li class="nav-item">
+							<a style="color: white; background-color: rgb(202, 173, 5); border-radius: 10px;" class="nav-link  current active" href="{% url 'post_job' %}">{% trans 'Post A Job' %}</a>
+						</li>
+						{% endif %}
+
+            		</ul>
+
+				</nav>
+				<!--  User Notifications -->
+				<div class="header-widget hide-on-mobile">
+					
+					<!-- Notifications -->
+					<div class="header-notifications">
+
+						<!-- Trigger -->
+						<div class="header-notifications-trigger">
+							<a href="#"><i class="fas fa-language"></i></a>
+						</div>
+
+						<!-- Dropdown -->
+						<div class="header-notifications-dropdown">
+							<div class="header-notifications-content">
+								<div class="header-notifications-scroll" data-simplebar>
+									
+									<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+										<input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:'}}">
+										<select name="language">
+											{% get_current_language as LANGUAGE_CODE %}
+											{% get_available_languages as LANGUAGES %}
+											{% get_language_info_list for LANGUAGES as languages %}
+											{% for language in languages %}
+												<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+													{{ language.name_local }} ({{ language.code }})
+												</option>
+											{% endfor %}
+										</select>
+										<input type="submit" value="{% trans 'Go' %}">
+									</form>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					
+				<!-- User Menu -->
+        {% if user.is_authenticated %}
+				<div class="header-widget">
+
+					<!-- Messages -->
+					<div class="header-notifications user-menu">
+						<div class="header-notifications-trigger">
+							<a href="#"><div class="user-avatar status-online"><img src="{{user.profile.image.url}}" alt=""></div></a>
+						</div>
+
+						<!-- Dropdown -->
+						<div class="header-notifications-dropdown">
+
+							<!-- User Status -->
+							<div class="user-status">
+
+								<!-- User Name / Avatar -->
+								<div class="user-details">
+									<div class="user-avatar status-online"><img src="{{user.profile.image.url}}" alt=""></div>
+									<div class="user-name">
+										{{user.username}} <span>{{user.profile.category}}</span>
+									</div>
+								</div>
+						</div>
+						
+						<ul class="user-menu-small-nav">
+							<li><a href="{% url 'profile' user.id %}"><i class="far fa-address-book"></i>{% trans 'My posts' %}</a></li>
+							<li><a href="{% url 'profile_edit' user.id %}"><i class="fas fa-cog"></i>{% trans 'Settings' %}</a></li>
+							<li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>{% trans 'Logout' %}</a></li>
+						</ul>
+
+						</div>
+					</div>
+
+				</div>
+
+        {% else %}
+
+        
+          <a class="nav-link  " href="{% url 'login' %}">{% trans 'Login' %} / </a>
+          <a class="nav-link  " href="{% url 'register' %}">{% trans 'Register' %}</a>
+        
+
+        {% endif %}
+				<!-- User Menu / End -->
+
+				<!-- Mobile Navigation Button -->
+				<span class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+
+				</div>
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+</header>
+
+<!-- Header Container / End -->

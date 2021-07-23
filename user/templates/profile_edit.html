@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="margin-top-60"></div>
+<div class="dashboard-container">
+
+	<!-- Dashboard Sidebar
+	================================================== -->
+	<div class="dashboard-sidebar">
+		<div class="dashboard-sidebar-inner" data-simplebar>
+			<div class="dashboard-nav-container">
+
+				<!-- Responsive Navigation Trigger -->
+				<a href="#" class="dashboard-responsive-nav-trigger">
+					<span class="hamburger hamburger--collapse" >
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</span>
+					<span class="trigger-title">{% trans 'My posts' %}</span>
+				</a>
+				
+				<!-- Navigation -->
+				<div class="dashboard-nav">
+					<div class="dashboard-nav-inner">
+						<ul data-submenu-title="Account">
+							<li><a href="{% url 'profile' user.id %}"><i class="far fa-address-book"></i> {% trans 'My posts' %}</a></li>
+							<li class="active"><a href="{% url 'profile_edit' user.profile.id %}"><i class="fas fa-cog"></i> {% trans 'Settings' %}</a></li>
+							<li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> {% trans 'Logout' %}</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				<!-- Navigation / End -->
+
+			</div>
+		</div>
+	</div>
+	<!-- Dashboard Sidebar / End -->
+
+
+	<!-- Dashboard Content
+	================================================== -->
+	<div class="dashboard-content-container" data-simplebar>
+		<div class="dashboard-content-inner" >
+			
+			<!-- Dashboard Headline -->
+			<div class="dashboard-headline">
+				<h3>{% trans 'Settings' %}</h3>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+						<li>{% trans 'Settings' %}</li>
+					</ul>
+				</nav>
+			</div>
+	
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Dashboard Box -->
+				<div class="col-xl-12">
+					<div class="dashboard-box margin-top-0">
+
+						<!-- Headline -->
+						<div class="headline">
+							<h3><i class="icon-material-outline-account-circle"></i> {% trans 'My Account' %}</h3>
+						</div>
+
+						<div class="content with-padding padding-bottom-0">
+
+							<div class="row">
+
+								<div class="col-auto">
+									<div class="avatar-wrapper" data-tippy-placement="bottom">
+										<img class="profile-pic" src="{{user.profile.image.url}}" alt="" />
+										<div class="upload-button"></div>
+										
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="row">
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<form enctype="multipart/form-data" method="POST">
+													{% csrf_token %}
+													{{ u_form|crispy }}
+													{{ p_form|crispy }}
+													<br>
+															<button class="button ripple-effect big margin-top-30" type="submit">{% trans 'SAVE' %}</button>
+												</form>
+											</div>
+										</div>
+
+										<!-- <div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Last Name</h5>
+												<input type="text" class="with-border" value="Smith">
+											</div>
+										</div> -->
+
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- Button -->
+				<div class="col-xl-12">
+					<a href="{% url 'password_change' %}" class="button ripple-effect big margin-top-30">{% trans 'Change Password' %}</a>
+				</div>
+
+			</div>
+			<!-- Row / End -->
+
+			<!-- Footer -->
+
+			<!-- Footer / End -->
+
+		</div>
+	</div>
+	<!-- Dashboard Content / End -->
+
+</div>
+
+
+{% endblock %}
