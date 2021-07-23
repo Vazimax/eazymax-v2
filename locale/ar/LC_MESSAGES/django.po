@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-23 13:27+0100\n"
+"POT-Creation-Date: 2021-07-23 18:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -591,7 +591,7 @@ msgid "Order"
 msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:417
-#: .\post\templates\post_confirm_delete.html:46
+#: .\post\templates\post_confirm_delete.html:45
 #: .\post\templates\post_detail.html:25
 msgid "Delete"
 msgstr ""
@@ -1258,46 +1258,42 @@ msgstr ""
 msgid "what are you looking for ..?"
 msgstr "عما تبحث ؟"
 
-#: .\post\forms.py:7
+#: .\post\forms.py:8
 msgid "post title"
 msgstr "العنوان"
 
-#: .\post\forms.py:8
+#: .\post\forms.py:9
 msgid "description"
 msgstr "الوصف"
 
-#: .\post\forms.py:9 .\user\forms.py:36
+#: .\post\forms.py:10 .\user\forms.py:36
 msgid "phone number"
 msgstr "رقم الهاتف"
 
-#: .\post\templates\about_us.html:14
+#: .\post\templates\about_us.html:13
 msgid "About The Company"
 msgstr "عن الشركة"
 
-#: .\post\templates\about_us.html:19
-#: .\post\templates\post_confirm_delete.html:22
-#: .\post\templates\post_edit.html:22 .\post\templates\post_job.html:22
-#: .\templates\parts\navbar.html:25 .\user\templates\login.html:22
+#: .\post\templates\about_us.html:18
+#: .\post\templates\post_confirm_delete.html:21
+#: .\post\templates\post_edit.html:21 .\post\templates\post_job.html:18
+#: .\templates\parts\navbar.html:49 .\user\templates\login.html:22
 #: .\user\templates\logout.html:19
-#: .\user\templates\password_change_done.html:19
+#: .\user\templates\password_change_done.html:18
 #: .\user\templates\password_change_form.html:22
 #: .\user\templates\password_change_form.html:44
 #: .\user\templates\profile.html:57 .\user\templates\profile_edit.html:57
-#: .\user\templates\register.html:22
+#: .\user\templates\register.html:20
 msgid "Home"
 msgstr "الرئيسية"
 
-#: .\post\templates\about_us.html:20
-#, fuzzy
-#| msgid "About us"
+#: .\post\templates\about_us.html:19 .\templates\parts\navbar.html:58
 msgid "About Us"
 msgstr "معلومات عنا"
 
-#: .\post\templates\about_us.html:51
-#, fuzzy
-#| msgid "My Account"
+#: .\post\templates\about_us.html:50
 msgid "Social Accounts"
-msgstr "حسابي"
+msgstr "الحسابات الاجتماعية"
 
 #: .\post\templates\categories\carpenter.html:19
 #: .\post\templates\categories\carpenter.html:31
@@ -1323,7 +1319,7 @@ msgstr "النجارين"
 #: .\post\templates\categories\painter.html:62
 #: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:120
 #: .\post\templates\home.html:254 .\post\templates\jobs.html:69
-#: .\post\templates\post_detail.html:80 .\post\templates\post_detail.html:110
+#: .\post\templates\post_detail.html:86 .\post\templates\post_detail.html:116
 msgid "Tangier , Morocco"
 msgstr "طنجة، المغرب"
 
@@ -1392,7 +1388,7 @@ msgstr "النجار"
 msgid "Special workers"
 msgstr "عمال خاصون"
 
-#: .\post\templates\home.html:254 .\post\templates\post_detail.html:109
+#: .\post\templates\home.html:254 .\post\templates\post_detail.html:115
 msgid "Location"
 msgstr "الموقع"
 
@@ -1448,26 +1444,26 @@ msgstr "نتائج البحث"
 msgid "SORRY ! There is no result"
 msgstr "آسف ! لا توجد نتيجة"
 
-#: .\post\templates\post_confirm_delete.html:17
-#: .\post\templates\post_confirm_delete.html:23
-#: .\templates\parts\footer.html:119 .\user\templates\login.html:17
+#: .\post\templates\post_confirm_delete.html:16
+#: .\post\templates\post_confirm_delete.html:22
+#: .\templates\parts\footer.html:120 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "تسجيل الدخول"
 
-#: .\post\templates\post_confirm_delete.html:45
+#: .\post\templates\post_confirm_delete.html:44
 msgid "Do you really want to delete your post ?"
 msgstr "هل تريد حقا حذف منشورك؟"
 
-#: .\post\templates\post_confirm_delete.html:46
+#: .\post\templates\post_confirm_delete.html:45
 msgid "Yes, i want to"
 msgstr "نعم اريد ذلك"
 
-#: .\post\templates\post_confirm_delete.html:47
+#: .\post\templates\post_confirm_delete.html:46
 msgid "Nope"
 msgstr "لا"
 
-#: .\post\templates\post_confirm_delete.html:47
+#: .\post\templates\post_confirm_delete.html:46
 msgid "Cancel"
 msgstr "أريد الإلغاء والعودة"
 
@@ -1483,151 +1479,143 @@ msgstr "مميز"
 msgid "Update"
 msgstr "تحديث"
 
-#: .\post\templates\post_detail.html:47
+#: .\post\templates\post_detail.html:53
 msgid "Description"
 msgstr "الوصف"
 
-#: .\post\templates\post_detail.html:54
+#: .\post\templates\post_detail.html:60
 msgid "Other Jobs"
 msgstr "وظائف أخرى"
 
-#: .\post\templates\post_detail.html:99
+#: .\post\templates\post_detail.html:105
 msgid "Job Summary"
 msgstr "ملخص العمل"
 
-#: .\post\templates\post_detail.html:104
+#: .\post\templates\post_detail.html:110
 msgid "Poster"
 msgstr "الناشر"
 
-#: .\post\templates\post_detail.html:114
+#: .\post\templates\post_detail.html:120
 msgid "Date Posted"
 msgstr "تاريخ النشر"
 
-#: .\post\templates\post_edit.html:17 .\post\templates\post_edit.html:23
+#: .\post\templates\post_edit.html:16 .\post\templates\post_edit.html:22
 #, fuzzy
 #| msgid "Edit"
 msgid "Edit Post"
 msgstr "تعديل"
 
-#: .\post\templates\post_edit.html:43
+#: .\post\templates\post_edit.html:42
 msgid "You can edit anything you want"
 msgstr "يمكنك تعديل أي شيء تريده"
 
-#: .\post\templates\post_edit.html:55 .\user\templates\profile.html:108
+#: .\post\templates\post_edit.html:59 .\user\templates\profile.html:108
 msgid "Edit"
 msgstr "تعديل"
 
-#: .\post\templates\post_job.html:17 .\templates\parts\navbar.html:54
+#: .\post\templates\post_job.html:13
 msgid "Post A Job"
 msgstr "انشر وظيفة"
 
-#: .\post\templates\post_job.html:23
+#: .\post\templates\post_job.html:19
 #, fuzzy
 #| msgid "Post Listings"
 msgid "Posting"
 msgstr "المنشورات"
 
-#: .\post\templates\post_job.html:41
+#: .\post\templates\post_job.html:37
 msgid "Fill Out All Information"
 msgstr "املأ جميع المعلومات"
 
-#: .\post\templates\post_job.html:54
+#: .\post\templates\post_job.html:56
 msgid "Post"
 msgstr "انشر"
 
-#: .\templates\parts\footer.html:79
+#: .\templates\parts\footer.html:80
 msgid "Who wants a worker"
 msgstr "من يريد عامل"
 
-#: .\templates\parts\footer.html:81
+#: .\templates\parts\footer.html:82
 msgid "Browse Jobs"
 msgstr "تصفح جميع الوظائف"
 
-#: .\templates\parts\footer.html:89
+#: .\templates\parts\footer.html:90
 msgid "Who wants to work"
 msgstr "من يريد العمل"
 
-#: .\templates\parts\footer.html:91
+#: .\templates\parts\footer.html:92
 msgid "Membership"
 msgstr "العضويات"
 
-#: .\templates\parts\footer.html:92
+#: .\templates\parts\footer.html:93
 msgid "Post a Job"
 msgstr "انشر وظيفة"
 
-#: .\templates\parts\footer.html:101
+#: .\templates\parts\footer.html:102
 msgid "Helpful Links"
 msgstr "روابط مفيدة"
 
-#: .\templates\parts\footer.html:103
+#: .\templates\parts\footer.html:104
 msgid "Contact"
 msgstr "تكلم معنا "
 
-#: .\templates\parts\footer.html:104
+#: .\templates\parts\footer.html:105
 msgid "Privacy Policy"
 msgstr "سياسة خاصة"
 
-#: .\templates\parts\footer.html:105
+#: .\templates\parts\footer.html:106
 msgid "Terms of Use"
 msgstr "شروط الاستخدام"
 
-#: .\templates\parts\footer.html:114
+#: .\templates\parts\footer.html:115
 msgid "Account"
 msgstr "الحساب"
 
-#: .\templates\parts\footer.html:117 .\user\templates\profile_edit.html:72
+#: .\templates\parts\footer.html:118 .\user\templates\profile_edit.html:72
 msgid "My Account"
 msgstr "حسابي"
 
-#: .\templates\parts\footer.html:127
+#: .\templates\parts\footer.html:128
 msgid "Sign Up For a Newsletter"
 msgstr "اشترك في النشرة الإخبارية"
 
-#: .\templates\parts\footer.html:129 .\templates\parts\navbar.html:138
-#: .\user\templates\login.html:45 .\user\templates\register.html:17
-#: .\user\templates\register.html:56
+#: .\templates\parts\footer.html:130 .\templates\parts\navbar.html:127
+#: .\user\templates\login.html:45 .\user\templates\register.html:15
+#: .\user\templates\register.html:54
 msgid "Register"
 msgstr "انشاء حساب"
 
-#: .\templates\parts\footer.html:141
+#: .\templates\parts\footer.html:142
 msgid "© 2021 <strong>EazyMax</strong>. All Rights Reserved."
 msgstr " 2021 <strong> EazyMax </strong>. كل الحقوق محفوظة ©"
 
-#: .\templates\parts\navbar.html:29
-msgid "Find Work"
-msgstr "تصفح الوظائف"
+#: .\templates\parts\navbar.html:52
+msgid "Find Workers"
+msgstr "ابحث عن عامل"
 
-#: .\templates\parts\navbar.html:33
+#: .\templates\parts\navbar.html:55
 msgid "Contact Us"
 msgstr " تكلم معنا "
 
-#: .\templates\parts\navbar.html:36
-msgid "About us"
-msgstr "معلومات عنا"
-
-#: .\templates\parts\navbar.html:89
-msgid "Go"
-msgstr "Go"
-
-#: .\templates\parts\navbar.html:124 .\user\templates\profile.html:23
+#: .\templates\parts\navbar.html:107 .\user\templates\profile.html:23
 #: .\user\templates\profile.html:30 .\user\templates\profile.html:58
 #: .\user\templates\profile_edit.html:23 .\user\templates\profile_edit.html:30
 msgid "My posts"
 msgstr "منشوراتي"
 
-#: .\templates\parts\navbar.html:125 .\user\templates\profile.html:32
+#: .\templates\parts\navbar.html:110 .\user\templates\profile.html:32
 #: .\user\templates\profile_edit.html:31 .\user\templates\profile_edit.html:52
 #: .\user\templates\profile_edit.html:58
 msgid "Settings"
 msgstr "الاعدادات"
 
-#: .\templates\parts\navbar.html:126 .\user\templates\logout.html:14
+#: .\templates\parts\navbar.html:113 .\user\templates\logout.html:14
 #: .\user\templates\logout.html:20 .\user\templates\profile.html:33
 #: .\user\templates\profile_edit.html:32
 msgid "Logout"
 msgstr "تسجيل خروج"
 
-#: .\templates\parts\navbar.html:137 .\user\templates\register.html:44
+#: .\templates\parts\navbar.html:122 .\user\templates\register.html:42
 msgid "Login"
 msgstr "تسجيل الدخول"
 
@@ -1685,22 +1673,22 @@ msgstr "لقد سجلت خروجك"
 msgid "Log In Again"
 msgstr "تسجيل الدخول مرة أخرى"
 
-#: .\user\templates\password_change_done.html:14
-#: .\user\templates\password_change_done.html:20
+#: .\user\templates\password_change_done.html:13
+#: .\user\templates\password_change_done.html:19
 msgid "Password change done"
 msgstr "تم تغيير كلمة المرور"
 
-#: .\user\templates\password_change_done.html:40
+#: .\user\templates\password_change_done.html:39
 msgid "You've changed your password successfully"
 msgstr "لقد قمت بتغيير كلمة المرور الخاصة بك بنجاح"
 
-#: .\user\templates\password_change_done.html:44
+#: .\user\templates\password_change_done.html:43
 msgid "Go to profile"
 msgstr "اذهب الى حسابك"
 
 #: .\user\templates\password_change_form.html:17
 #: .\user\templates\password_change_form.html:23
-#: .\user\templates\profile_edit.html:121
+#: .\user\templates\profile_edit.html:126
 msgid "Change Password"
 msgstr "تغيير كلمة المرور"
 
@@ -1732,21 +1720,27 @@ msgstr "انشر وظيفة"
 msgid "Remove"
 msgstr "إزالة"
 
-#: .\user\templates\profile_edit.html:97
+#: .\user\templates\profile_edit.html:102
 msgid "SAVE"
 msgstr "حفظ"
 
-#: .\user\templates\register.html:23
+#: .\user\templates\register.html:21
 msgid "Sign Up"
 msgstr "التسجيل"
 
-#: .\user\templates\register.html:43
+#: .\user\templates\register.html:41
 msgid "We're glad that you will register"
 msgstr "يسعدنا أن تقوم بالتسجيل"
 
-#: .\user\templates\register.html:44
+#: .\user\templates\register.html:42
 msgid "Already have an account"
 msgstr "لدي حساب"
+
+#~ msgid "About us"
+#~ msgstr "معلومات عنا"
+
+#~ msgid "Go"
+#~ msgstr "Go"
 
 #~ msgid "Morocco"
 #~ msgstr "المغرب"

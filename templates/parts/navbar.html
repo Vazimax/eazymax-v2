@@ -1,161 +1,146 @@
 {% load static %}
 {% load i18n %}
-  <!-- Header Container
-================================================== -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"
+/>
 
-<header id="header-container" class="fullwidth">
-
-	<!-- Header -->
-	<div id="header">
-		<div class="container">
-			
-			<!-- Left Side Content -->
-			<div class="left-side">
-				
-				<!-- Logo -->
-				<div id="logo">
-					<a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
-				</div>
-
-				<!-- Main Navigation -->
-				<nav id="navigation">
-					<ul id="responsive">
-
-						<li class="nav-item">
-							<a class="nav-link  current active" href="{% url 'home' %}">{% trans 'Home' %}</a>
-						  </li>
-
-						  <li class="nav-item">
-							<a class="nav-link" href="{% url 'jobs' %}">{% trans 'Find Work'%}</a>
-						  </li>
-
-						  <li class="nav-item">
-							<a class="nav-link " href="/html/contactUs.html">{% trans 'Contact Us' %}</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link " href="{% url 'about' %}">{% trans 'About us' %}</a>
-						  </li>
-            </ul>
-
-				</nav>
-				<div class="clearfix"></div>
-				<!-- Main Navigation / End -->
-				
-			</div>
-			<!-- Left Side Content / End -->
-
-
-			<!-- Right Side Content / End -->
-			<div class="right-side">
-				<nav id="navigation">
-					<ul id="responsive">
-						{% if user.is_authenticated %}
-						<li class="nav-item">
-							<a style="color: white; background-color: rgb(202, 173, 5); border-radius: 10px;" class="nav-link  current active" href="{% url 'post_job' %}">{% trans 'Post A Job' %}</a>
-						</li>
-						{% endif %}
-
-            		</ul>
-
-				</nav>
-				<!--  User Notifications -->
-				<div class="header-widget hide-on-mobile">
-					
-					<!-- Notifications -->
-					<div class="header-notifications">
-
-						<!-- Trigger -->
-						<div class="header-notifications-trigger">
-							<a href="#"><i class="fas fa-language"></i></a>
-						</div>
-
-						<!-- Dropdown -->
-						<div class="header-notifications-dropdown">
-							<div class="header-notifications-content">
-								<div class="header-notifications-scroll" data-simplebar>
-									
-									<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-										<input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:'}}">
-										<select name="language">
-											{% get_current_language as LANGUAGE_CODE %}
-											{% get_available_languages as LANGUAGES %}
-											{% get_language_info_list for LANGUAGES as languages %}
-											{% for language in languages %}
-												<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-													{{ language.name_local }} ({{ language.code }})
-												</option>
-											{% endfor %}
-										</select>
-										<input type="submit" value="{% trans 'Go' %}">
-									</form>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					
-				<!-- User Menu -->
-        {% if user.is_authenticated %}
-				<div class="header-widget">
-
-					<!-- Messages -->
-					<div class="header-notifications user-menu">
-						<div class="header-notifications-trigger">
-							<a href="#"><div class="user-avatar status-online"><img src="{{user.profile.image.url}}" alt=""></div></a>
-						</div>
-
-						<!-- Dropdown -->
-						<div class="header-notifications-dropdown">
-
-							<!-- User Status -->
-							<div class="user-status">
-
-								<!-- User Name / Avatar -->
-								<div class="user-details">
-									<div class="user-avatar status-online"><img src="{{user.profile.image.url}}" alt=""></div>
-									<div class="user-name">
-										{{user.username}} <span>{{user.profile.category}}</span>
-									</div>
-								</div>
-						</div>
-						
-						<ul class="user-menu-small-nav">
-							<li><a href="{% url 'profile' user.id %}"><i class="far fa-address-book"></i>{% trans 'My posts' %}</a></li>
-							<li><a href="{% url 'profile_edit' user.id %}"><i class="fas fa-cog"></i>{% trans 'Settings' %}</a></li>
-							<li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>{% trans 'Logout' %}</a></li>
-						</ul>
-
-						</div>
-					</div>
-
-				</div>
-
-        {% else %}
-
-        
-          <a class="nav-link  " href="{% url 'login' %}">{% trans 'Login' %} / </a>
-          <a class="nav-link  " href="{% url 'register' %}">{% trans 'Register' %}</a>
-        
-
-        {% endif %}
-				<!-- User Menu / End -->
-
-				<!-- Mobile Navigation Button -->
-				<span class="mmenu-trigger">
-					<button class="hamburger hamburger--collapse" type="button">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Container wrapper -->
+	<div class="container-fluid">
+	  <!-- Toggle button -->
+	  <button
+		class="navbar-toggler"
+		type="button"
+		data-mdb-toggle="collapse"
+		data-mdb-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	  >
+		<i class="fas fa-bars"></i>
+	  </button>
+  
+	  <!-- Collapsible wrapper -->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<!-- Navbar brand -->
+		<a class="navbar-brand mt-2 mt-lg-0" href="{% url 'home' %}">
+		  <img
+			src="{% static 'img/logo.png' %}"
+			height="45"
+			alt=""
+			loading="lazy"
+		  />
+		</a>
+		<!-- Left links -->
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link" href="{% url 'home' %}">{% trans 'Home' %}</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="{% url 'jobs' %}">{% trans 'Find Workers' %}</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">{% trans 'Contact Us' %}</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="{% url 'about' %}">{% trans 'About Us' %}</a>
+		  </li>
+		  <li class="nav-item mx-3">
+			<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+				{% get_current_language as LANGUAGE_CODE %}                                         
+				{% if LANGUAGE_CODE == 'ar' %}
+					<i class="fas fa-language"></i>
+					<button style="color: white;background-color: black; border-radius: 5px;padding: 8px;" type='submit' name='language' value='fr'>
+						Français
 					</button>
-				</span>
+				{% else %}
+					<button style="color: white;background-color: black; border-radius: 5px;padding: 8px;" type='submit' name='language' value='ar'>
+						العربية
+					</button>
+					<i class="fas fa-language"></i>
+				{% endif %}
+			</form>
+		   </li>
+		</ul>
 
-				</div>
-			<!-- Right Side Content / End -->
-
+		<!-- Left links -->
+	  </div>
+	  <!-- Collapsible wrapper -->
+  
+	  <!-- Right elements -->
+		<div class="d-flex align-items-center">
+			{% if user.is_authenticated %}
+			<a href="{% url 'register' %}">
+				<button type="button" style="background-color: #e0c040; color: white;" class="btn btn-lg me-3">
+				{% trans "Post A Job" %}
+				</button>
+			</a>
+			<!-- Avatar -->
+			<a
+			class="dropdown-toggle d-flex align-items-center hidden-arrow"
+			href="#"
+			id="navbarDropdownMenuLink"
+			role="button"
+			data-mdb-toggle="dropdown"
+			aria-expanded="false"
+			>
+			<img
+				src="{{user.profile.image.url}}"
+				class="rounded-circle"
+				height="55"
+				alt=""
+				loading="lazy"
+			/>
+			</a>
+			<ul
+			class="dropdown-menu dropdown-menu-end"
+			aria-labelledby="navbarDropdownMenuLink"
+			>
+			<li>
+				<a class="dropdown-item" href="{% url 'profile' user.profile.id %}">{% trans "My posts" %}</a>
+			</li>
+			<li>
+				<a class="dropdown-item" href="{% url 'profile_edit' user.profile.id %}">{% trans "Settings" %}</a>
+			</li>
+			<li>
+				<a class="dropdown-item" href="{% url 'logout' %}">{% trans "Logout" %}</a>
+			</li>
+			</ul>
+			
 		</div>
+		{% else %}
+		<div class="d-flex align-items-center">
+			<a href="{% url 'login' %}">
+				<button type="button" style="color:#e0c040 ;" class="btn btn-lg btn-link px-3 me-2">
+				{% trans "Login" %}
+				</button>
+			</a>
+			<a href="{% url 'register' %}">
+				<button type="button" style="background-color: #e0c040; color: white;" class="btn btn-lg me-3">
+				{% trans "Register" %}
+				</button>
+			</a>
+		</div> 
+		{% endif %}
+	  <!-- Right elements -->
 	</div>
-	<!-- Header / End -->
-</header>
+	<!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
 
-<!-- Header Container / End -->
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>

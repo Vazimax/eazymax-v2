@@ -115,7 +115,6 @@ USE_TZ = True
 
 LANGUAGES = [
   ('fr', ('French')),
-  ('en', ('English')),
   ('ar', ('Arabic')),
 ]
 
