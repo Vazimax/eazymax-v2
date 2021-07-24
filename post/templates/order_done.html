@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="order-confirmation-page">
+				<div class="breathing-icon"><i class="fa fa-check-circle"></i></div>
+				<h2 class="margin-top-30">{% trans "Thank you for your order!" %}</h2>
+				<p>{% trans "Your payment has been processed successfully." %}</p>
+				<a href="{% url 'home' %}" class="button ripple-effect-dark button-sliding-icon margin-top-30">{% trans "Home" %}<i class="icon-material-outline-arrow-right-alt"></i></a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}

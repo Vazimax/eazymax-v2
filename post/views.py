@@ -37,6 +37,14 @@ def about_us(request):
 
     return render(request,'about_us.html')
 
+def membership(request):
+
+    return render(request,'membership.html')
+
+def order_done(request):
+
+    return render(request,'order_done.html')
+
 def jobs(request):
     posts = Post.objects.all()
 
@@ -200,5 +208,4 @@ def painter(request):
         'filter' : filter,
     }
     return render(request,'categories/painter.html',context)
-
 

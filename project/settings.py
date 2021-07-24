@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_filters',
     'autotranslate',
-    'phonenumber_field'
+    'phonenumber_field',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -156,3 +157,5 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = os.environ.get('EMAIL')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
+

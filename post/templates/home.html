@@ -116,9 +116,9 @@
 							<!-- Job Listing Footer -->
 							<div class="job-listing-footer">
 								<ul>
-								<li><i class="icon-material-outline-business"></i> {{post.poster}} {% if post.poster.profile.featured %} <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div> {% endif %} </li>
-								<li><i class="icon-material-outline-location-on"></i> {% trans "Tangier , Morocco" %}</li>
-								<li><i class="icon-material-outline-access-time"></i>{{post.date_posted|date:"F d, Y"}}</li>
+								<li><i class="fa fa-user" style="font-size:15px"></i> {{post.poster}} {% if post.poster.profile.featured %} <i class="fa fa-check-circle" style="font-size:15px; color: #e0c040;"></i> {% endif %} </li>
+								<li><i class="fas fa-map-marker-alt"></i> {% trans "Tangier , Morocco" %}</li>
+								<li><i class="fas fa-clock"></i> {{post.date_posted|date:"F d, Y"}}</li>
 								</ul>
 							</div>
 							</div>
@@ -230,19 +230,14 @@
 										
 										<!-- Avatar -->
 										<div class="freelancer-avatar">
-											<div class="verified-badge"></div>
-											<a href="single-freelancer-profile.html"><img src="{{profile.image.url}}" alt=""></a>
+											<a href="single-freelancer-profile.html"><img src="{{profile.image.url}}" style="margin-bottom: 8px;" alt=""></a>
+											<i class="fa fa-check-circle" style="font-size:25px; color: #e0c040;"></i>
 										</div>
 
 										<!-- Name -->
 										<div class="freelancer-name">
 											<h4><a href="{% url 'profile' profile.id %}">{{profile.user.username}}<img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
 											<span>{{profile.category}}</span>
-										</div>
-
-										<!-- Rating -->
-										<div class="freelancer-rating">
-											
 										</div>
 									</div>
 								</div>
@@ -251,10 +246,10 @@
 								<div class="freelancer-details">
 									<div class="freelancer-details-list">
 										<ul>
-											<li>{% trans "Location" %} <strong><i class="icon-material-outline-location-on"></i> {% trans "Tangier , Morocco" %} </strong></li>
+											<li>{% trans "Location" %} <strong> <i class="fas fa-map-marker-alt"></i> {% trans "Tangier , Morocco" %} </strong></li>
 										</ul>
 									</div>
-									<a href="{% url 'profile' profile.id %}" class="button button-sliding-icon ripple-effect"> {% trans "View Profile" %} <i class="icon-material-outline-arrow-right-alt"></i></a>
+									<a href="{% url 'profile' profile.id %}" class="button button-sliding-icon ripple-effect"> {% trans "View Profile" %}  <i class="fa fa-user" style="font-size:15px"></i></a>
 								</div>
 							</div>
 						{% endif %}
@@ -296,14 +291,14 @@
 					<div class="pricing-plan">
 						<h3>{% trans "Basic Plan" %}</h3>
 						<p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
-						<div class="pricing-plan-label billed-monthly-label"><strong>$19</strong>/ monthly</div>
-						<div class="pricing-plan-label billed-yearly-label"><strong>$205</strong>/ yearly</div>
+						<div class="pricing-plan-label billed-monthly-label"><strong>15 DH</strong></div>
 						<div class="pricing-plan-features">
 							<strong>{% trans "Features of Basic Plan" %}</strong>
 							<ul>
-								<li>1 Listing</li>
-								<li>30 Days Visibility</li>
-								<li>Highlighted in Search Results</li>
+								<li>{% trans "<b>-</b> Your post will featured for <b>2 DAYS</b>" %}</li>
+								<li>{% trans "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>" %}</li>
+								<li>{% trans "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>" %}</li>
+								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x2</b>" %}</li>
 							</ul>
 						</div>
 						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
@@ -314,14 +309,14 @@
 						<div class="recommended-badge">{% trans "Recommended" %}</div>
 						<h3>{% trans "Standard Plan" %}</h3>
 						<p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
-						<div class="pricing-plan-label billed-monthly-label"><strong>$49</strong>/ monthly</div>
-						<div class="pricing-plan-label billed-yearly-label"><strong>$529</strong>/ yearly</div>
+						<div class="pricing-plan-label billed-monthly-label"><strong>30 DH</strong></div>
 						<div class="pricing-plan-features">
 							<strong>{% trans "Features of Standard Plan" %}</strong>
 							<ul>
-								<li>5 Listings</li>
-								<li>60 Days Visibility</li>
-								<li>Highlighted in Search Results</li>
+								<li>{% trans "<b>-</b> Your post will featured for <b>7 DAYS</b>" %}</li>
+								<li>{% trans "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>" %}</li>
+								<li>{% trans "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>" %}</li>
+								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x3</b>" %}</li>
 							</ul>
 						</div>
 						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
@@ -331,14 +326,15 @@
 					<div class="pricing-plan">
 						<h3>{% trans "Extended Plan" %}</h3>
 						<p class="margin-top-10">One time fee for one listing or task highlighted in search results.</p>
-						<div class="pricing-plan-label billed-monthly-label"><strong>$99</strong>/ monthly</div>
-						<div class="pricing-plan-label billed-yearly-label"><strong>$1069</strong>/ yearly</div>
+						<div class="pricing-plan-label billed-monthly-label"><strong>50 DH</strong></div>
+			
 						<div class="pricing-plan-features">
 							<strong>{% trans "Features of Extended Plan" %}</strong>
 							<ul>
-								<li>Unlimited Listings Listing</li>
-								<li>90 Days Visibility</li>
-								<li>Highlighted in Search Results</li>
+								<li>{% trans "<b>-</b> Your post will featured for <b>10 DAYS</b>" %}</li>
+								<li>{% trans "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>" %}</li>
+								<li>{% trans "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>" %}</li>
+								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x4</b>" %}</li>
 							</ul>
 						</div>
 						<a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>

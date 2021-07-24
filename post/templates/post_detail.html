@@ -18,7 +18,7 @@
                 <br>
                 <ul>
                   <li><a href="{% url 'profile' object.poster.id %}"><i class="icon-material-outline-business"></i>{{object.poster}}</a></li>
-                  <li><img class="flag" src="images/flags/gb.svg" alt="">{% trans "Morocco , Tangier" %}</li>
+                  <li><img class="flag" src="" alt="">{% trans "Morocco , Tangier" %}</li>
                   {% if object.featured %}<li><div class="verified-badge-with-title">{% trans "Verified" %}</div></li>{% endif %}
                   {% if object.poster == user %}
                         <a href="{% url 'post-update' object.id %}" style="color: white;background-color:rgb(4, 192, 4) ; padding: 3px; border-radius: 5px;">{% trans "Update" %}</a>
