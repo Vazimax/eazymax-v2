@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-23 18:36+0100\n"
+"POT-Creation-Date: 2021-07-24 11:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1284,6 +1284,11 @@ msgstr "عن الشركة"
 #: .\user\templates\password_change_form.html:44
 #: .\user\templates\profile.html:57 .\user\templates\profile_edit.html:57
 #: .\user\templates\register.html:20
+#: .\user\templates\reset\password_reset_complete.html:19
+#: .\user\templates\reset\password_reset_complete.html:42
+#: .\user\templates\reset\password_reset_confirm.html:22
+#: .\user\templates\reset\password_reset_done.html:19
+#: .\user\templates\reset\password_reset_form.html:22
 msgid "Home"
 msgstr "الرئيسية"
 
@@ -1513,7 +1518,7 @@ msgstr "يمكنك تعديل أي شيء تريده"
 msgid "Edit"
 msgstr "تعديل"
 
-#: .\post\templates\post_job.html:13
+#: .\post\templates\post_job.html:13 .\templates\parts\navbar.html:87
 msgid "Post A Job"
 msgstr "انشر وظيفة"
 
@@ -1579,7 +1584,7 @@ msgstr "حسابي"
 msgid "Sign Up For a Newsletter"
 msgstr "اشترك في النشرة الإخبارية"
 
-#: .\templates\parts\footer.html:130 .\templates\parts\navbar.html:127
+#: .\templates\parts\footer.html:130 .\templates\parts\navbar.html:132
 #: .\user\templates\login.html:45 .\user\templates\register.html:15
 #: .\user\templates\register.html:54
 msgid "Register"
@@ -1597,25 +1602,25 @@ msgstr "ابحث عن عامل"
 msgid "Contact Us"
 msgstr " تكلم معنا "
 
-#: .\templates\parts\navbar.html:107 .\user\templates\profile.html:23
+#: .\templates\parts\navbar.html:112 .\user\templates\profile.html:23
 #: .\user\templates\profile.html:30 .\user\templates\profile.html:58
 #: .\user\templates\profile_edit.html:23 .\user\templates\profile_edit.html:30
 msgid "My posts"
 msgstr "منشوراتي"
 
-#: .\templates\parts\navbar.html:110 .\user\templates\profile.html:32
+#: .\templates\parts\navbar.html:115 .\user\templates\profile.html:32
 #: .\user\templates\profile_edit.html:31 .\user\templates\profile_edit.html:52
 #: .\user\templates\profile_edit.html:58
 msgid "Settings"
 msgstr "الاعدادات"
 
-#: .\templates\parts\navbar.html:113 .\user\templates\logout.html:14
+#: .\templates\parts\navbar.html:118 .\user\templates\logout.html:14
 #: .\user\templates\logout.html:20 .\user\templates\profile.html:33
 #: .\user\templates\profile_edit.html:32
 msgid "Logout"
 msgstr "تسجيل خروج"
 
-#: .\templates\parts\navbar.html:122 .\user\templates\register.html:42
+#: .\templates\parts\navbar.html:127 .\user\templates\register.html:42
 msgid "Login"
 msgstr "تسجيل الدخول"
 
@@ -1735,6 +1740,57 @@ msgstr "يسعدنا أن تقوم بالتسجيل"
 #: .\user\templates\register.html:42
 msgid "Already have an account"
 msgstr "لدي حساب"
+
+#: .\user\templates\reset\password_reset_complete.html:14
+#: .\user\templates\reset\password_reset_complete.html:20
+#, fuzzy
+#| msgid "Password change done"
+msgid "Password reset complete"
+msgstr "تم تغيير كلمة المرور"
+
+#: .\user\templates\reset\password_reset_complete.html:40
+msgid ""
+"You've changed the password successfully . Now you've the access to Login"
+msgstr "لقد قمت بتغيير كلمة المرور بنجاح. الآن يمكنك تسجيل الدخول"
+
+#: .\user\templates\reset\password_reset_confirm.html:17
+#: .\user\templates\reset\password_reset_confirm.html:23
+msgid "Reset Password Confirm"
+msgstr "تغيير كلمة المرور"
+
+#: .\user\templates\reset\password_reset_confirm.html:44
+msgid "Write the new password"
+msgstr "اكتب كلمة المرور الجديدة"
+
+#: .\user\templates\reset\password_reset_confirm.html:54
+msgid "Submit"
+msgstr "إرسال"
+
+#: .\user\templates\reset\password_reset_done.html:14
+#: .\user\templates\reset\password_reset_done.html:20
+msgid "Checking The Email"
+msgstr "التحقق من صندوق البريد الإلكتروني الخاص بك"
+
+#: .\user\templates\reset\password_reset_done.html:40
+msgid "We've sent you the link to your email to change your password"
+msgstr "لقد أرسلنا لك الرابط إلى بريدك الإلكتروني لتغيير كلمة المرور الخاصة بك"
+
+#: .\user\templates\reset\password_reset_done.html:44
+msgid "Go To Gmail"
+msgstr "Gmail انتقل إلى"
+
+#: .\user\templates\reset\password_reset_form.html:17
+#: .\user\templates\reset\password_reset_form.html:23
+msgid "Reset Password"
+msgstr "إعادة كلمة المرور"
+
+#: .\user\templates\reset\password_reset_form.html:44
+msgid "Write Your Email To Reset You Password"
+msgstr "اكتب بريدك الإلكتروني لإعادة كلمة المرور الخاصة بك"
+
+#: .\user\templates\reset\password_reset_form.html:55
+msgid "Reset"
+msgstr "إرسال"
 
 #~ msgid "About us"
 #~ msgstr "معلومات عنا"
