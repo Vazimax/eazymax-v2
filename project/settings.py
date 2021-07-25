@@ -157,5 +157,5 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = os.environ.get('EMAIL')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-
-
+#EMAIL_USE_TLS = False
+# EMAIL_USE_SSL = False

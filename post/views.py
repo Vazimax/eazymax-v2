@@ -5,11 +5,12 @@ from django.http.response import HttpResponseForbidden
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render , redirect
 from django.core.paginator import Paginator
+from django.core.mail import send_mail
 from django.contrib import messages
 from datetime import datetime as dt
-from datetime import timedelta
 from django.urls import reverse
 from user.models import Profile
+from datetime import timedelta
 from .forms import PostForm
 from .models import Post
 from .filters import *
@@ -43,8 +44,27 @@ def about_us(request):
     return render(request,'about_us.html')
 
 def contact(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        subject = request.POST['subject']
+        comments = request.POST['comments']
 
-    return render(request,'contact.html')
+        send_mail(
+            subject,
+            comments,
+            email,
+            ['tvazimax@gmail.com'],
+        )
+
+        context = {
+            'email' : email,
+            'subject' : subject,
+            'comments' : comments,
+        }
+        return render(request,'contact.html',context)
+
+    else :
+        return render(request,'contact.html')
 
 def membership(request):
 

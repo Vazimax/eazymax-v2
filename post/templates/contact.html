@@ -13,9 +13,8 @@
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs" class="dark">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Pages</a></li>
-						<li>Contact</li>
+						<li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+						<li>{% trans "Contact" %}</li>
 					</ul>
 				</nav>
 
@@ -23,11 +22,16 @@
 		</div>
 	</div>
 </div>
-
+{% if subject %}
+<center>
+	<h2 style="color: #e0c040;"><b>Thanks !</b></h2>
+	<p>We received your email and we will respond shortly ...</p>
+</center>
+<br>
 
 <!-- Content
 ================================================== -->
-
+{% else %}
 		<div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
 
 			<section id="contact" class="margin-bottom-60">
@@ -40,52 +44,48 @@
                     <div class="row">
 						<div class="col-md-6">
 							<div class="input-with-icon-left">
-								<input class="with-border" name="name" type="text" id="name" placeholder="Your Name" required="required" />
-								<i class="far fa-user-circle"></i>
+								<input class="with-border" name="subject" type="text" id="name" placeholder="The subject" required="required" />
+								<i class="far fa-file-alt"></i>
 							</div>
 						</div>
 
 						<div class="col-md-6">
 							<div class="input-with-icon-left">
-								<input class="with-border" name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+								<input class="with-border" name="email" type="email" id="email" placeholder="The email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
 								<i class="far fa-envelope"></i>
 							</div>
 						</div>
-					
-					<div class="input-with-icon-left col-md-12">
-						<input class="with-border" name="subject" type="text" id="subject" placeholder="Subject" required="required" />
-						<i class="far fa-file-alt"></i>
-					</div>
 
 					<div class="col-md-12">
 						<textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
 					</div>
-                <div class="col-md-12">
-					<input type="submit" class="submit button col-md-12" id="submit" value="Submit Message" />
-				</div>
+					<div class="col-md-12">
+						<br>
+						<input type="submit" class="submit button col-md-12" id="submit" value="Submit Message" />
+					</div>
 				</div>
 			</div>
-					<div class="col-xl-3">
-						<div class="cd">
-						    <p class="koko"><i class="fas keke fa-map-marker-alt"></i> Belle Air, Tangier.</p>
-						    <p class="kaka">X , 9000</p>
-					    </div>
-						
-						<div class="cd">
-							<p class="koko"><i class="fas keke fa-phone-alt"></i> +212 694920029</p>
-							<p class="kaka">Mon to Fri 9am to 6pm</p>
-						</div>  
-
-						<div class="cd">
-							<p class="koko"><i class="far keke fa-envelope"></i> info@eazymax.com</p>
-							<p class="kaka">Send us your query anytime!</p>
-						</div>  		
-						
-					 </div>
 				
 				</form>
-			</section>
+				<div class="col-xl-3">
+					<div class="cd">
+						<p class="koko"><i class="fas keke fa-map-marker-alt"></i> Belle Air, Tangier.</p>
+						<p class="kaka">X , 9000</p>
+					</div>
+					
+					<div class="cd">
+						<p class="koko"><i class="fas keke fa-phone-alt"></i> +212 694920029</p>
+						<p class="kaka">Mon to Fri 9am to 6pm</p>
+					</div>  
 
+					<div class="cd">
+						<p class="koko"><i class="far keke fa-envelope"></i> info@eazymax.com</p>
+						<p class="kaka">Send us your query anytime!</p>
+					</div>  		
+					
+				 </div>
+			</section>
+			{% endif %}
 		</div>
 	</div>
 	</div>
