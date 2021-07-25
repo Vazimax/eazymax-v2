@@ -27,10 +27,10 @@
           <div class="dashboard-nav">
             <div class="dashboard-nav-inner">
               <ul data-submenu-title="Account">
-                <li class="active"><a href="{% url 'profile' user.profile.id %}"><i class="far fa-address-book"></i>{% trans 'My posts' %}</a></li>
+                <li class="active"><a href="{% url 'profile' user.profile.id %}"><i class="far fa-address-book"></i> {% trans 'My posts' %}</a></li>
                 {% if user.profile.id == profile.id %}
                   <li><a href="{% url 'profile_edit' user.profile.id %}"><i class="fas fa-cog"></i> {% trans 'Settings' %}</a></li>
-                  <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>{% trans 'Logout' %}</a></li>
+                  <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> {% trans 'Logout' %}</a></li>
                 {% endif %}
               </ul>
               
@@ -69,7 +69,7 @@
 
 						<!-- Headline -->
 						<div class="headline">
-							<h3><i class="icon-material-outline-business-center"></i>{% trans 'Post Listings' %}</h3>
+							<h3><i class="fa fa-align-justify"></i> {% trans 'Post Listings' %}</h3>
             </div>
 
 						<div class="content">
@@ -94,7 +94,7 @@
                           <!-- Job Listing Footer -->
                           <div class="job-listing-footer">
                             <ul>
-                              <li><i class="icon-material-outline-date-range"></i> {% trans 'Posted on' %} {{post.date_posted|date:"F d, Y"}}</li>
+                              <li><i class="fas fa-map-marker-alt"></i> {% trans 'Posted on' %} {{post.date_posted|date:"F d, Y"}}</li>
                             </ul>
                           </div>
                         </div>
@@ -103,11 +103,11 @@
 
                     <!-- Buttons -->
                     <div class="buttons-to-right always-visible">
-                      <a href="{% url 'post-detail' post.id %}" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i>{% trans 'View' %}</a>
+                      <a href="{% url 'post-detail' post.id %}" class="button ripple-effect"><i class="fa fa-eye"></i> {% trans 'View' %}</a>
                       {% if request.user.profile.id == profile.id %}  
-                      <a href="{% url 'post-update' post.id %}" class="button gray ripple-effect ico" title="{% trans 'Edit' %}" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-                      <a href="{% url 'post-delete' post.id %}" class="button gray ripple-effect ico" title="{% trans 'Remove' %}" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
-                    {% endif %}
+                        <a href="{% url 'post-update' post.id %}" class="button gray ripple-effect ico" title="{% trans 'Edit' %}" data-tippy-placement="top"><i class='fas fa-edit'></i></a>
+                        <a href="{% url 'post-delete' post.id %}" class="button gray ripple-effect ico" title="{% trans 'Remove' %}" data-tippy-placement="top"><i class="far fa-trash-alt"></i></a>
+                      {% endif %}
                     </div>
                   </li>
                 {% endfor %}
@@ -126,6 +126,7 @@
 	</div>
   </div>
 
+  <div style="margin-bottom: 120px;"></div>
   
   <!-- Dashboard Container / End -->
   

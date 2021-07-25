@@ -109,7 +109,7 @@
 			aria-labelledby="navbarDropdownMenuLink"
 			>
 			<li>
-				<a class="dropdown-item" href="{% url 'profile' user.profile.id %}"><i class="far fa-address-book"></i> {% trans "My posts" %}</a>
+				<a class="dropdown-item" href="{% url 'profile' user.id %}"><i class="far fa-address-book"></i> {% trans "My posts" %}</a>
 			</li>
 			<li>
 				<a class="dropdown-item" href="{% url 'profile_edit' user.profile.id %}"><i class="fas fa-cog"></i> {% trans "Settings" %}</a>

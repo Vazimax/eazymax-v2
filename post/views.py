@@ -1,16 +1,21 @@
 from django.contrib.auth.mixins import LoginRequiredMixin , UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
 from django.views.generic import UpdateView , DeleteView
+from django.http.response import HttpResponseForbidden
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render , redirect
 from django.core.paginator import Paginator
 from django.contrib import messages
+from datetime import datetime as dt
+from datetime import timedelta
 from django.urls import reverse
 from user.models import Profile
 from .forms import PostForm
 from .models import Post
 from .filters import *
+from pytz import *
 import random 
+import pytz
 
 
 def home(request):
@@ -66,7 +71,10 @@ def post_job(request):
 
     if request.method == 'POST':
         form = PostForm(request.POST,request.FILES)
-        if form.is_valid():
+        yesterday = dt.now() - timedelta(days=1)
+        if Post.objects.filter(poster=request.user, date_posted__gt=yesterday).exists():
+            return HttpResponseForbidden("Vous avez posté aujourd'hui, venez demain ! / ! لقد نشرت اليوم ، تعال غدًا")
+        elif form.is_valid():
             my_form = form.save(commit=False)
             my_form.poster = request.user
             my_form.save()
@@ -86,11 +94,16 @@ def post_job(request):
 def post_detail(request,pk):
 
     object = Post.objects.get(id=pk)
-    posts = list(Post.objects.all())
-    featured_posts = random.sample(posts,3)
+
+    posts = list(Post.objects.filter(featured = False))
+    posts = random.sample(posts,2)
+    
+    featured_posts = list(Post.objects.filter(featured = True))
+    featured_posts = random.sample(featured_posts,2)
 
     context = {
         'object' : object,
+        'posts' : posts,
         'featured_posts' : featured_posts,
     }
 
