@@ -39,11 +39,11 @@ def home(request):
                 pass
 
         featured_posts = list(Post.objects.filter(hot = True))
-        featured_jobs = random.sample(featured_posts,1)
+        featured_jobs = random.sample(featured_posts,2)
 
         posts = Post.objects.filter(poster_id=request.user.id)
         profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
-        profiles = random.sample(profilex,2)
+        profiles = random.sample(profilex,3)
 
         filter = JobFilter(request.GET, queryset=posts)
         posts = filter.qs
@@ -68,6 +68,14 @@ def home(request):
             }
 
         return render(request, 'home.html', context)
+
+def memberships(request):
+    if request.user.is_authenticated :
+        user = Profile.objects.get(user_id=request.user.id)
+    else : 
+        user = None
+    
+    return render(request,'memberships.html',{'userx':user})
 
 def contact(request):
     if request.method == 'POST':
@@ -195,10 +203,10 @@ def post_detail(request, pk):
 
     object = Post.objects.get(id=pk)
     posts = list(Post.objects.filter(hot=False))
-    posts = random.sample(posts, 1)
+    posts = random.sample(posts, 2)
 
     featured_posts = list(Post.objects.filter(hot=True))
-    featured_posts = random.sample(featured_posts, 1)
+    featured_posts = random.sample(featured_posts, 2)
 
     context = {
         'object': object,

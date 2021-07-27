@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+
+<!-- Membership Plans -->
+{% if userx.sta  or userx.prem or userx.vip  %}
+<center>
+	<h2>{% trans "Sorry" %}</h2>
+	<p>{% trans "You already have a membership" %}</p>
+</center>
+{% else %}
+<div class="section padding-top-60 padding-bottom-75">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xl-12">
+				<!-- Section Headline -->
+				<div class="section-headline centered margin-top-0 margin-bottom-35">
+					<h1>{% trans "Membership Plans" %}</h1>
+				</div>
+			</div>
+
+
+			<div class="col-xl-12">
+
+				<!-- Billing Cycle  -->
+				<div class="billing-cycle-radios margin-bottom-70">
+				</div>
+
+				<!-- Pricing Plans Container -->
+				<div class="pricing-plans-container">
+
+					<!-- Plan -->
+					<div class="pricing-plan">
+						<h3>{% trans "Basic Plan" %}</h3>
+						<div class="pricing-plan-label billed-monthly-label"><strong>15 DH</strong></div>
+						<div class="pricing-plan-features">
+							<strong>{% trans "Features of Basic Plan" %}</strong>
+							<ul>
+								<li>{% trans "<b>-</b> Your post will featured for <b>2 DAYS</b>" %}</li>
+								<li>{% trans "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>" %}</li>
+								<li>{% trans "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>" %}</li>
+								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x2</b>" %}</li>
+							</ul>
+						</div>
+						<a href="{% url 'membershipsta' %}" class="button full-width margin-top-20">Buy Now</a>
+					</div>
+
+					<!-- Plan -->
+					<div class="pricing-plan recommended">
+						<div class="recommended-badge">{% trans "Recommended" %}</div>
+						<h3>{% trans "Standard Plan" %}</h3>
+						<div class="pricing-plan-label billed-monthly-label"><strong>30 DH</strong></div>
+						<div class="pricing-plan-features">
+							<strong>{% trans "Features of Standard Plan" %}</strong>
+							<ul>
+								<li>{% trans "<b>-</b> Your post will featured for <b>7 DAYS</b>" %}</li>
+								<li>{% trans "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>" %}</li>
+								<li>{% trans "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>" %}</li>
+								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x3</b>" %}</li>
+							</ul>
+						</div>
+						<a href="{% url 'membershipprem' %}" class="button full-width margin-top-20">Buy Now</a>
+					</div>
+
+					<!-- Plan -->
+					<div class="pricing-plan">
+						<h3>{% trans "Extended Plan" %}</h3>
+						<div class="pricing-plan-label billed-monthly-label"><strong>50 DH</strong></div>
+			
+						<div class="pricing-plan-features">
+							<strong>{% trans "Features of Extended Plan" %}</strong>
+							<ul>
+								<li>{% trans "<b>-</b> Your post will featured for <b>10 DAYS</b>" %}</li>
+								<li>{% trans "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>" %}</li>
+								<li>{% trans "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>" %}</li>
+								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x4</b>" %}</li>
+							</ul>
+						</div>
+						<a href="{% url 'membershipvip' %}" class="button full-width margin-top-20">Buy Now</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Membership Plans / End-->
+{% endif %}
+{% endblock %}

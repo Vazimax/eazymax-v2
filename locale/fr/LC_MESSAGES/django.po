@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 09:19+0100\n"
+"POT-Creation-Date: 2021-07-27 16:09+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.6\n"
+
+#: .\env\Lib\site-packages\bootstrap4\components.py:17
+#: .\env\Lib\site-packages\bootstrap4\templates\bootstrap4\form_errors.html:3
+#: .\env\Lib\site-packages\bootstrap4\templates\bootstrap4\messages.html:4
+msgid "close"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\create.html:6
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\list.html:10
+#, python-format
+msgid "Add %(object_name)s"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\delete.html:6
+#, python-format
+msgid "Delete %(object_name)s"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\delete.html:11
+#, fuzzy, python-format
+#| msgid "Do you really want to delete your post ?"
+msgid "Are you sure you want to delete this %(object_name)s?"
+msgstr "Voulez-vous vraiment supprimer votre message ?"
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\delete.html:15
+msgid "Confirm?"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\delete.html:18
+msgid "Yes, delete this!"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\delete.html:19
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\form.html:48
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\formset.html:158
+#: .\post\templates\post_confirm_delete.html:46
+msgid "Cancel"
+msgstr "Annuler"
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\form.html:47
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\formset.html:157
+msgid "Save"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\formset.html:62
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\formset.html:77
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\formset.html:148
+#, python-format
+msgid "Remove %(object_name)s"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\formset.html:114
+#, python-format
+msgid "Add other %(object_name)s"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\update.html:6
+#, python-format
+msgid "Edit %(object_name)s"
+msgstr ""
+
+#: .\env\Lib\site-packages\bootstrap\templates\bootstrap\update.html:15
+#: .\env\Lib\site-packages\django\forms\formsets.py:417
+#: .\post\templates\post_confirm_delete.html:45
+#: .\post\templates\post_detail.html:24
+msgid "Delete"
+msgstr ""
 
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:129
 #: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:139
@@ -588,12 +655,6 @@ msgstr[1] ""
 #: .\env\Lib\site-packages\django\forms\formsets.py:405
 #: .\env\Lib\site-packages\django\forms\formsets.py:412
 msgid "Order"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\formsets.py:417
-#: .\post\templates\post_confirm_delete.html:45
-#: .\post\templates\post_detail.html:24
-msgid "Delete"
 msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\models.py:763
@@ -1225,48 +1286,19 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
-#: .\env\Lib\site-packages\httplib2\__init__.py:368
-#, python-format
-msgid "Content purported to be compressed with %s but failed to decompress."
-msgstr ""
-
-#: .\env\Lib\site-packages\httplib2\__init__.py:532
-#, python-format
-msgid "Unsupported value for qop: %s."
-msgstr ""
-
-#: .\env\Lib\site-packages\httplib2\__init__.py:536
-#: .\env\Lib\site-packages\httplib2\__init__.py:614
-#, python-format
-msgid "Unsupported value for algorithm: %s."
-msgstr ""
-
-#: .\env\Lib\site-packages\httplib2\__init__.py:609
-msgid "The challenge doesn't contain a server nonce, or this one is empty."
-msgstr ""
-
-#: .\env\Lib\site-packages\httplib2\__init__.py:619
-#, python-format
-msgid "Unsupported value for pw-algorithm: %s."
-msgstr ""
-
-#: .\env\Lib\site-packages\httplib2\__init__.py:1448
-msgid "Redirected but the response is missing a Location: header."
-msgstr ""
-
 #: .\post\filters.py:7 .\post\filters.py:13
 msgid "what are you looking for ..?"
 msgstr "Que cherche-tu ?"
 
-#: .\post\forms.py:8
+#: .\post\forms.py:9
 msgid "post title"
 msgstr "Titre"
 
-#: .\post\forms.py:9
+#: .\post\forms.py:10
 msgid "description"
 msgstr "Description"
 
-#: .\post\forms.py:10 .\user\forms.py:36
+#: .\post\forms.py:11 .\user\forms.py:36
 msgid "phone number"
 msgstr "Numéro de téléphone"
 
@@ -1275,7 +1307,9 @@ msgid "About The Company"
 msgstr "À  propos de l'entreprise"
 
 #: .\post\templates\about_us.html:18 .\post\templates\contact.html:16
-#: .\post\templates\membership.html:16 .\post\templates\order_done.html:14
+#: .\post\templates\membershipprem.html:20
+#: .\post\templates\membershipsta.html:20
+#: .\post\templates\membershipvip.html:20 .\post\templates\order_done.html:14
 #: .\post\templates\post_confirm_delete.html:21
 #: .\post\templates\post_edit.html:21 .\post\templates\post_job.html:18
 #: .\templates\parts\navbar.html:49 .\user\templates\login.html:22
@@ -1318,19 +1352,27 @@ msgstr "Rechercher"
 msgid "Carpenters"
 msgstr "Charpentiers/Charpentières"
 
-#: .\post\templates\categories\carpenter.html:62
-#: .\post\templates\categories\dishwasher.html:62
-#: .\post\templates\categories\electrician.html:62
-#: .\post\templates\categories\painter.html:62
-#: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:120
-#: .\post\templates\home.html:249 .\post\templates\jobs.html:69
+#: .\post\templates\categories\carpenter.html:63
+#: .\post\templates\categories\dishwasher.html:63
+#: .\post\templates\categories\electrician.html:63
+#: .\post\templates\categories\painter.html:63
+#: .\post\templates\categories\plumber.html:63 .\post\templates\home.html:121
+#: .\post\templates\home.html:251 .\post\templates\jobs.html:69
 #: .\post\templates\post_detail.html:85 .\post\templates\post_detail.html:111
 #: .\post\templates\post_detail.html:141
 msgid "Tangier , Morocco"
 msgstr "Tanger, Maroc"
 
+#: .\post\templates\categories\carpenter.html:77
+#: .\post\templates\categories\dishwasher.html:77
+#: .\post\templates\categories\electrician.html:77
+#: .\post\templates\categories\painter.html:77
+#: .\post\templates\categories\plumber.html:77 .\post\templates\jobs.html:83
+msgid "SORRY ! There is no result"
+msgstr "PARDON ! Il n'y a pas de résultat"
+
 #: .\post\templates\categories\dishwasher.html:39
-#: .\post\templates\home.html:157
+#: .\post\templates\home.html:159
 msgid "Housekeeping"
 msgstr "Entretien ménager"
 
@@ -1347,7 +1389,7 @@ msgid "Plumbers"
 msgstr "Plombiers/Plombières"
 
 #: .\post\templates\contact.html:11 .\post\templates\contact.html:17
-#: .\templates\parts\footer.html:104
+#: .\templates\parts\footer.html:117
 msgid "Contact"
 msgstr "Contact"
 
@@ -1397,119 +1439,122 @@ msgstr "Emplois en vedette"
 msgid "Browse All Jobs"
 msgstr "Parcourir tous les emplois"
 
-#: .\post\templates\home.html:127 .\user\templates\profile.html:106
+#: .\post\templates\home.html:128 .\user\templates\profile.html:106
 msgid "View"
 msgstr "Afficher"
 
-#: .\post\templates\home.html:146
+#: .\post\templates\home.html:148
 msgid "CATEGORIES"
 msgstr "Catégories"
 
-#: .\post\templates\home.html:167
+#: .\post\templates\home.html:169
 msgid "Painter"
 msgstr "Peintre"
 
-#: .\post\templates\home.html:176
+#: .\post\templates\home.html:178
 msgid "Electrician"
 msgstr "Électricien"
 
-#: .\post\templates\home.html:185
+#: .\post\templates\home.html:187
 msgid "Plumber"
 msgstr "Plombier"
 
-#: .\post\templates\home.html:194
+#: .\post\templates\home.html:196
 msgid "Carpenter"
 msgstr "Charpentier"
 
-#: .\post\templates\home.html:213
+#: .\post\templates\home.html:215
 msgid "Special workers"
 msgstr "Travailleur spécial"
 
-#: .\post\templates\home.html:249 .\post\templates\post_detail.html:140
+#: .\post\templates\home.html:251 .\post\templates\post_detail.html:140
 msgid "Location"
 msgstr "Emplacement"
 
-#: .\post\templates\home.html:252
+#: .\post\templates\home.html:254
 msgid "View Profile"
 msgstr "emplacement"
 
-#: .\post\templates\home.html:276
+#: .\post\templates\home.html:279
 msgid "Membership Plans"
 msgstr "plans d'abonnement"
 
-#: .\post\templates\home.html:292
+#: .\post\templates\home.html:295 .\post\templates\membershipsta.html:61
 msgid "Basic Plan"
 msgstr "Abonnement régulière"
 
-#: .\post\templates\home.html:295
+#: .\post\templates\home.html:298
 msgid "Features of Basic Plan"
 msgstr "Caractéristiques d'abonnement régulière"
 
-#: .\post\templates\home.html:297
+#: .\post\templates\home.html:300
 msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 2 jours </b>"
 
-#: .\post\templates\home.html:298
+#: .\post\templates\home.html:301
 msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
-msgstr "- Votre post sera marqué dans les détails de la post pendant <b>2 jours</b>"
+msgstr ""
+"- Votre post sera marqué dans les détails de la post pendant <b>2 jours</b>"
 
-#: .\post\templates\home.html:299
+#: .\post\templates\home.html:302
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 2 jours</b>"
 
-#: .\post\templates\home.html:300
+#: .\post\templates\home.html:303
 msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x2</b>"
 
-#: .\post\templates\home.html:308
+#: .\post\templates\home.html:311
 msgid "Recommended"
 msgstr "Conseillé"
 
-#: .\post\templates\home.html:309
+#: .\post\templates\home.html:312 .\post\templates\membershipprem.html:62
 msgid "Standard Plan"
 msgstr "Abonnement avancée"
 
-#: .\post\templates\home.html:312
+#: .\post\templates\home.html:315
 msgid "Features of Standard Plan"
 msgstr "Caractéristiques d'abonnement avancée"
 
-#: .\post\templates\home.html:297
+#: .\post\templates\home.html:317
 msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 7 jours </b>"
 
-#: .\post\templates\home.html:298
+#: .\post\templates\home.html:318
 msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
-msgstr "- Votre post sera marqué dans les détails de la post pendant <b>7 jours</b>"
+msgstr ""
+"- Votre post sera marqué dans les détails de la post pendant <b>7 jours</b>"
 
-#: .\post\templates\home.html:299
+#: .\post\templates\home.html:319
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 5 jours</b>"
 
-#: .\post\templates\home.html:300
+#: .\post\templates\home.html:320
 msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x3</b>"
 
-#: .\post\templates\home.html:325
+#: .\post\templates\home.html:328 .\post\templates\membershipvip.html:61
 msgid "Extended Plan"
 msgstr "Abonnement ultra avancé"
 
-#: .\post\templates\home.html:329
+#: .\post\templates\home.html:332
 msgid "Features of Extended Plan"
 msgstr "Caractéristiques d'abonnement ultra avancé"
 
-#: .\post\templates\home.html:297
+#: .\post\templates\home.html:334
 msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 10 jours </b>"
 
-#: .\post\templates\home.html:298
+#: .\post\templates\home.html:335
 msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
-msgstr "- Votre post sera marqué dans les détails de la post pendant <b>10 jours</b>"
+msgstr ""
+"- Votre post sera marqué dans les détails de la post pendant <b>10 jours</b>"
 
-#: .\post\templates\home.html:299
+#: .\post\templates\home.html:336
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 10 jours</b>"
 
-#: .\post\templates\home.html:300
+#: .\post\templates\home.html:337
 msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 
@@ -1517,7 +1562,7 @@ msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 msgid "what are you looking for ?"
 msgstr "Que cherche-tu ?"
 
-#: .\post\templates\jobs.html:32 .\user\models.py:13
+#: .\post\templates\jobs.html:32 .\user\models.py:31
 msgid "category"
 msgstr "Catégorie"
 
@@ -1525,31 +1570,34 @@ msgstr "Catégorie"
 msgid "Search Results"
 msgstr "Résultats de recherche"
 
-#: .\post\templates\jobs.html:83
-msgid "SORRY ! There is no result"
-msgstr "PARDON ! Il n'y a pas de résultat"
-
-#: .\post\templates\membership.html:11 .\post\templates\membership.html:17
+#: .\post\templates\membershipprem.html:15
+#: .\post\templates\membershipprem.html:21
+#: .\post\templates\membershipsta.html:15
+#: .\post\templates\membershipsta.html:21
+#: .\post\templates\membershipvip.html:15
+#: .\post\templates\membershipvip.html:21
 msgid "Checkout"
 msgstr "Paiement à la caisse"
 
-#: .\post\templates\membership.html:31
+#: .\post\templates\membershipprem.html:35
+#: .\post\templates\membershipsta.html:35
+#: .\post\templates\membershipvip.html:35
 msgid "Payment Method"
 msgstr "Mode de paiement"
 
-#: .\post\templates\membership.html:44
-msgid "You will be redirected to PayPal to complete payment"
-msgstr "Vous serez redirigé vers PayPal pour effectuer le paiement"
-
-#: .\post\templates\membership.html:52
-msgid "Credit / Debit Card"
-msgstr "Carte de crédit / débit"
-
-#: .\post\templates\membership.html:107
+#: .\post\templates\membershipprem.html:58
+#: .\post\templates\membershipsta.html:57
+#: .\post\templates\membershipvip.html:57
 #, fuzzy
 #| msgid "Job Summary"
 msgid "Summary"
 msgstr "Résumé de l'emploi"
+
+#: .\post\templates\membershipprem.html:63
+#: .\post\templates\membershipsta.html:62
+#: .\post\templates\membershipvip.html:62
+msgid "Final Price"
+msgstr ""
 
 #: .\post\templates\order_done.html:12
 msgid "Thank you for your order!"
@@ -1561,7 +1609,7 @@ msgstr "Votre paiement a été traité avec succès"
 
 #: .\post\templates\post_confirm_delete.html:16
 #: .\post\templates\post_confirm_delete.html:22
-#: .\templates\parts\footer.html:120 .\user\templates\login.html:17
+#: .\templates\parts\footer.html:133 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "Se connecter"
@@ -1577,10 +1625,6 @@ msgstr "Oui, je veux"
 #: .\post\templates\post_confirm_delete.html:46
 msgid "Nope"
 msgstr "No"
-
-#: .\post\templates\post_confirm_delete.html:46
-msgid "Cancel"
-msgstr "Annuler"
 
 #: .\post\templates\post_detail.html:19
 msgid "Morocco , Tangier"
@@ -1642,57 +1686,61 @@ msgstr "Remplir toutes les informations"
 msgid "Post"
 msgstr "Publier"
 
-#: .\templates\parts\footer.html:80
+#: .\templates\parts\footer.html:93
 msgid "Who wants a worker"
 msgstr "Qui veut un travailleur"
 
-#: .\templates\parts\footer.html:82
+#: .\templates\parts\footer.html:95
 msgid "Browse Jobs"
 msgstr "Parcourir tous les emplois"
 
-#: .\templates\parts\footer.html:90
+#: .\templates\parts\footer.html:103
 msgid "Who wants to work"
 msgstr "Qui veut travailler"
 
-#: .\templates\parts\footer.html:92
+#: .\templates\parts\footer.html:105
 msgid "Membership"
 msgstr "L'abonnement"
 
-#: .\templates\parts\footer.html:93
+#: .\templates\parts\footer.html:106
 msgid "Post a Job"
 msgstr "Publier une travail"
 
-#: .\templates\parts\footer.html:102
+#: .\templates\parts\footer.html:115
 msgid "Helpful Links"
 msgstr "Liens utiles"
 
-#: .\templates\parts\footer.html:105
+#: .\templates\parts\footer.html:118
 msgid "Privacy Policy"
 msgstr "politique de confidentialité"
 
-#: .\templates\parts\footer.html:106
+#: .\templates\parts\footer.html:119
 msgid "Terms of Use"
 msgstr "Conditions d'utilisation"
 
-#: .\templates\parts\footer.html:115
+#: .\templates\parts\footer.html:128
 msgid "Account"
 msgstr "Le compte"
 
-#: .\templates\parts\footer.html:118 .\user\templates\profile_edit.html:72
+#: .\templates\parts\footer.html:131 .\user\templates\profile_edit.html:72
 msgid "My Account"
 msgstr "Mon compte"
 
-#: .\templates\parts\footer.html:128
-msgid "Sign Up For a Newsletter"
-msgstr "Inscrivez-vous à une newsletter"
+#: .\templates\parts\footer.html:141
+msgid "Sign Up To Post A Job"
+msgstr "Inscrivez-vous pour publier un emploi"
 
-#: .\templates\parts\footer.html:130 .\templates\parts\navbar.html:132
+#: .\templates\parts\footer.html:142
+msgid "Once you register you get allowed to post a job"
+msgstr "Une fois que vous vous êtes inscrit, vous êtes autorisé à publier un emploi"
+
+#: .\templates\parts\footer.html:143 .\templates\parts\navbar.html:132
 #: .\user\templates\login.html:45 .\user\templates\register.html:15
 #: .\user\templates\register.html:54
 msgid "Register"
 msgstr "S'inscrire"
 
-#: .\templates\parts\footer.html:142
+#: .\templates\parts\footer.html:155
 msgid "© 2021 <strong>EazyMax</strong>. All Rights Reserved."
 msgstr "© 2021 <strong>EazyMax</strong>. Tous les droits sont réservés."
 
@@ -1739,19 +1787,15 @@ msgstr "Nom"
 msgid "email"
 msgstr "Email"
 
-#: .\user\models.py:10
+#: .\user\models.py:22
 msgid "user"
 msgstr "utilisateur"
 
-#: .\user\models.py:11
-msgid "featured"
-msgstr "En vedette"
-
-#: .\user\models.py:12
+#: .\user\models.py:30
 msgid "phone_number"
 msgstr "numéro de téléphone"
 
-#: .\user\models.py:14
+#: .\user\models.py:32
 msgid "image"
 msgstr "image"
 
@@ -1894,6 +1938,18 @@ msgstr "Saisir votre email pour réinitialiser votre mot de passe"
 #: .\user\templates\reset\password_reset_form.html:55
 msgid "Reset"
 msgstr "Réinitialiser"
+
+#~ msgid "You will be redirected to PayPal to complete payment"
+#~ msgstr "Vous serez redirigé vers PayPal pour effectuer le paiement"
+
+#~ msgid "Credit / Debit Card"
+#~ msgstr "Carte de crédit / débit"
+
+#~ msgid "Sign Up For a Newsletter"
+#~ msgstr "Inscrivez-vous à une newsletter"
+
+#~ msgid "featured"
+#~ msgstr "En vedette"
 
 #~ msgid "About us"
 #~ msgstr "À propos de nous"

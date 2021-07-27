@@ -56,7 +56,20 @@
 							<!-- Language Switcher -->
 							<div class="footer-row">
 								<div class="footer-row-inner">
-									<h2> <span style="color:rgb(255, 255, 73)">Nothing</span> </h2>
+									<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+										{% get_current_language as LANGUAGE_CODE %}                                         
+										{% if LANGUAGE_CODE == 'ar' %}
+											<i class="fas fa-language"></i>
+											<button style="color: black;background-color: white; border-radius: 8px;padding: 12px;" type='submit' name='language' value='fr'>
+												Français
+											</button>
+										{% else %}
+											<button style="color: black;background-color: white; border-radius: 8px;padding: 12px;" type='submit' name='language' value='ar'>
+												العربية
+											</button>
+											<i class="fas fa-language"></i>
+										{% endif %}
+									</form>
 								</div>
 							</div>
 						</div>
@@ -89,7 +102,7 @@
 					<div class="footer-links">
 						<h3>{% trans "Who wants to work" %}</h3>
 						<ul>
-							<li><a href="#"><span>{% trans "Membership" %}</span></a></li>
+							<li><a href="{% url 'memberships' %}"><span>{% trans "Membership" %}</span></a></li>
 							<li><a href="{% url 'post_job' %}"><span>{% trans "Post a Job" %}</span></a></li>
 
 						</ul>
@@ -101,7 +114,7 @@
 					<div class="footer-links">
 						<h3>{% trans "Helpful Links" %}</h3>
 						<ul>
-							<li><a href="#"><span>{% trans "Contact" %}</span></a></li>
+							<li><a href="{% url 'contact' %}"><span>{% trans "Contact" %}</span></a></li>
 							<li><a href="#"><span>{% trans "Privacy Policy" %}</span></a></li>
 							<li><a href="#"><span>{% trans "Terms of Use" %}</span></a></li>
 						</ul>
@@ -115,7 +128,7 @@
 						<h3>{% trans 'Account' %}</h3>
 						<ul>
 							{% if user.is_authenticated %}
-								<li><a href="[% url 'profile' user.profile.id %}"><span>{% trans "My Account" %}</span></a></li>
+								<li><a href="{% url 'profile' user.profile.id %}"><span>{% trans "My Account" %}</span></a></li>
 							{% else %}
 								<li><a href="{% url 'login' %}"><span>{% trans "Log In" %}</span></a></li>
 							{% endif %}
@@ -123,12 +136,13 @@
 					</div>
 				</div>
 
-				<!-- Newsletter -->
+				{% if not user.is_authenticated %}
 				<div class="col-xl-4 col-lg-4 col-md-12">
-					<h3><i class="icon-feather-mail"></i> {% trans "Sign Up For a Newsletter" %}</h3>
-					<p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
+					<h3><i class="fas fa-registered"></i> {% trans "Sign Up To Post A Job" %}</h3>
+					<p>{% trans "Once you register you get allowed to post a job" %}</p>
 					<a href="{% url 'register' %}" class="button full-width button-sliding-icon ripple-effect margin-top-10">{% trans "Register" %}</i></a>
 				</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>

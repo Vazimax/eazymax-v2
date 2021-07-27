@@ -8,24 +8,28 @@ from .models import Profile
 from .forms import *
 
 def register(request):
-    if request.method == 'POST':
-        form = UserRegisterForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password1']
-            messages.success(request,'Votre compte a été créé / لقد تم إنشاء حسابك ')
-            user = authenticate(username=username,password=password)
-            login(request,user)
-            return redirect(f'/profile/{user.profile.id}/edit')
-    else : 
-        form = UserRegisterForm()
+    if request.user.is_authenticated :
+ 	    return redirect('home')
+    else :
+        if request.method == 'POST':
+            form = UserRegisterForm(request.POST)
+            if form.is_valid():
+                form.save()
+                username = form.cleaned_data['username']
+                password = form.cleaned_data['password1']
+                messages.success(request,'Votre compte à été créé avec succès / لقد تم انشاء حسابك بنجاح ')
+                user = authenticate(username=username,password=password)
+                login(request,user)
+                return redirect(f'/profile/{user.profile.id}/edit')
+        else : 
+            form = UserRegisterForm()
 
-    context = {
-        'form':form,
-        'title' : 'Register'
-    }
-    return render(request,'register.html',context)
+        context = {
+            'form':form,
+            'title' : 'Register'
+        }
+
+        return render(request,'register.html',context)
 
 # def loginPage(request):
 #     if request.user.is_authenticated :

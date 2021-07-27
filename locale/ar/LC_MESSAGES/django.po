@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 13:19+0100\n"
+"POT-Creation-Date: 2021-07-27 16:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1352,16 +1352,24 @@ msgstr "بحث"
 msgid "Carpenters"
 msgstr "النجارين"
 
-#: .\post\templates\categories\carpenter.html:62
-#: .\post\templates\categories\dishwasher.html:62
-#: .\post\templates\categories\electrician.html:62
-#: .\post\templates\categories\painter.html:62
-#: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:121
+#: .\post\templates\categories\carpenter.html:63
+#: .\post\templates\categories\dishwasher.html:63
+#: .\post\templates\categories\electrician.html:63
+#: .\post\templates\categories\painter.html:63
+#: .\post\templates\categories\plumber.html:63 .\post\templates\home.html:121
 #: .\post\templates\home.html:251 .\post\templates\jobs.html:69
 #: .\post\templates\post_detail.html:85 .\post\templates\post_detail.html:111
 #: .\post\templates\post_detail.html:141
 msgid "Tangier , Morocco"
 msgstr "طنجة، المغرب"
+
+#: .\post\templates\categories\carpenter.html:77
+#: .\post\templates\categories\dishwasher.html:77
+#: .\post\templates\categories\electrician.html:77
+#: .\post\templates\categories\painter.html:77
+#: .\post\templates\categories\plumber.html:77 .\post\templates\jobs.html:83
+msgid "SORRY ! There is no result"
+msgstr "آسف ! لا توجد نتيجة"
 
 #: .\post\templates\categories\dishwasher.html:39
 #: .\post\templates\home.html:159
@@ -1381,7 +1389,7 @@ msgid "Plumbers"
 msgstr "سباك"
 
 #: .\post\templates\contact.html:11 .\post\templates\contact.html:17
-#: .\templates\parts\footer.html:104
+#: .\templates\parts\footer.html:117
 msgid "Contact"
 msgstr "تواصل معنا"
 
@@ -1555,10 +1563,6 @@ msgstr "نوع الوظيفة"
 msgid "Search Results"
 msgstr "نتائج البحث"
 
-#: .\post\templates\jobs.html:83
-msgid "SORRY ! There is no result"
-msgstr "آسف ! لا توجد نتيجة"
-
 #: .\post\templates\membershipprem.html:15
 #: .\post\templates\membershipprem.html:21
 #: .\post\templates\membershipsta.html:15
@@ -1594,10 +1598,9 @@ msgstr "شكرا لطلبك!"
 msgid "Your payment has been processed successfully."
 msgstr "تمت معالجة الدفع الخاص بك بنجاح"
 
-
 #: .\post\templates\post_confirm_delete.html:16
 #: .\post\templates\post_confirm_delete.html:22
-#: .\templates\parts\footer.html:120 .\user\templates\login.html:17
+#: .\templates\parts\footer.html:133 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "تسجيل الدخول"
@@ -1676,57 +1679,61 @@ msgstr "املأ جميع المعلومات"
 msgid "Post"
 msgstr "انشر"
 
-#: .\templates\parts\footer.html:80
+#: .\templates\parts\footer.html:93
 msgid "Who wants a worker"
 msgstr "من يريد عامل"
 
-#: .\templates\parts\footer.html:82
+#: .\templates\parts\footer.html:95
 msgid "Browse Jobs"
 msgstr "تصفح جميع الوظائف"
 
-#: .\templates\parts\footer.html:90
+#: .\templates\parts\footer.html:103
 msgid "Who wants to work"
 msgstr "من يريد العمل"
 
-#: .\templates\parts\footer.html:92
+#: .\templates\parts\footer.html:105
 msgid "Membership"
 msgstr "العضويات"
 
-#: .\templates\parts\footer.html:93
+#: .\templates\parts\footer.html:106
 msgid "Post a Job"
 msgstr "انشر وظيفة"
 
-#: .\templates\parts\footer.html:102
+#: .\templates\parts\footer.html:115
 msgid "Helpful Links"
 msgstr "روابط مفيدة"
 
-#: .\templates\parts\footer.html:105
+#: .\templates\parts\footer.html:118
 msgid "Privacy Policy"
 msgstr "سياسة خاصة"
 
-#: .\templates\parts\footer.html:106
+#: .\templates\parts\footer.html:119
 msgid "Terms of Use"
 msgstr "شروط الاستخدام"
 
-#: .\templates\parts\footer.html:115
+#: .\templates\parts\footer.html:128
 msgid "Account"
 msgstr "الحساب"
 
-#: .\templates\parts\footer.html:118 .\user\templates\profile_edit.html:72
+#: .\templates\parts\footer.html:131 .\user\templates\profile_edit.html:72
 msgid "My Account"
 msgstr "حسابي"
 
-#: .\templates\parts\footer.html:128
-msgid "Sign Up For a Newsletter"
-msgstr "اشترك في النشرة الإخبارية"
+#: .\templates\parts\footer.html:141
+msgid "Sign Up To Post A Job"
+msgstr "سجل لنشر وظيفة"
 
-#: .\templates\parts\footer.html:130 .\templates\parts\navbar.html:132
+#: .\templates\parts\footer.html:142
+msgid "Once you register you get allowed to post a job"
+msgstr "بمجرد التسجيل ، يُسمح لك بنشر وظيفة"
+
+#: .\templates\parts\footer.html:143 .\templates\parts\navbar.html:132
 #: .\user\templates\login.html:45 .\user\templates\register.html:15
 #: .\user\templates\register.html:54
 msgid "Register"
 msgstr "انشاء حساب"
 
-#: .\templates\parts\footer.html:142
+#: .\templates\parts\footer.html:155
 msgid "© 2021 <strong>EazyMax</strong>. All Rights Reserved."
 msgstr " 2021 <strong> EazyMax </strong>. كل الحقوق محفوظة ©"
 
@@ -1924,6 +1931,9 @@ msgstr "اكتب بريدك الإلكتروني لإعادة كلمة المر�
 #: .\user\templates\reset\password_reset_form.html:55
 msgid "Reset"
 msgstr "إرسال"
+
+#~ msgid "Sign Up For a Newsletter"
+#~ msgstr "اشترك في النشرة الإخبارية"
 
 #~ msgid "featured"
 #~ msgstr "مميز"

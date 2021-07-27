@@ -41,6 +41,7 @@
 			<div class="listings-container compact-list-layout margin-top-35">
 				
 				<!-- Job Listing -->
+				{% if posts %}
                 {% for post in posts %}
                     <a href="{% url 'post-detail' post.id %}" class="job-listing">
                         <!-- Job Listing Details -->
@@ -58,7 +59,7 @@
                                 <!-- Job Listing Footer -->
                                 <div class="job-listing-footer">
                                     <ul>
-                                        <li> {{post.poster}}  {% if post.poster.profile.featured == True %}<div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div> {% endif %}</li>
+                                        <li> {{post.poster}}  {% if post.poster.profile.sta or post.poster.profile.prem or post.poster.profile.vip %}<i class="fa fa-check-circle" style="font-size:15px; color: #e0c040;"></i> {% endif %}</li>
                                         <li>{% trans "Tangier , Morocco" %}</li>
 
                                         <li>{{post.date_posted|date:"F d, Y"}}</li>
@@ -71,7 +72,11 @@
                         </div>
                     </a>	
                 {% endfor %}
-
+			{% else %}
+				<br>
+					<h2> {% trans "SORRY ! There is no result" %} :(</h2>
+				<br>
+			{% endif %}
 
 			</div>
 
@@ -104,6 +109,11 @@
 			</div>
 			{% endif %}
 
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 	</div>
 </div>
