@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+ <script
+
+    src="https://www.paypal.com/sdk/js?client-id=AYGXTiZ-8QQV4ZTMK9iGNdWT2sCgTVAuYiOvZwJPsgj5DnslRM27bVIOqb0bqwFoEsxRp9rRYHVt1LrT"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
+
+  </script>
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2><u>{% trans "Checkout" %}</u></h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="#">{% trans "Home" %}</a></li>
+						<li>{% trans "Checkout" %}</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xl-8 col-lg-8 content-right-offset">
+			
+			<!-- Hedline -->
+			<h3 class="margin-top-50">{% trans "Payment Method" %}</h3>
+
+			<!-- Payment Methods Accordion -->
+			<div class="payment margin-top-30">
+
+				
+				
+  <div id="paypal-button-container"></div>
+				
+
+			</div>
+			<!-- Payment Methods Accordion / End -->
+		
+		</div>
+
+
+		<!-- Summary -->
+		<div class="col-xl-4 col-lg-4 margin-top-0 margin-bottom-60">
+			
+			<!-- Summary -->
+			<div class="boxed-widget summary margin-top-0">
+				<div class="boxed-widget-headline">
+					<h3>{% trans "Summary" %}</h3>
+				</div>
+				<div class="boxed-widget-inner">
+					<ul>
+						<li>Standard Plan <span>50 DH</span></li>
+						<li class="total-costs">Final Price <span>50 DH</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Summary / End -->
+		</div>
+
+	</div>
+</div>
+ <script>
+ function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+const csrftoken = getCookie('csrftoken');
+
+	 	var total = '5.58'
+		 
+
+	 	function completeOrder(){
+	 		 
+					var url = "{% url 'order_done' %}"
+
+	 		fetch(url, {
+	 			method:'POST',
+	 			headers:{
+	 				'Content-type':'application/json',
+	 				'X-CSRFToken':csrftoken,
+	 			},
+	 			body:JSON.stringify({'price':total})
+	 		})
+			 setTimeout(red, 2000);
+					
+			
+	 	}
+		 function red(){window.location.href = '{% url 'order_done' %}';}
+
+
+
+        // Render the PayPal button into #paypal-button-container
+          paypal.Buttons({
+
+    createOrder: function(data, actions) {
+
+      // This function sets up the details of the transaction, including the amount and line item details.
+
+      return actions.order.create({
+
+        purchase_units: [{
+
+          amount: {
+
+            value: total
+
+          }
+
+        }]
+
+      });
+
+    },
+
+    onApprove: function(data, actions) {
+
+      // This function captures the funds from the transaction.
+
+      return actions.order.capture().then(function(details) {
+
+        // This function shows a transaction success message to your buyer.
+
+        completeOrder()
+
+      });
+
+    }
+
+  }).render('#paypal-button-container');
+  </script>
+
+
+{% endblock %}

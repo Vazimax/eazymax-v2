@@ -5,8 +5,10 @@ from .views import *
 urlpatterns = [
     path('',home,name="home"),
     path('about_us/',about_us,name="about"),
-    path('contact/',contact,name="contact"),
-    path('membership/',membership,name="membership"),
+    path('membershipsta/',membershipsta,name="membershipsta"),
+    path('membershipprem/',membershipprem,name="membershipprem"),
+    path('membershipvip/',membershipvip,name="membershipvip"),
+
     path('order_done/',order_done,name="order_done"),
 
     path('jobs/',jobs,name="jobs"),

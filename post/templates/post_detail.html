@@ -18,7 +18,7 @@
                   <li><a href="{% url 'profile' object.poster.id %}"><i class="fa fa-user" style="font-size:15px"></i> {{object.poster}}</a></li>
                   <li><img class="flag" src="" alt=""> <i class="fas fa-map-marker-alt"></i> {% trans "Morocco , Tangier" %}</li>
                   <li><i class="fas fa-clock"></i> {{object.date_posted|date:"F d, Y"}}</li>
-                  {% if object.featured %}<li><div  class="verified-badge-with-title">{% trans "Verified" %}</div></li>{% endif %}
+                  {% if object.hot  %}<li><div  class="verified-badge-with-title">{% trans "Verified" %}</div></li>{% endif %}
                   {% if object.poster == user %}
                         <a href="{% url 'post-update' object.id %}" style="color: white;background-color:rgb(4, 192, 4) ; padding: 3px; border-radius: 5px;">{% trans "Update" %}</a>
                         <a href="{% url 'post-delete' object.id %}" style="color: white;background-color: red; padding: 3px; border-radius: 5px;">{% trans "Delete" %}</a>

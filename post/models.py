@@ -1,4 +1,3 @@
-from phonenumber_field.modelfields import PhoneNumberField
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import User
 from django.urls import reverse
@@ -24,8 +23,8 @@ class Post(models.Model):
     phone_number = models.IntegerField(null=True,blank=True)
     category = models.ForeignKey(Category,related_name='categories',on_delete=models.CASCADE,)
     image = models.ImageField(upload_to=image_upload,default="jobs/default.jpg",null=True,blank=True,)
-    date_posted = models.DateTimeField(auto_now_add=True)
-    featured = models.BooleanField(default=False)
+    date_posted = models.DateTimeField(auto_now=True)
+    hot=models.BooleanField(default=False)
 
 
     def __str__(self):

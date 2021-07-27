@@ -1,6 +1,7 @@
 from django.utils.translation import ugettext_lazy 
 from django import forms
-from .models import Post
+from .models import Post 
+from user.models import Profile
 
 import datetime , timedelta , timezones
 
@@ -12,8 +13,7 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = '__all__'
-        exclude = ['poster','featured']
-        
+        exclude = ['poster','date_posted','hot']
         # def has_posted_today(self):
         #   yesterday = timezones.now() - timezones.timedelta(hours=24)
         #   poster = self.cleaned_data.get('poster')

@@ -52,7 +52,7 @@
 			<a class="nav-link" href="{% url 'jobs' %}">{% trans 'Find Workers' %}</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="{% url 'contact' %}">{% trans 'Contact Us' %}</a>
+			<a class="nav-link" href="">{% trans 'Contact Us' %}</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="{% url 'about' %}">{% trans 'About Us' %}</a>
@@ -112,7 +112,7 @@
 				<a class="dropdown-item" href="{% url 'profile' user.id %}"><i class="far fa-address-book"></i> {% trans "My posts" %}</a>
 			</li>
 			<li>
-				<a class="dropdown-item" href="{% url 'profile_edit' user.profile.id %}"><i class="fas fa-cog"></i> {% trans "Settings" %}</a>
+				<a class="dropdown-item" href="#"><i class="fas fa-cog"></i> {% trans "Settings" %}</a>
 			</li>
 			<li>
 				<a class="dropdown-item" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> {% trans "Logout" %}</a>
@@ -120,19 +120,19 @@
 			</ul>
 			
 		</div>
-		{% else %}
-		<div class="d-flex align-items-center">
-			<a href="{% url 'login' %}">
-				<button type="button" style="color:#e0c040 ;" class="btn btn-lg btn-link px-3 me-2">
-				{% trans "Login" %}
-				</button>
-			</a>
-			<a href="{% url 'register' %}">
-				<button type="button" style="background-color: #e0c040; color: white;" class="btn btn-lg me-3">
-				{% trans "Register" %}
-				</button>
-			</a>
-		</div> 
+		{% elif not user.is_authenticated %}
+			<div class="d-flex align-items-center">
+				<a href="{% url 'login' %}">
+					<button type="button" style="color:#e0c040 ;" class="btn btn-lg btn-link px-3 me-2">
+					{% trans "Login" %}
+					</button>
+				</a>
+				<a href="{% url 'register' %}">
+					<button type="button" style="background-color: #e0c040; color: white;" class="btn btn-lg me-3">
+					{% trans "Register" %}
+					</button>
+				</a>
+			</div> 
 		{% endif %}
 	  <!-- Right elements -->
 	</div>

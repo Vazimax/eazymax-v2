@@ -97,8 +97,9 @@
 				
 				<!-- Jobs Container -->
 				<div class="listings-container compact-list-layout margin-top-35">
-
+					
 					{% for post in featured_posts %}
+					{%if post.hot %}
 						<a href="{% url 'post-detail' post.id %}" class="job-listing with-apply-button">
 
 						<!-- Job Listing Details -->
@@ -116,7 +117,7 @@
 							<!-- Job Listing Footer -->
 							<div class="job-listing-footer">
 								<ul>
-								<li><i class="fa fa-user" style="font-size:15px"></i> {{post.poster}} {% if post.poster.profile.featured %} <i class="fa fa-check-circle" style="font-size:15px; color: #e0c040;"></i> {% endif %} </li>
+								<li><i class="fa fa-user" style="font-size:15px"></i> {{post.poster}} {% if post.hot %} <i class="fa fa-check-circle" style="font-size:15px; color: #e0c040;"></i> {% endif %} </li>
 								<li><i class="fas fa-map-marker-alt"></i> {% trans "Tangier , Morocco" %}</li>
 								<li><i class="fas fa-clock"></i> {{post.date_posted|date:"F d, Y"}}</li>
 								</ul>
@@ -127,6 +128,7 @@
 							<span class="list-apply-button ripple-effect">{% trans "View" %}</span>
 						</div>
 						</a>
+					{% endif%}
 					{% endfor %}
 
 				</div>
@@ -139,7 +141,7 @@
 <!-- Featured Jobs / End -->
 
 
-<!-- Features Ctegories -->
+<!-- Features Categories -->
 <div class="section margin-top-65 margin-bottom-65">
 	<div class="container">
 		<div class="section-headline centered margin-top-0 margin-bottom-45">
@@ -219,7 +221,7 @@
 
 					<!--Freelancer -->
 					{% for profile in profiles %}
-						{% if profile.featured == True %}
+						{% if profile.sta or profile.prem or profile.vip %}
 							<div class="freelancer">
 								<!-- Overview -->
 								<div class="freelancer-overview">
@@ -264,8 +266,9 @@
 </div>
 <!-- Featured Clients / End-->
 
-
 <!-- Membership Plans -->
+{% if user.sta  or user.prem or user.vip  %}
+{% else %}
 <div class="section padding-top-60 padding-bottom-75">
 	<div class="container">
 		<div class="row">
@@ -301,7 +304,7 @@
 								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x2</b>" %}</li>
 							</ul>
 						</div>
-						<a href="{% url 'membership' %}" class="button full-width margin-top-20">Buy Now</a>
+						<a href="{% url 'membershipsta' %}" class="button full-width margin-top-20">Buy Now</a>
 					</div>
 
 					<!-- Plan -->
@@ -319,7 +322,7 @@
 								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x3</b>" %}</li>
 							</ul>
 						</div>
-						<a href="{% url 'membership' %}" class="button full-width margin-top-20">Buy Now</a>
+						<a href="{% url 'membershipprem' %}" class="button full-width margin-top-20">Buy Now</a>
 					</div>
 
 					<!-- Plan -->
@@ -337,7 +340,7 @@
 								<li>{% trans "<b>-</b> Get <b>More CLIENTS / x4</b>" %}</li>
 							</ul>
 						</div>
-						<a href="{% url 'membership' %}" class="button full-width margin-top-20">Buy Now</a>
+						<a href="{% url 'membershipvip' %}" class="button full-width margin-top-20">Buy Now</a>
 					</div>
 				</div>
 
@@ -347,5 +350,5 @@
 	</div>
 </div>
 <!-- Membership Plans / End-->
-
+{% endif %}
 {% endblock %}
