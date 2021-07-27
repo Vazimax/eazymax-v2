@@ -4,7 +4,7 @@
 {% block content %}
  <script
 
-    src="https://www.paypal.com/sdk/js?client-id=AYGXTiZ-8QQV4ZTMK9iGNdWT2sCgTVAuYiOvZwJPsgj5DnslRM27bVIOqb0bqwFoEsxRp9rRYHVt1LrT&currency=USD"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
+ src="https://www.paypal.com/sdk/js?client-id=AT21yBYkPAev13zjca_gWf2gQTP2hlyTu483kdAsBXO_xdHldxhfK7zRbXYIZQ-TSQ09v3QgVnF50Ksd&currency=USD">
 
   </script>
 <div id="titlebar" class="gradient">
@@ -58,8 +58,8 @@
 				</div>
 				<div class="boxed-widget-inner">
 					<ul>
-						<li>Standard Plan <span>15 DH</span></li>
-						<li class="total-costs">Final Price <span>15 DH</span></li>
+						<li>{% trans "Basic Plan" %}<span>15 DH</span></li>
+						<li class="total-costs">{% trans "Final Price" %}<span>15 DH</span></li>
 					</ul>
 				</div>
 			</div>
@@ -105,7 +105,7 @@ const csrftoken = getCookie('csrftoken');
 					
 			
 	 	}
-		 function red(){window.location.href = '{% url 'order_done' %}';}
+		 function red(){window.location.href = '{% url "order_done" %}';}
 
 
 

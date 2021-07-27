@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col-md-12">
 
-				<h2>Contact</h2>
+				<h2>{% trans "Contact" %}</h2>
 
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs" class="dark">
@@ -24,8 +24,8 @@
 </div>
 {% if subject %}
 <center>
-	<h2 style="color: #e0c040;"><b>Thanks !</b></h2>
-	<p>We received your email and we will respond shortly ...</p>
+	<h2 style="color: #e0c040;"><b>{% trans "Thanks" %}</b></h2>
+	<p>{% trans "We received your email and we will respond shortly ..."%}</p>
 </center>
 <br>
 
@@ -35,7 +35,7 @@
 		<div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
 
 			<section id="contact" class="margin-bottom-60">
-				<h3 class="headline margin-top-15 margin-bottom-35">Any questions? Feel free to contact us!</h3>
+				<h3 class="headline margin-top-15 margin-bottom-35">{% trans "Any questions? Feel free to contact us!" %}</h3>
 
 				<form method="post" action="{% url 'contact' %}" name="contactform" id="contactform" autocomplete="on">
                     {% csrf_token %}
@@ -44,24 +44,24 @@
                     <div class="row">
 						<div class="col-md-6">
 							<div class="input-with-icon-left">
-								<input class="with-border" name="subject" type="text" id="name" placeholder="The subject" required="required" />
+								<input class="with-border" name="subject" type="text" id="name" placeholder="L'objet / الموضوع" required="required" />
 								<i class="far fa-file-alt"></i>
 							</div>
 						</div>
 
 						<div class="col-md-6">
 							<div class="input-with-icon-left">
-								<input class="with-border" name="email" type="email" id="email" placeholder="The email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+								<input class="with-border" name="email" type="email" id="email" placeholder="Email / البريد الإلكتروني" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
 								<i class="far fa-envelope"></i>
 							</div>
 						</div>
 
 					<div class="col-md-12">
-						<textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
+						<textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Le message / الرسالة" spellcheck="true" required="required"></textarea>
 					</div>
 					<div class="col-md-12">
 						<br>
-						<input type="submit" class="submit button col-md-12" id="submit" value="Submit Message" />
+						<input type="submit" class="submit button col-md-12" id="submit" value="{% trans 'send' %}" />
 					</div>
 				</div>
 			</div>
@@ -69,18 +69,15 @@
 				</form>
 				<div class="col-xl-3">
 					<div class="cd">
-						<p class="koko"><i class="fas keke fa-map-marker-alt"></i> Belle Air, Tangier.</p>
-						<p class="kaka">X , 9000</p>
+						<p class="koko"><i class="fas keke fa-map-marker-alt"></i> {% trans "Belair, Tangier." %} </p>
 					</div>
 					
 					<div class="cd">
-						<p class="koko"><i class="fas keke fa-phone-alt"></i> +212 694920029</p>
-						<p class="kaka">Mon to Fri 9am to 6pm</p>
+						<p class="koko"><i class="fas keke fa-phone-alt"></i> +212 694920029 </p>
 					</div>  
 
 					<div class="cd">
 						<p class="koko"><i class="far keke fa-envelope"></i> info@eazymax.com</p>
-						<p class="kaka">Send us your query anytime!</p>
 					</div>  		
 					
 				 </div>

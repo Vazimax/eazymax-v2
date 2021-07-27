@@ -17,15 +17,19 @@ from .filters import *
 from pytz import *
 import random
 import pytz
+
+from django.core.mail import send_mail
 from django.http import JsonResponse
 from django.db.models import Q
-import json
 import datetime
-
+import json
 
 def home(request):
-
-        user = Profile.objects.get(user_id=request.user.id)
+        
+        if request.user.is_authenticated :
+            user = Profile.objects.get(user_id=request.user.id)
+        else : 
+            user = None
 
         try:
             if  user.expiredate < datetime.datetime.now():
@@ -44,24 +48,49 @@ def home(request):
         filter = JobFilter(request.GET, queryset=posts)
         posts = filter.qs
 
-        if user.sta  or user.prem or user.vip:
-            for post in posts :
-                if post.poster.profile.id == user.id :
-                    post = True    
-        else:
-            pass
+        if request.user.is_authenticated :
+            if user.sta or user.prem or user.vip:
+                posts = Post.objects.all()
+                for post in posts :
+                    if post.poster.profile.id == user.id :
+                        post.hot = True    
+            else:
+                pass
 
+        userx = user
+        
         context = {
             'featured_posts': featured_jobs,
             'posts': posts,
             'filter': filter,
             'profiles': profiles,
-            'user': user,
+            'userx': userx,
             }
 
         return render(request, 'home.html', context)
 
+def contact(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        subject = request.POST['subject']
+        comments = request.POST['comments']
 
+        send_mail(
+            subject,
+            comments,
+            email,
+            ['tvazimax@gmail.com'],
+        )
+
+        context = {
+            'email' : email,
+            'subject' : subject,
+            'comments' : comments,
+        }
+        return render(request,'contact.html',context)
+
+    else :
+        return render(request,'contact.html')
 
 
 def about_us(request):

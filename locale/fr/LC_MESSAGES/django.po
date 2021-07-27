@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-24 11:36+0100\n"
+"POT-Creation-Date: 2021-07-26 09:19+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -592,7 +592,7 @@ msgstr ""
 
 #: .\env\Lib\site-packages\django\forms\formsets.py:417
 #: .\post\templates\post_confirm_delete.html:45
-#: .\post\templates\post_detail.html:25
+#: .\post\templates\post_detail.html:24
 msgid "Delete"
 msgstr ""
 
@@ -1274,7 +1274,8 @@ msgstr "Numéro de téléphone"
 msgid "About The Company"
 msgstr "À  propos de l'entreprise"
 
-#: .\post\templates\about_us.html:18
+#: .\post\templates\about_us.html:18 .\post\templates\contact.html:16
+#: .\post\templates\membership.html:16 .\post\templates\order_done.html:14
 #: .\post\templates\post_confirm_delete.html:21
 #: .\post\templates\post_edit.html:21 .\post\templates\post_job.html:18
 #: .\templates\parts\navbar.html:49 .\user\templates\login.html:22
@@ -1322,8 +1323,9 @@ msgstr "Charpentiers/Charpentières"
 #: .\post\templates\categories\electrician.html:62
 #: .\post\templates\categories\painter.html:62
 #: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:120
-#: .\post\templates\home.html:254 .\post\templates\jobs.html:69
-#: .\post\templates\post_detail.html:86 .\post\templates\post_detail.html:116
+#: .\post\templates\home.html:249 .\post\templates\jobs.html:69
+#: .\post\templates\post_detail.html:85 .\post\templates\post_detail.html:111
+#: .\post\templates\post_detail.html:141
 msgid "Tangier , Morocco"
 msgstr "Tanger, Maroc"
 
@@ -1343,6 +1345,33 @@ msgstr "Peintres"
 #: .\post\templates\categories\plumber.html:39
 msgid "Plumbers"
 msgstr "Plombiers/Plombières"
+
+#: .\post\templates\contact.html:11 .\post\templates\contact.html:17
+#: .\templates\parts\footer.html:104
+msgid "Contact"
+msgstr "Contact"
+
+#: .\post\templates\contact.html:27
+msgid "Thanks"
+msgstr "Merci"
+
+#: .\post\templates\contact.html:28
+msgid "We received your email and we will respond shortly ..."
+msgstr "Nous avons reçu votre email et nous vous répondrons sous peu..."
+
+#: .\post\templates\contact.html:38
+msgid "Any questions? Feel free to contact us!"
+msgstr "Des questions? N'hésitez pas à nous contacter!"
+
+#: .\post\templates\contact.html:64
+msgid "send"
+msgstr "envoyer"
+
+#: .\post\templates\contact.html:72
+#, fuzzy
+#| msgid "Morocco , Tangier"
+msgid "Belair, Tangier."
+msgstr "Maroc , Tanger"
 
 #: .\post\templates\home.html:17
 msgid "Hire experts or be hired for any job, any time"
@@ -1396,45 +1425,93 @@ msgstr "Charpentier"
 msgid "Special workers"
 msgstr "Travailleur spécial"
 
-#: .\post\templates\home.html:254 .\post\templates\post_detail.html:115
+#: .\post\templates\home.html:249 .\post\templates\post_detail.html:140
 msgid "Location"
 msgstr "Emplacement"
 
-#: .\post\templates\home.html:257
+#: .\post\templates\home.html:252
 msgid "View Profile"
 msgstr "emplacement"
 
-#: .\post\templates\home.html:281
+#: .\post\templates\home.html:276
 msgid "Membership Plans"
 msgstr "plans d'abonnement"
 
-#: .\post\templates\home.html:297
+#: .\post\templates\home.html:292
 msgid "Basic Plan"
 msgstr "Abonnement régulière"
 
-#: .\post\templates\home.html:302
+#: .\post\templates\home.html:295
 msgid "Features of Basic Plan"
 msgstr "Caractéristiques d'abonnement régulière"
 
-#: .\post\templates\home.html:314
+#: .\post\templates\home.html:297
+msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
+msgstr "<b> - </b> Votre post sera marqué pendant <b> 2 jours </b>"
+
+#: .\post\templates\home.html:298
+msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
+msgstr "- Votre post sera marqué dans les détails de la post pendant <b>2 jours</b>"
+
+#: .\post\templates\home.html:299
+msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
+msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 2 jours</b>"
+
+#: .\post\templates\home.html:300
+msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
+msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x2</b>"
+
+#: .\post\templates\home.html:308
 msgid "Recommended"
 msgstr "Conseillé"
 
-#: .\post\templates\home.html:315
+#: .\post\templates\home.html:309
 msgid "Standard Plan"
 msgstr "Abonnement avancée"
 
-#: .\post\templates\home.html:320
+#: .\post\templates\home.html:312
 msgid "Features of Standard Plan"
 msgstr "Caractéristiques d'abonnement avancée"
 
-#: .\post\templates\home.html:332
+#: .\post\templates\home.html:297
+msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
+msgstr "<b> - </b> Votre post sera marqué pendant <b> 7 jours </b>"
+
+#: .\post\templates\home.html:298
+msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
+msgstr "- Votre post sera marqué dans les détails de la post pendant <b>7 jours</b>"
+
+#: .\post\templates\home.html:299
+msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
+msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 5 jours</b>"
+
+#: .\post\templates\home.html:300
+msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
+msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x3</b>"
+
+#: .\post\templates\home.html:325
 msgid "Extended Plan"
 msgstr "Abonnement ultra avancé"
 
-#: .\post\templates\home.html:337
+#: .\post\templates\home.html:329
 msgid "Features of Extended Plan"
 msgstr "Caractéristiques d'abonnement ultra avancé"
+
+#: .\post\templates\home.html:297
+msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
+msgstr "<b> - </b> Votre post sera marqué pendant <b> 10 jours </b>"
+
+#: .\post\templates\home.html:298
+msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
+msgstr "- Votre post sera marqué dans les détails de la post pendant <b>10 jours</b>"
+
+#: .\post\templates\home.html:299
+msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
+msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 10 jours</b>"
+
+#: .\post\templates\home.html:300
+msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
+msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 
 #: .\post\templates\jobs.html:20
 msgid "what are you looking for ?"
@@ -1452,12 +1529,42 @@ msgstr "Résultats de recherche"
 msgid "SORRY ! There is no result"
 msgstr "PARDON ! Il n'y a pas de résultat"
 
+#: .\post\templates\membership.html:11 .\post\templates\membership.html:17
+msgid "Checkout"
+msgstr "Paiement à la caisse"
+
+#: .\post\templates\membership.html:31
+msgid "Payment Method"
+msgstr "Mode de paiement"
+
+#: .\post\templates\membership.html:44
+msgid "You will be redirected to PayPal to complete payment"
+msgstr "Vous serez redirigé vers PayPal pour effectuer le paiement"
+
+#: .\post\templates\membership.html:52
+msgid "Credit / Debit Card"
+msgstr "Carte de crédit / débit"
+
+#: .\post\templates\membership.html:107
+#, fuzzy
+#| msgid "Job Summary"
+msgid "Summary"
+msgstr "Résumé de l'emploi"
+
+#: .\post\templates\order_done.html:12
+msgid "Thank you for your order!"
+msgstr "Nous vous remercions de votre commande!"
+
+#: .\post\templates\order_done.html:13
+msgid "Your payment has been processed successfully."
+msgstr "Votre paiement a été traité avec succès"
+
 #: .\post\templates\post_confirm_delete.html:16
 #: .\post\templates\post_confirm_delete.html:22
 #: .\templates\parts\footer.html:120 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
-msgstr "Connexion"
+msgstr "Se connecter"
 
 #: .\post\templates\post_confirm_delete.html:44
 msgid "Do you really want to delete your post ?"
@@ -1475,35 +1582,35 @@ msgstr "No"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: .\post\templates\post_detail.html:21
+#: .\post\templates\post_detail.html:19
 msgid "Morocco , Tangier"
 msgstr "Maroc , Tanger"
 
-#: .\post\templates\post_detail.html:22
+#: .\post\templates\post_detail.html:21
 msgid "Verified"
 msgstr "Vérifié"
 
-#: .\post\templates\post_detail.html:24
+#: .\post\templates\post_detail.html:23
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: .\post\templates\post_detail.html:53
+#: .\post\templates\post_detail.html:52
 msgid "Description"
 msgstr "Description"
 
-#: .\post\templates\post_detail.html:60
+#: .\post\templates\post_detail.html:59
 msgid "Other Jobs"
 msgstr "D'autre travail"
 
-#: .\post\templates\post_detail.html:105
+#: .\post\templates\post_detail.html:130
 msgid "Job Summary"
 msgstr "Résumé de l'emploi"
 
-#: .\post\templates\post_detail.html:110
+#: .\post\templates\post_detail.html:135
 msgid "Poster"
 msgstr "Éditeur"
 
-#: .\post\templates\post_detail.html:120
+#: .\post\templates\post_detail.html:145
 msgid "Date Posted"
 msgstr "Date postée"
 
@@ -1559,10 +1666,6 @@ msgstr "Publier une travail"
 msgid "Helpful Links"
 msgstr "Liens utiles"
 
-#: .\templates\parts\footer.html:104
-msgid "Contact"
-msgstr "Contact"
-
 #: .\templates\parts\footer.html:105
 msgid "Privacy Policy"
 msgstr "politique de confidentialité"
@@ -1617,16 +1720,16 @@ msgstr "Les paramètres"
 #: .\user\templates\logout.html:20 .\user\templates\profile.html:33
 #: .\user\templates\profile_edit.html:32
 msgid "Logout"
-msgstr "Se déconnecter"
+msgstr "Se Déconnecter"
 
 #: .\templates\parts\navbar.html:127 .\user\templates\register.html:42
 #: .\user\templates\reset\password_reset_complete.html:42
 msgid "Login"
-msgstr "Connexion"
+msgstr "Se connecter"
 
 #: .\user\forms.py:10
 msgid "firstname"
-msgstr "prenom "
+msgstr "Prénom"
 
 #: .\user\forms.py:11
 msgid "lastname"
@@ -1745,7 +1848,9 @@ msgstr "Changement de mot de passe effectué"
 #: .\user\templates\reset\password_reset_complete.html:40
 msgid ""
 "You've changed the password successfully . Now you've the access to Login"
-msgstr "Vous avez modifié votre mot de passe avec succès, Vous avez maintenant accès à la connexion"
+msgstr ""
+"Vous avez modifié votre mot de passe avec succès, Vous avez maintenant accès "
+"à la connexion"
 
 #: .\user\templates\reset\password_reset_confirm.html:17
 #: .\user\templates\reset\password_reset_confirm.html:23
@@ -1767,7 +1872,9 @@ msgstr "vérifiez vos boîtes e-mail"
 
 #: .\user\templates\reset\password_reset_done.html:40
 msgid "We've sent you the link to your email to change your password"
-msgstr "Nous vous avons envoyé le lien vers votre email pour changer votre mot de passe"
+msgstr ""
+"Nous vous avons envoyé le lien vers votre email pour changer votre mot de "
+"passe"
 
 #: .\user\templates\reset\password_reset_done.html:44
 msgid "Go To Gmail"
