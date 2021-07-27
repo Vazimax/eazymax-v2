@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<!-- Spacer / End-->
+    <!-- Titlebar
+================================================== -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>{% trans "Policies" %}</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+						<li>{% trans "Policy" %}</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Page Content
+================================================== -->
+<div class="container">
+	<div class="row">
+		
+		<!-- Content -->
+		<div class="col-xl-8 col-lg-8 content-right-offset ">
+
+			<div class="single-page-section">
+				<p>
+				{% trans "- We are not responsible for anything that happens between workers and clients in including any Type of stealing safety and Cheating. "%}
+                </p>
+                <p>
+                {% trans "- Prices are decided by only workers and clients no other  third party included" %}
+				</p>
+				<p>
+				{% trans "* Regarding clients and workers, almost every EazyMax services are for <b>FREE</b> ." %}
+				</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- Spacer -->
+<div class="margin-top-70"></div>
+<!-- Spacer / End-->
+{% endblock %}

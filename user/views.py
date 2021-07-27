@@ -7,6 +7,11 @@ from project import settings
 from .models import Profile
 from .forms import *
 
+def policy(request):
+
+    return render(request,'policy/policy.html')
+
+
 def register(request):
     if request.user.is_authenticated :
  	    return redirect('home')
