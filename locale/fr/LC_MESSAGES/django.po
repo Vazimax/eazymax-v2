@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 16:09+0100\n"
+"POT-Creation-Date: 2021-07-27 23:05+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1303,8 +1303,8 @@ msgid "phone number"
 msgstr "Numéro de téléphone"
 
 #: .\post\templates\about_us.html:13
-msgid "About The Company"
-msgstr "À  propos de l'entreprise"
+msgid "About The StartUp"
+msgstr "à propos de la start-up"
 
 #: .\post\templates\about_us.html:18 .\post\templates\contact.html:16
 #: .\post\templates\membershipprem.html:20
@@ -1317,8 +1317,8 @@ msgstr "À  propos de l'entreprise"
 #: .\user\templates\password_change_done.html:18
 #: .\user\templates\password_change_form.html:22
 #: .\user\templates\password_change_form.html:44
-#: .\user\templates\profile.html:57 .\user\templates\profile_edit.html:57
-#: .\user\templates\register.html:20
+#: .\user\templates\policy\policy.html:18 .\user\templates\profile.html:57
+#: .\user\templates\profile_edit.html:57 .\user\templates\register.html:20
 #: .\user\templates\reset\password_reset_complete.html:19
 #: .\user\templates\reset\password_reset_confirm.html:22
 #: .\user\templates\reset\password_reset_done.html:19
@@ -1330,7 +1330,33 @@ msgstr "Accueil"
 msgid "About Us"
 msgstr "À  propos de nous"
 
-#: .\post\templates\about_us.html:50
+#: .\post\templates\about_us.html:39
+msgid ""
+"EazyMax is a startup company. We are doing our best to make our city Tangier "
+"(And all the cities in the future) a better place. "
+msgstr ""
+" EazyMax est une startup. Nous faisons de notre mieux pour rendre notre ville Tanger "
+"(Et toutes les villes à l'avenir) un meilleur endroit. "
+
+#: .\post\templates\about_us.html:40
+msgid ""
+"By helping citizens getting fast and good home services and at the same time "
+"creating new jobs opportunities."
+msgstr ""
+" En aidant les citoyens à obtenir des services à domicile rapides et de qualité et en même temps "
+" créer de nouvelles opportunités d'emplois. "
+
+#: .\post\templates\about_us.html:43
+msgid ""
+"We are welcoming All respectful and well-behaved Electricians, Plumbers, "
+"painters, Carpenter, Housekeeper, etc. To work with us and get clients all "
+"around Tangier ( And The whole country in the future) ."
+msgstr ""
+"Nous accueillons tous les électriciens, plombiers respectueux et sages, "
+"peintres, menuisier, femme de ménage, etc. Pour travailler avec nous et obtenir tous les clients"
+"autour de Tanger (Et tout le pays dans le futur) ."
+
+#: .\post\templates\about_us.html:56
 msgid "Social Accounts"
 msgstr "Comptes sociaux"
 
@@ -1475,86 +1501,89 @@ msgstr "Emplacement"
 msgid "View Profile"
 msgstr "emplacement"
 
-#: .\post\templates\home.html:279
+#: .\post\templates\home.html:279 .\post\templates\memberships.html:21
 msgid "Membership Plans"
 msgstr "plans d'abonnement"
 
-#: .\post\templates\home.html:295 .\post\templates\membershipsta.html:61
+#: .\post\templates\home.html:295 .\post\templates\memberships.html:37
+#: .\post\templates\membershipsta.html:61
 msgid "Basic Plan"
 msgstr "Abonnement régulière"
 
-#: .\post\templates\home.html:298
+#: .\post\templates\home.html:298 .\post\templates\memberships.html:40
 msgid "Features of Basic Plan"
 msgstr "Caractéristiques d'abonnement régulière"
 
-#: .\post\templates\home.html:300
+#: .\post\templates\home.html:300 .\post\templates\memberships.html:42
 msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 2 jours </b>"
 
-#: .\post\templates\home.html:301
+#: .\post\templates\home.html:301 .\post\templates\memberships.html:43
 msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>2 jours</b>"
 
-#: .\post\templates\home.html:302
+#: .\post\templates\home.html:302 .\post\templates\memberships.html:44
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 2 jours</b>"
 
-#: .\post\templates\home.html:303
+#: .\post\templates\home.html:303 .\post\templates\memberships.html:45
 msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x2</b>"
 
-#: .\post\templates\home.html:311
+#: .\post\templates\home.html:311 .\post\templates\memberships.html:53
 msgid "Recommended"
 msgstr "Conseillé"
 
 #: .\post\templates\home.html:312 .\post\templates\membershipprem.html:62
+#: .\post\templates\memberships.html:54
 msgid "Standard Plan"
 msgstr "Abonnement avancée"
 
-#: .\post\templates\home.html:315
+#: .\post\templates\home.html:315 .\post\templates\memberships.html:57
 msgid "Features of Standard Plan"
 msgstr "Caractéristiques d'abonnement avancée"
 
-#: .\post\templates\home.html:317
+#: .\post\templates\home.html:317 .\post\templates\memberships.html:59
 msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 7 jours </b>"
 
-#: .\post\templates\home.html:318
+#: .\post\templates\home.html:318 .\post\templates\memberships.html:60
 msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>7 jours</b>"
 
-#: .\post\templates\home.html:319
+#: .\post\templates\home.html:319 .\post\templates\memberships.html:61
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 5 jours</b>"
 
-#: .\post\templates\home.html:320
+#: .\post\templates\home.html:320 .\post\templates\memberships.html:62
 msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x3</b>"
 
-#: .\post\templates\home.html:328 .\post\templates\membershipvip.html:61
+#: .\post\templates\home.html:328 .\post\templates\memberships.html:70
+#: .\post\templates\membershipvip.html:61
 msgid "Extended Plan"
 msgstr "Abonnement ultra avancé"
 
-#: .\post\templates\home.html:332
+#: .\post\templates\home.html:332 .\post\templates\memberships.html:74
 msgid "Features of Extended Plan"
 msgstr "Caractéristiques d'abonnement ultra avancé"
 
-#: .\post\templates\home.html:334
+#: .\post\templates\home.html:334 .\post\templates\memberships.html:76
 msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 10 jours </b>"
 
-#: .\post\templates\home.html:335
+#: .\post\templates\home.html:335 .\post\templates\memberships.html:77
 msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>10 jours</b>"
 
-#: .\post\templates\home.html:336
+#: .\post\templates\home.html:336 .\post\templates\memberships.html:78
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 10 jours</b>"
 
-#: .\post\templates\home.html:337
+#: .\post\templates\home.html:337 .\post\templates\memberships.html:79
 msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 
@@ -1599,6 +1628,14 @@ msgstr "Résumé de l'emploi"
 msgid "Final Price"
 msgstr ""
 
+#: .\post\templates\memberships.html:10
+msgid "Sorry"
+msgstr ""
+
+#: .\post\templates\memberships.html:11
+msgid "You already have a membership"
+msgstr ""
+
 #: .\post\templates\order_done.html:12
 msgid "Thank you for your order!"
 msgstr "Nous vous remercions de votre commande!"
@@ -1609,7 +1646,7 @@ msgstr "Votre paiement a été traité avec succès"
 
 #: .\post\templates\post_confirm_delete.html:16
 #: .\post\templates\post_confirm_delete.html:22
-#: .\templates\parts\footer.html:133 .\user\templates\login.html:17
+#: .\templates\parts\footer.html:132 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "Se connecter"
@@ -1714,27 +1751,24 @@ msgstr "Liens utiles"
 msgid "Privacy Policy"
 msgstr "politique de confidentialité"
 
-#: .\templates\parts\footer.html:119
-msgid "Terms of Use"
-msgstr "Conditions d'utilisation"
-
-#: .\templates\parts\footer.html:128
+#: .\templates\parts\footer.html:127
 msgid "Account"
 msgstr "Le compte"
 
-#: .\templates\parts\footer.html:131 .\user\templates\profile_edit.html:72
+#: .\templates\parts\footer.html:130 .\user\templates\profile_edit.html:72
 msgid "My Account"
 msgstr "Mon compte"
 
-#: .\templates\parts\footer.html:141
+#: .\templates\parts\footer.html:140
 msgid "Sign Up To Post A Job"
 msgstr "Inscrivez-vous pour publier un emploi"
 
-#: .\templates\parts\footer.html:142
+#: .\templates\parts\footer.html:141
 msgid "Once you register you get allowed to post a job"
-msgstr "Une fois que vous vous êtes inscrit, vous êtes autorisé à publier un emploi"
+msgstr ""
+"Une fois que vous vous êtes inscrit, vous êtes autorisé à publier un emploi"
 
-#: .\templates\parts\footer.html:143 .\templates\parts\navbar.html:132
+#: .\templates\parts\footer.html:142 .\templates\parts\navbar.html:132
 #: .\user\templates\login.html:45 .\user\templates\register.html:15
 #: .\user\templates\register.html:54
 msgid "Register"
@@ -1850,6 +1884,40 @@ msgstr "Changez votre mot de passe ici"
 msgid "You don't want to change it"
 msgstr "Vous ne voulez pas le changer ?"
 
+#: .\user\templates\policy\policy.html:13
+msgid "Policies"
+msgstr ""
+
+#: .\user\templates\policy\policy.html:19
+#, fuzzy
+#| msgid "Privacy Policy"
+msgid "Policy"
+msgstr "politique de confidentialité"
+
+#: .\user\templates\policy\policy.html:39
+msgid ""
+"- We are not responsible for anything that happens between workers and "
+"clients in including any Type of stealing safety and Cheating. "
+msgstr ""
+"- Nous ne sommes pas responsables de tout ce qui se passe entre les travailleurs et "
+"clients en incluant tout type de vol de sécurité et de tricherie. "
+
+#: .\user\templates\policy\policy.html:42
+msgid ""
+"- Prices are decided by only workers and clients no other  third party "
+"included"
+msgstr ""
+"- Les prix sont décidés uniquement par les travailleurs et les clients aucun autre tiers"
+"inclus"
+
+#: .\user\templates\policy\policy.html:45
+msgid ""
+"* Regarding clients and workers, almost every EazyMax services are for "
+"<b>FREE</b> ."
+msgstr ""
+"* En ce qui concerne les clients et les travailleurs, presque tous les services EazyMax sont pour "
+"<b>GRATUIT</b> ."
+
 #: .\user\templates\profile.html:52
 msgid "Posts of"
 msgstr "Postes de"
@@ -1938,6 +2006,9 @@ msgstr "Saisir votre email pour réinitialiser votre mot de passe"
 #: .\user\templates\reset\password_reset_form.html:55
 msgid "Reset"
 msgstr "Réinitialiser"
+
+#~ msgid "Terms of Use"
+#~ msgstr "Conditions d'utilisation"
 
 #~ msgid "You will be redirected to PayPal to complete payment"
 #~ msgstr "Vous serez redirigé vers PayPal pour effectuer le paiement"

@@ -4,6 +4,7 @@ from django.db.models.signals import post_save
 from django.utils.translation import gettext_lazy as _
 from django.dispatch import receiver
 from post.models import Category
+from PIL import Image
 import datetime
 
 class sta(models.Model):
@@ -34,6 +35,15 @@ class Profile(models.Model):
 
     def __str__(self):
         return str(self.user)
+
+    # def save(self,*args,**kwargs):
+    #     super().save(*args,**kwargs)
+    #     img = Image.open(self.image.path)
+
+    #     if img.height > 300 or img.width > 300:
+    #         output_size = (300,300)
+    #         img.thumbnail(output_size)
+    #         img.save(self.image.path)
         
 
 @receiver(post_save,sender=User)

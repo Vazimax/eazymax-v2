@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 16:06+0100\n"
+"POT-Creation-Date: 2021-07-27 23:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1303,8 +1303,9 @@ msgid "phone number"
 msgstr "رقم الهاتف"
 
 #: .\post\templates\about_us.html:13
-msgid "About The Company"
-msgstr "عن الشركة"
+
+msgid "About The StartUp"
+msgstr "عن الشركة الناشئة"
 
 #: .\post\templates\about_us.html:18 .\post\templates\contact.html:16
 #: .\post\templates\membershipprem.html:20
@@ -1317,8 +1318,8 @@ msgstr "عن الشركة"
 #: .\user\templates\password_change_done.html:18
 #: .\user\templates\password_change_form.html:22
 #: .\user\templates\password_change_form.html:44
-#: .\user\templates\profile.html:57 .\user\templates\profile_edit.html:57
-#: .\user\templates\register.html:20
+#: .\user\templates\policy\policy.html:18 .\user\templates\profile.html:57
+#: .\user\templates\profile_edit.html:57 .\user\templates\register.html:20
 #: .\user\templates\reset\password_reset_complete.html:19
 #: .\user\templates\reset\password_reset_confirm.html:22
 #: .\user\templates\reset\password_reset_done.html:19
@@ -1330,7 +1331,34 @@ msgstr "الرئيسية"
 msgid "About Us"
 msgstr "معلومات عنا"
 
-#: .\post\templates\about_us.html:50
+#: .\post\templates\about_us.html:39
+msgid ""
+"EazyMax is a startup company. We are doing our best to make our city Tangier "
+"(And all the cities in the future) a better place. "
+msgstr ""
+".هي شركة ناشئة EazyMax <br>"
+" نحن نبذل قصارى جهدنا لجعل مدينتنا طنجة"
+" (وجميع المدن في المستقبل) مكان أفضل "
+
+#: .\post\templates\about_us.html:40
+msgid ""
+"By helping citizens getting fast and good home services and at the same time "
+"creating new jobs opportunities."
+msgstr ""
+"من خلال مساعدة المواطنين في الحصول على خدمات منزلية سريعة وجيدة وفي نفس الوقت"
+"خلق فرص عمل جديدة"
+
+#: .\post\templates\about_us.html:43
+msgid ""
+"We are welcoming All respectful and well-behaved Electricians, Plumbers, "
+"painters, Carpenter, Housekeeper, etc. To work with us and get clients all "
+"around Tangier ( And The whole country in the future) ."
+msgstr ""
+"نرحب بجميع السباكين والكهربائيين المحترمين وحسن التصرف ،"
+" الصباغين ، النجارين ، مدبرة المنزل ، إلخ ... للعمل معنا والحصول على العمل"
+" في طنجة (والبلاد كلها في المستقبل) "
+
+#: .\post\templates\about_us.html:56
 msgid "Social Accounts"
 msgstr "الحسابات الاجتماعية"
 
@@ -1471,83 +1499,86 @@ msgstr "الموقع"
 msgid "View Profile"
 msgstr "الحساب"
 
-#: .\post\templates\home.html:279
+#: .\post\templates\home.html:279 .\post\templates\memberships.html:21
 msgid "Membership Plans"
 msgstr "العضويات"
 
-#: .\post\templates\home.html:295 .\post\templates\membershipsta.html:61
+#: .\post\templates\home.html:295 .\post\templates\memberships.html:37
+#: .\post\templates\membershipsta.html:61
 msgid "Basic Plan"
 msgstr "العضوية العادية"
 
-#: .\post\templates\home.html:298
+#: .\post\templates\home.html:298 .\post\templates\memberships.html:40
 msgid "Features of Basic Plan"
 msgstr "خصائص العضوية العادية"
 
-#: .\post\templates\home.html:300
+#: .\post\templates\home.html:300 .\post\templates\memberships.html:42
 msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
 msgstr "سيتم تمييز منشورك لمدة يومين"
 
-#: .\post\templates\home.html:301
+#: .\post\templates\home.html:301 .\post\templates\memberships.html:43
 msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
 msgstr "سيتم تمييز منشورك في تفاصيل المشاركة لمدة يومين"
 
-#: .\post\templates\home.html:302
+#: .\post\templates\home.html:302 .\post\templates\memberships.html:44
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
 msgstr "ستصبح واحدًا من أفضل العاملين لمدة يومين"
 
-#: .\post\templates\home.html:303
+#: .\post\templates\home.html:303 .\post\templates\memberships.html:45
 msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
 msgstr "2x احصل على المزيد من العملاء"
 
-#: .\post\templates\home.html:311
+#: .\post\templates\home.html:311 .\post\templates\memberships.html:53
 msgid "Recommended"
 msgstr "موصى بها"
 
 #: .\post\templates\home.html:312 .\post\templates\membershipprem.html:62
+#: .\post\templates\memberships.html:54
 msgid "Standard Plan"
 msgstr "العضوية المتقدمة"
 
-#: .\post\templates\home.html:315
+#: .\post\templates\home.html:315 .\post\templates\memberships.html:57
 msgid "Features of Standard Plan"
 msgstr "خصائص العضوية المتقدمة"
 
-#: .\post\templates\home.html:317
+#: .\post\templates\home.html:317 .\post\templates\memberships.html:59
 msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
 msgstr "سيتم تمييز منشورك لمدة 7 أيام"
 
-#: .\post\templates\home.html:318
+#: .\post\templates\home.html:318 .\post\templates\memberships.html:60
 msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
 msgstr "سيتم تمييز منشورك في تفاصيل المشاركة لمدة 7 أيام"
 
-#: .\post\templates\home.html:319
+#: .\post\templates\home.html:319 .\post\templates\memberships.html:61
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
 msgstr "ستصبح واحدًا من أفضل العاملين لمدة 5 أيام"
 
-#: .\post\templates\home.html:320
+#: .\post\templates\home.html:320 .\post\templates\memberships.html:62
 msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
 msgstr "3x احصل على المزيد من العملاء"
 
-#: .\post\templates\home.html:328 .\post\templates\membershipvip.html:61
+#: .\post\templates\home.html:328 .\post\templates\memberships.html:70
+#: .\post\templates\membershipvip.html:61
 msgid "Extended Plan"
 msgstr "العضوية المتقدمة جدا"
 
-#: .\post\templates\home.html:332
+#: .\post\templates\home.html:332 .\post\templates\memberships.html:74
 msgid "Features of Extended Plan"
 msgstr "خصائص العضوية المتقدمة جدا"
 
-#: .\post\templates\home.html:334
+#: .\post\templates\home.html:334 .\post\templates\memberships.html:76
 msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
 msgstr "سيتم تمييز منشورك لمدة 10 أيام"
 
-#: .\post\templates\home.html:335
+#: .\post\templates\home.html:335 .\post\templates\memberships.html:77
 msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
 msgstr "سيتم تمييز منشورك في تفاصيل المشاركة لمدة 10 أيام"
 
-#: .\post\templates\home.html:336
+#: .\post\templates\home.html:336 .\post\templates\memberships.html:78
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
 msgstr "ستصبح واحدًا من أفضل العاملين لمدة 10 أيام"
 
-#: .\post\templates\home.html:337
+#: .\post\templates\home.html:337 .\post\templates\memberships.html:79
 msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
 msgstr "4x احصل على المزيد من العملاء"
 
@@ -1590,6 +1621,14 @@ msgstr "ملخص"
 msgid "Final Price"
 msgstr "السعر النهائي"
 
+#: .\post\templates\memberships.html:10
+msgid "Sorry"
+msgstr ""
+
+#: .\post\templates\memberships.html:11
+msgid "You already have a membership"
+msgstr ""
+
 #: .\post\templates\order_done.html:12
 msgid "Thank you for your order!"
 msgstr "شكرا لطلبك!"
@@ -1600,7 +1639,7 @@ msgstr "تمت معالجة الدفع الخاص بك بنجاح"
 
 #: .\post\templates\post_confirm_delete.html:16
 #: .\post\templates\post_confirm_delete.html:22
-#: .\templates\parts\footer.html:133 .\user\templates\login.html:17
+#: .\templates\parts\footer.html:132 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "تسجيل الدخول"
@@ -1707,27 +1746,23 @@ msgstr "روابط مفيدة"
 msgid "Privacy Policy"
 msgstr "سياسة خاصة"
 
-#: .\templates\parts\footer.html:119
-msgid "Terms of Use"
-msgstr "شروط الاستخدام"
-
-#: .\templates\parts\footer.html:128
+#: .\templates\parts\footer.html:127
 msgid "Account"
 msgstr "الحساب"
 
-#: .\templates\parts\footer.html:131 .\user\templates\profile_edit.html:72
+#: .\templates\parts\footer.html:130 .\user\templates\profile_edit.html:72
 msgid "My Account"
 msgstr "حسابي"
 
-#: .\templates\parts\footer.html:141
+#: .\templates\parts\footer.html:140
 msgid "Sign Up To Post A Job"
 msgstr "سجل لنشر وظيفة"
 
-#: .\templates\parts\footer.html:142
+#: .\templates\parts\footer.html:141
 msgid "Once you register you get allowed to post a job"
 msgstr "بمجرد التسجيل ، يُسمح لك بنشر وظيفة"
 
-#: .\templates\parts\footer.html:143 .\templates\parts\navbar.html:132
+#: .\templates\parts\footer.html:142 .\templates\parts\navbar.html:132
 #: .\user\templates\login.html:45 .\user\templates\register.html:15
 #: .\user\templates\register.html:54
 msgid "Register"
@@ -1845,11 +1880,40 @@ msgstr "قم بتغيير كلمة المرور الخاصة بك هنا"
 msgid "You don't want to change it"
 msgstr "لا تريد تغيير كلمة المرور الخاصة بك"
 
+#: .\user\templates\policy\policy.html:13
+msgid "Policies"
+msgstr "سياسات"
+
+#: .\user\templates\policy\policy.html:19
+msgid "Policy"
+msgstr "سياسة خاصة"
+
+#: .\user\templates\policy\policy.html:39
+msgid ""
+"- We are not responsible for anything that happens between workers and "
+"clients in including any Type of stealing safety and Cheating. "
+msgstr ""
+" نحن لسنا مسؤولين عن أي شيء يحدث بين العمال و "
+"العملاء بما في ذلك أي نوع من سرقة الأمان والغش"
+
+#: .\user\templates\policy\policy.html:42
+msgid ""
+"- Prices are decided by only workers and clients no other  third party "
+"included"
+msgstr ""
+" يتم تحديد الأسعار من قبل العمال والعملاء فقط وليس من قبل طرف ثالث"
+" متضمن "
+
+#: .\user\templates\policy\policy.html:45
+msgid ""
+"* Regarding clients and workers, almost every EazyMax services are for "
+"<b>FREE</b> ."
+msgstr ""
+"تقريبا كلها <b> مجانية </b>  Eazymax فيما يتعلق بالعملاء والعاملين ، فإن خدمات "
+
 #: .\user\templates\profile.html:52
-#, fuzzy
-#| msgid "Post A Job"
 msgid "Posts of"
-msgstr "انشر وظيفة"
+msgstr "منشورات"
 
 #: .\user\templates\profile.html:72
 msgid "Post Listings"
@@ -1931,6 +1995,9 @@ msgstr "اكتب بريدك الإلكتروني لإعادة كلمة المر�
 #: .\user\templates\reset\password_reset_form.html:55
 msgid "Reset"
 msgstr "إرسال"
+
+#~ msgid "Terms of Use"
+#~ msgstr "شروط الاستخدام"
 
 #~ msgid "Sign Up For a Newsletter"
 #~ msgstr "اشترك في النشرة الإخبارية"
