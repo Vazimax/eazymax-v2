@@ -75,7 +75,7 @@ def memberships(request):
     else : 
         user = None
     
-    return render(request,'memberships.html',{'userx':user})
+    return render(request,'memberships.html',{'userx':user,'title':'memberships'})
 
 def contact(request):
     if request.method == 'POST':
@@ -94,6 +94,7 @@ def contact(request):
             'email' : email,
             'subject' : subject,
             'comments' : comments,
+            'title':'contact'
         }
         return render(request,'contact.html',context)
 
@@ -103,26 +104,26 @@ def contact(request):
 
 def about_us(request):
 
-    return render(request, 'about_us.html')
+    return render(request, 'about_us.html',{'title':'about us'})
 
 
 def membershipsta(request):
     if request.user.is_authenticated:
-        return render(request, 'membershipsta.html')
+        return render(request, 'membershipsta.html',{'title':'membership 1'})
     else:
         return redirect('login')
 
 
 def membershipprem(request):
     if request.user.is_authenticated:
-        return render(request, 'membershipprem.html')
+        return render(request, 'membershipprem.html',{'title':'membership 2'})
     else:
         return redirect('login')
 
 
 def membershipvip(request):
     if request.user.is_authenticated:
-        return render(request, 'membershipvip.html')
+        return render(request, 'membershipvip.html',{'title':'membership 3'})
     else:
         return redirect('login')
 
@@ -145,7 +146,7 @@ def order_done(request):
                         usr.update(sta=True,expiredate=ex3.strftime("%Y-%m-%d"))
 
         print(usr.sta.date)
-    return render(request, 'order_done.html')
+    return render(request, 'order_done.html',{'title':'order done'})
 
 
 def jobs(request):
@@ -161,6 +162,7 @@ def jobs(request):
     context = {
         'posts': page_obj,
         'filter': filter,
+        'title' : 'jobs'
     }
     return render(request, 'jobs.html', context)
 
@@ -195,6 +197,7 @@ def post_job(request):
 
     context = {
         'form': PostForm(),
+        'title' : 'post job'
     }
     return render(request, 'post_job.html', context)
 
@@ -212,6 +215,7 @@ def post_detail(request, pk):
         'object': object,
         'posts': posts,
         'featured_posts': featured_posts,
+        'title' : 'post detail'
     }
 
     return render(request, 'post_detail.html', context)
@@ -234,7 +238,8 @@ def UpdatePost(request, pk):
                 request, "le numéro de téléphone n'est pas correct / رقم الهاتف غير صحيح")
 
     context = {
-        'form': form
+        'form': form,
+        'title' : 'post update'
     }
 
     return render(request, 'post_edit.html', context)
@@ -264,7 +269,8 @@ def plumber(request):
 
     context = {
         'posts': page_obj,
-        'filter': filter
+        'filter': filter,
+        'title' : 'plumber'
     }
     return render(request, 'categories/plumber.html', context)
 
@@ -281,7 +287,8 @@ def electrician(request):
 
     context = {
         'posts': page_obj,
-        'filter': filter
+        'filter': filter,
+        'title' : 'electrician'
     }
     return render(request, 'categories/plumber.html', context)
 
@@ -298,7 +305,8 @@ def dishwasher(request):
 
     context = {
         'posts': page_obj,
-        'filter': filter
+        'filter': filter,
+        'title' : 'housekeeping'
     }
     return render(request, 'categories/dishwasher.html', context)
 
@@ -315,6 +323,7 @@ def carpenter(request):
 
     context = {
         'posts': page_obj,
+        'title' : 'carpenter',
         'filter': filter,
     }
     return render(request, 'categories/carpenter.html', context)
@@ -332,6 +341,7 @@ def painter(request):
 
     context = {
         'posts': page_obj,
+        'title' : 'painter',
         'filter': filter,
     }
     return render(request, 'categories/painter.html', context)

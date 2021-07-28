@@ -68,6 +68,7 @@ def profile(request,id):
     context = {
         'profile' : profile, 
         'posts' : posts,
+        'title' : 'profile',
     }
 
     return render(request,'profile.html',context)
@@ -98,6 +99,7 @@ def profile_edit(request,id):
     context = {
         'u_form' : u_form,
         'p_form' : p_form,
+        'title' : 'profile edit',
     }
 
     return render(request,'profile_edit.html',context)
