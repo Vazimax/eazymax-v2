@@ -1623,11 +1623,11 @@ msgstr "السعر النهائي"
 
 #: .\post\templates\memberships.html:10
 msgid "Sorry"
-msgstr ""
+msgstr "آسف"
 
 #: .\post\templates\memberships.html:11
 msgid "You already have a membership"
-msgstr ""
+msgstr "لديك عضوية مسبقا"
 
 #: .\post\templates\order_done.html:12
 msgid "Thank you for your order!"

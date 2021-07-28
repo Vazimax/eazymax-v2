@@ -1626,15 +1626,15 @@ msgstr "Résumé de l'emploi"
 #: .\post\templates\membershipsta.html:62
 #: .\post\templates\membershipvip.html:62
 msgid "Final Price"
-msgstr ""
+msgstr "Prix ​​final"
 
 #: .\post\templates\memberships.html:10
 msgid "Sorry"
-msgstr ""
+msgstr "Désolé"
 
 #: .\post\templates\memberships.html:11
 msgid "You already have a membership"
-msgstr ""
+msgstr "Vous avez déjà un abonnement"
 
 #: .\post\templates\order_done.html:12
 msgid "Thank you for your order!"
