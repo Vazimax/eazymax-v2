@@ -39,11 +39,11 @@ def home(request):
                 pass
 
         featured_posts = list(Post.objects.filter(hot = True))
-        featured_jobs = random.sample(featured_posts,2)
+        featured_jobs = random.sample(featured_posts,1)
 
         posts = Post.objects.filter(poster_id=request.user.id)
         profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
-        profiles = random.sample(profilex,3)
+        profiles = random.sample(profilex,1)
 
         filter = JobFilter(request.GET, queryset=posts)
         posts = filter.qs
