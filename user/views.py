@@ -74,6 +74,7 @@ def profile(request,id):
 
 @login_required
 def profile_edit(request,id):
+    id = int(id)
     profile = Profile.objects.get(user=id-1)
 
     try:
