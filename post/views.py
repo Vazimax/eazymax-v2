@@ -38,12 +38,12 @@ def home(request):
         except:
                 pass
 
-        featured_jobs = list(Post.objects.filter(hot = True))
-        #featured_jobs = random.sample(featured_posts,2)
+        featured_posts = list(Post.objects.filter(hot = True))
+        featured_jobs = random.sample(featured_posts,2)
 
         posts = Post.objects.filter(poster_id=request.user.id)
-        profiles = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
-        #profiles = random.sample(profilex,2)
+        profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
+        profiles = random.sample(profilex,3)
 
         filter = JobFilter(request.GET, queryset=posts)
         posts = filter.qs
@@ -253,8 +253,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 
 def plumber(request):
-    #jobs = Post.objects.filter(category=5)
-    jobs = Post.objects.all()
+    jobs = Post.objects.filter(category=5)
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -271,8 +270,7 @@ def plumber(request):
 
 
 def electrician(request):
-    #jobs = Post.objects.filter(category=4)
-    jobs = Post.objects.all()
+    jobs = Post.objects.filter(category=4)
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -289,8 +287,7 @@ def electrician(request):
 
 
 def dishwasher(request):
-    #jobs = Post.objects.filter(category=2)
-    jobs = Post.objects.all()
+    jobs = Post.objects.filter(category=2)
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -307,8 +304,7 @@ def dishwasher(request):
 
 
 def carpenter(request):
-    #jobs = Post.objects.filter(category=1)
-    jobs = Post.objects.all()
+    jobs = Post.objects.filter(category=1)
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -325,8 +321,7 @@ def carpenter(request):
 
 
 def painter(request):
-    #jobs = Post.objects.filter(category=3)
-    jobs = Post.objects.all()
+    jobs = Post.objects.filter(category=3)
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
