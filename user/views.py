@@ -74,7 +74,7 @@ def profile(request,id):
 
 @login_required
 def profile_edit(request,id):
-    profile = Profile.objects.get(user=id)
+    profile = Profile.objects.get(user=id-1)
 
     try:
         profile = request.user.profile
@@ -89,7 +89,7 @@ def profile_edit(request,id):
             my_profile = p_form.save(commit=False)
             my_profile.user = request.user
             my_profile.save()
-            return redirect(f'/profile/{profile.id}/edit')
+            return redirect(f'/profile/{profile.id-1}/edit')
 
     else :
         u_form = UserForm(instance=request.user)
