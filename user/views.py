@@ -25,7 +25,7 @@ def register(request):
                 messages.success(request,'Votre compte à été créé avec succès / لقد تم انشاء حسابك بنجاح ')
                 user = authenticate(username=username,password=password)
                 login(request,user)
-                return redirect(f'/profile/{user.profile.id}{-1}/edit')
+                return redirect(f'/profile/{user.profile.id-1}/edit')
         else : 
             form = UserRegisterForm()
 
