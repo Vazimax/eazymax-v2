@@ -253,7 +253,8 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 
 def plumber(request):
-    jobs = Post.objects.filter(category=5)
+    #jobs = Post.objects.filter(category=5)
+    jobs = Post.objects.all()
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -270,7 +271,8 @@ def plumber(request):
 
 
 def electrician(request):
-    jobs = Post.objects.filter(category=4)
+    #jobs = Post.objects.filter(category=4)
+    jobs = Post.objects.all()
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -287,7 +289,8 @@ def electrician(request):
 
 
 def dishwasher(request):
-    jobs = Post.objects.filter(category=2)
+    #jobs = Post.objects.filter(category=2)
+    jobs = Post.objects.all()
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -304,7 +307,8 @@ def dishwasher(request):
 
 
 def carpenter(request):
-    jobs = Post.objects.filter(category=1)
+    #jobs = Post.objects.filter(category=1)
+    jobs = Post.objects.all()
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
@@ -321,7 +325,8 @@ def carpenter(request):
 
 
 def painter(request):
-    jobs = Post.objects.filter(category=3)
+    #jobs = Post.objects.filter(category=3)
+    jobs = Post.objects.all()
 
     filter = JobFilter2(request.GET, queryset=jobs)
     jobs = filter.qs
