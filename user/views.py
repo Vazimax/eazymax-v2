@@ -58,6 +58,7 @@ def register(request):
 #         }
 #         return render(request,'login.html',context)
 
+@login_required
 def profile(request,id):
     profile = Profile.objects.get(user=id)
 
