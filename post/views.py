@@ -290,7 +290,7 @@ def electrician(request):
         'filter': filter,
         'title' : 'electrician'
     }
-    return render(request, 'categories/plumber.html', context)
+    return render(request, 'categories/electrician.html', context)
 
 
 def dishwasher(request):
