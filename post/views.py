@@ -37,13 +37,21 @@ def home(request):
                 usr.update(sta=False,prem=False,vip=False,maxed=False,expiredate=None)
         except:
                 pass
-
-        featured_posts = list(Post.objects.filter(hot = True))
-        featured_jobs = random.sample(featured_posts,2)
-
+        
+        if Post.objects.filter(hot = True).count() >= 5 :
+            featured_posts = list(Post.objects.filter(hot = True))
+            featured_jobs = random.sample(featured_posts,5)
+        else :
+            featured_posts = list(Post.objects.filter(hot = True))
+            featured_jobs = random.sample(featured_posts,2)
+            
         posts = Post.objects.filter(poster_id=request.user.id)
-        profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
-        profiles = random.sample(profilex,3)
+        if Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)).count() >= 6 :
+            profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
+            profiles = random.sample(profilex,6)
+        else : 
+            profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
+            profiles = random.sample(profilex,3)
 
         filter = JobFilter(request.GET, queryset=posts)
         posts = filter.qs

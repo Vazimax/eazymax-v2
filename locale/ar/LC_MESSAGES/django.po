@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-29 13:09+0100\n"
+"POT-Creation-Date: 2021-07-29 20:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1332,21 +1332,32 @@ msgstr "معلومات عنا"
 
 #: .\post\templates\about_us.html:39
 msgid ""
-"EazyMax is a startup company. We are doing our best to make our city Tangier "
-"(And all the cities in the future) a better place. "
+"EazyMax is a new startup ,  It allows you to find electricians, "
+"housekeepers, painters and so on, also any worker can post a job there and "
+"get a chance to find a huge opportunity . I got the idea when my mom needed "
+"a dishwasher and she didn't find anyone, so I decided to solve this problem "
+"by making a startup called Eazymax. "
 msgstr ""
-".هي شركة ناشئة EazyMax <br> نحن نبذل قصارى جهدنا لجعل مدينتنا طنجة (وجميع "
-"المدن في المستقبل) مكان أفضل "
+". هي شركة ناشئة جديدة EazyMax <br> "
+" ، فهي تتيح لك العثور على كهربائيين "
+"مدبرة المنزل والصباغين وما إلى ذلك ، كما يمكن لأي عامل نشر وظيفة هناك و"
+"الحصول على فرصة للعثور على عمل. خطرت لي الفكرة عندما احتاجت أمي "
+"مدبرة منزل ولم تجد أي شخص ، لذلك قررتُ حل هذه المشكلة "
+" من خلال إنشاء شركة ناشئة تدعى اِيزيماكس "
 
-#: .\post\templates\about_us.html:40
+
+
+#: .\post\templates\about_us.html:42
 msgid ""
-"By helping citizens getting fast and good home services and at the same time "
-"creating new jobs opportunities."
+"We are doing our best to make our city Tangier (And all the cities in the "
+"future) a better place, By helping citizens getting fast and good home "
+"services and at the same time creating new jobs opportunities."
 msgstr ""
-"من خلال مساعدة المواطنين في الحصول على خدمات منزلية سريعة وجيدة وفي نفس "
+"نحن نبذل قصارى جهدنا لجعل مدينتنا طنجة (وجميع المدن في "
+"المستقبل) مكان أفضل ، من خلال مساعدة المواطنين في الحصول على خدمات منزلية سريعة وجيدة وفي نفس "
 "الوقت خلق فرص عمل جديدة"
 
-#: .\post\templates\about_us.html:43
+#: .\post\templates\about_us.html:45
 msgid ""
 "We are welcoming All respectful and well-behaved Electricians, Plumbers, "
 "painters, Carpenter, Housekeeper, etc. To work with us and get clients all "
@@ -1356,7 +1367,7 @@ msgstr ""
 "النجارين ، مدبرة المنزل ، إلخ ... للعمل معنا والحصول على العمل في طنجة "
 "(والبلاد كلها في المستقبل) "
 
-#: .\post\templates\about_us.html:56
+#: .\post\templates\about_us.html:58
 msgid "Social Accounts"
 msgstr "الحسابات الاجتماعية"
 
@@ -1364,8 +1375,8 @@ msgstr "الحسابات الاجتماعية"
 #: .\post\templates\categories\carpenter.html:31
 #: .\post\templates\categories\dishwasher.html:19
 #: .\post\templates\categories\dishwasher.html:31
-#: .\post\templates\categories\electrician.html:19
-#: .\post\templates\categories\electrician.html:31
+#: .\post\templates\categories\electrician.html:18
+#: .\post\templates\categories\electrician.html:30
 #: .\post\templates\categories\painter.html:19
 #: .\post\templates\categories\painter.html:31
 #: .\post\templates\categories\plumber.html:19
@@ -1380,7 +1391,7 @@ msgstr "النجارين"
 
 #: .\post\templates\categories\carpenter.html:63
 #: .\post\templates\categories\dishwasher.html:63
-#: .\post\templates\categories\electrician.html:63
+#: .\post\templates\categories\electrician.html:62
 #: .\post\templates\categories\painter.html:63
 #: .\post\templates\categories\plumber.html:63 .\post\templates\home.html:121
 #: .\post\templates\home.html:251 .\post\templates\jobs.html:69
@@ -1391,7 +1402,7 @@ msgstr "طنجة، المغرب"
 
 #: .\post\templates\categories\carpenter.html:77
 #: .\post\templates\categories\dishwasher.html:77
-#: .\post\templates\categories\electrician.html:77
+#: .\post\templates\categories\electrician.html:76
 #: .\post\templates\categories\painter.html:77
 #: .\post\templates\categories\plumber.html:77 .\post\templates\jobs.html:83
 msgid "SORRY ! There is no result"
@@ -1402,7 +1413,7 @@ msgstr "آسف ! لا توجد نتيجة"
 msgid "Housekeeping"
 msgstr "التدبير المنزلي"
 
-#: .\post\templates\categories\electrician.html:39
+#: .\post\templates\categories\electrician.html:38
 msgid "Electricians "
 msgstr "اختصاصي بالكهرباء"
 
@@ -1993,6 +2004,13 @@ msgstr "اكتب بريدك الإلكتروني لإعادة كلمة المر�
 #: .\user\templates\reset\password_reset_form.html:55
 msgid "Reset"
 msgstr "إرسال"
+
+#~ msgid ""
+#~ "EazyMax is a startup company. We are doing our best to make our city "
+#~ "Tangier (And all the cities in the future) a better place. "
+#~ msgstr ""
+#~ ".هي شركة ناشئة EazyMax <br> نحن نبذل قصارى جهدنا لجعل مدينتنا طنجة (وجميع "
+#~ "المدن في المستقبل) مكان أفضل "
 
 #~ msgid "Terms of Use"
 #~ msgstr "شروط الاستخدام"

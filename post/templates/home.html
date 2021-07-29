@@ -112,12 +112,13 @@
 
 							<!-- Details -->
 							<div class="job-listing-description">
-							<h3 class="job-listing-title">{{post.title}}</h3>
+							<h3 class="job-listing-title">{{post.title}} <i class="fa fa-check-circle" style="font-size:20px; color: #e0c040;"></i></h3>
+							
 
 							<!-- Job Listing Footer -->
 							<div class="job-listing-footer">
 								<ul>
-								<li><i class="fa fa-user" style="font-size:15px"></i> {{post.poster}} {% if post.hot %} <i class="fa fa-check-circle" style="font-size:15px; color: #e0c040;"></i> {% endif %} </li>
+								<li><i class="fa fa-user" style="font-size:15px"></i> {{post.poster}} {% if post.poster.profile.sta or post.poster.profile.prem or post.poster.profile.vip %} <i class="fa fa-check-circle" style="font-size:15px; color: #408be0;"></i> {% endif %}</li>
 								<li><i class="fas fa-map-marker-alt"></i> {% trans "Tangier , Morocco" %}</li>
 								<li><i class="fas fa-clock"></i> {{post.date_posted|date:"F d, Y"}}</li>
 								</ul>
