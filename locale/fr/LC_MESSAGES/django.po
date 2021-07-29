@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 23:05+0100\n"
+"POT-Creation-Date: 2021-07-29 13:06+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1335,16 +1335,16 @@ msgid ""
 "EazyMax is a startup company. We are doing our best to make our city Tangier "
 "(And all the cities in the future) a better place. "
 msgstr ""
-" EazyMax est une startup. Nous faisons de notre mieux pour rendre notre ville Tanger "
-"(Et toutes les villes à l'avenir) un meilleur endroit. "
+" EazyMax est une startup. Nous faisons de notre mieux pour rendre notre "
+"ville Tanger (Et toutes les villes à l'avenir) un meilleur endroit. "
 
 #: .\post\templates\about_us.html:40
 msgid ""
 "By helping citizens getting fast and good home services and at the same time "
 "creating new jobs opportunities."
 msgstr ""
-" En aidant les citoyens à obtenir des services à domicile rapides et de qualité et en même temps "
-" créer de nouvelles opportunités d'emplois. "
+" En aidant les citoyens à obtenir des services à domicile rapides et de "
+"qualité et en même temps  créer de nouvelles opportunités d'emplois. "
 
 #: .\post\templates\about_us.html:43
 msgid ""
@@ -1353,8 +1353,8 @@ msgid ""
 "around Tangier ( And The whole country in the future) ."
 msgstr ""
 "Nous accueillons tous les électriciens, plombiers respectueux et sages, "
-"peintres, menuisier, femme de ménage, etc. Pour travailler avec nous et obtenir tous les clients"
-"autour de Tanger (Et tout le pays dans le futur) ."
+"peintres, menuisier, femme de ménage, etc. Pour travailler avec nous et "
+"obtenir tous les clientsautour de Tanger (Et tout le pays dans le futur) ."
 
 #: .\post\templates\about_us.html:56
 msgid "Social Accounts"
@@ -1403,7 +1403,7 @@ msgid "Housekeeping"
 msgstr "Entretien ménager"
 
 #: .\post\templates\categories\electrician.html:39
-msgid "Electricians"
+msgid "Electricians "
 msgstr "Électriciens/Électriciennes"
 
 #: .\post\templates\categories\painter.html:39
@@ -1591,7 +1591,7 @@ msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 msgid "what are you looking for ?"
 msgstr "Que cherche-tu ?"
 
-#: .\post\templates\jobs.html:32 .\user\models.py:31
+#: .\post\templates\jobs.html:32 .\user\models.py:32
 msgid "category"
 msgstr "Catégorie"
 
@@ -1821,15 +1821,15 @@ msgstr "Nom"
 msgid "email"
 msgstr "Email"
 
-#: .\user\models.py:22
+#: .\user\models.py:23
 msgid "user"
 msgstr "utilisateur"
 
-#: .\user\models.py:30
+#: .\user\models.py:31
 msgid "phone_number"
 msgstr "numéro de téléphone"
 
-#: .\user\models.py:32
+#: .\user\models.py:33
 msgid "image"
 msgstr "image"
 
@@ -1899,24 +1899,25 @@ msgid ""
 "- We are not responsible for anything that happens between workers and "
 "clients in including any Type of stealing safety and Cheating. "
 msgstr ""
-"- Nous ne sommes pas responsables de tout ce qui se passe entre les travailleurs et "
-"clients en incluant tout type de vol de sécurité et de tricherie. "
+"- Nous ne sommes pas responsables de tout ce qui se passe entre les "
+"travailleurs et clients en incluant tout type de vol de sécurité et de "
+"tricherie. "
 
 #: .\user\templates\policy\policy.html:42
 msgid ""
 "- Prices are decided by only workers and clients no other  third party "
 "included"
 msgstr ""
-"- Les prix sont décidés uniquement par les travailleurs et les clients aucun autre tiers"
-"inclus"
+"- Les prix sont décidés uniquement par les travailleurs et les clients aucun "
+"autre tiersinclus"
 
 #: .\user\templates\policy\policy.html:45
 msgid ""
 "* Regarding clients and workers, almost every EazyMax services are for "
 "<b>FREE</b> ."
 msgstr ""
-"* En ce qui concerne les clients et les travailleurs, presque tous les services EazyMax sont pour "
-"<b>GRATUIT</b> ."
+"* En ce qui concerne les clients et les travailleurs, presque tous les "
+"services EazyMax sont pour <b>GRATUIT</b> ."
 
 #: .\user\templates\profile.html:52
 msgid "Posts of"

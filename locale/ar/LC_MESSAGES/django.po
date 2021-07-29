@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 23:15+0100\n"
+"POT-Creation-Date: 2021-07-29 13:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1303,7 +1303,6 @@ msgid "phone number"
 msgstr "رقم الهاتف"
 
 #: .\post\templates\about_us.html:13
-
 msgid "About The StartUp"
 msgstr "عن الشركة الناشئة"
 
@@ -1336,17 +1335,16 @@ msgid ""
 "EazyMax is a startup company. We are doing our best to make our city Tangier "
 "(And all the cities in the future) a better place. "
 msgstr ""
-".هي شركة ناشئة EazyMax <br>"
-" نحن نبذل قصارى جهدنا لجعل مدينتنا طنجة"
-" (وجميع المدن في المستقبل) مكان أفضل "
+".هي شركة ناشئة EazyMax <br> نحن نبذل قصارى جهدنا لجعل مدينتنا طنجة (وجميع "
+"المدن في المستقبل) مكان أفضل "
 
 #: .\post\templates\about_us.html:40
 msgid ""
 "By helping citizens getting fast and good home services and at the same time "
 "creating new jobs opportunities."
 msgstr ""
-"من خلال مساعدة المواطنين في الحصول على خدمات منزلية سريعة وجيدة وفي نفس الوقت"
-"خلق فرص عمل جديدة"
+"من خلال مساعدة المواطنين في الحصول على خدمات منزلية سريعة وجيدة وفي نفس "
+"الوقت خلق فرص عمل جديدة"
 
 #: .\post\templates\about_us.html:43
 msgid ""
@@ -1354,9 +1352,9 @@ msgid ""
 "painters, Carpenter, Housekeeper, etc. To work with us and get clients all "
 "around Tangier ( And The whole country in the future) ."
 msgstr ""
-"نرحب بجميع السباكين والكهربائيين المحترمين وحسن التصرف ،"
-" الصباغين ، النجارين ، مدبرة المنزل ، إلخ ... للعمل معنا والحصول على العمل"
-" في طنجة (والبلاد كلها في المستقبل) "
+"نرحب بجميع السباكين والكهربائيين المحترمين وحسن التصرف ، الصباغين ، "
+"النجارين ، مدبرة المنزل ، إلخ ... للعمل معنا والحصول على العمل في طنجة "
+"(والبلاد كلها في المستقبل) "
 
 #: .\post\templates\about_us.html:56
 msgid "Social Accounts"
@@ -1405,7 +1403,7 @@ msgid "Housekeeping"
 msgstr "التدبير المنزلي"
 
 #: .\post\templates\categories\electrician.html:39
-msgid "Electricians"
+msgid "Electricians "
 msgstr "اختصاصي بالكهرباء"
 
 #: .\post\templates\categories\painter.html:39
@@ -1586,7 +1584,7 @@ msgstr "4x احصل على المزيد من العملاء"
 msgid "what are you looking for ?"
 msgstr "عما تبحث ؟"
 
-#: .\post\templates\jobs.html:32 .\user\models.py:31
+#: .\post\templates\jobs.html:32 .\user\models.py:32
 msgid "category"
 msgstr "نوع الوظيفة"
 
@@ -1815,17 +1813,17 @@ msgstr "الاسم العائلي"
 msgid "email"
 msgstr "البريد الإلكتروني"
 
-#: .\user\models.py:22
+#: .\user\models.py:23
 msgid "user"
 msgstr "المستخدم "
 
-#: .\user\models.py:30
+#: .\user\models.py:31
 #, fuzzy
 #| msgid "phone number"
 msgid "phone_number"
 msgstr "رقم الهاتف"
 
-#: .\user\models.py:32
+#: .\user\models.py:33
 msgid "image"
 msgstr "الصورة"
 
@@ -1893,23 +1891,23 @@ msgid ""
 "- We are not responsible for anything that happens between workers and "
 "clients in including any Type of stealing safety and Cheating. "
 msgstr ""
-" نحن لسنا مسؤولين عن أي شيء يحدث بين العمال و "
-"العملاء بما في ذلك أي نوع من سرقة الأمان والغش"
+" نحن لسنا مسؤولين عن أي شيء يحدث بين العمال و العملاء بما في ذلك أي نوع من "
+"سرقة الأمان والغش"
 
 #: .\user\templates\policy\policy.html:42
 msgid ""
 "- Prices are decided by only workers and clients no other  third party "
 "included"
 msgstr ""
-" يتم تحديد الأسعار من قبل العمال والعملاء فقط وليس من قبل طرف ثالث"
-" متضمن "
+" يتم تحديد الأسعار من قبل العمال والعملاء فقط وليس من قبل طرف ثالث متضمن "
 
 #: .\user\templates\policy\policy.html:45
 msgid ""
 "* Regarding clients and workers, almost every EazyMax services are for "
 "<b>FREE</b> ."
 msgstr ""
-"تقريبا كلها <b> مجانية </b>  Eazymax فيما يتعلق بالعملاء والعاملين ، فإن خدمات "
+"تقريبا كلها <b> مجانية </b>  Eazymax فيما يتعلق بالعملاء والعاملين ، فإن "
+"خدمات "
 
 #: .\user\templates\profile.html:52
 msgid "Posts of"
