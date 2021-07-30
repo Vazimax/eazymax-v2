@@ -41,17 +41,33 @@ def home(request):
         if Post.objects.filter(hot = True).count() >= 5 :
             featured_posts = list(Post.objects.filter(hot = True))
             featured_jobs = random.sample(featured_posts,5)
-        else :
+        elif Post.objects.filter(hot = True).count() >= 4 :
+            featured_posts = list(Post.objects.filter(hot = True))
+            featured_jobs = random.sample(featured_posts,4)
+        elif Post.objects.filter(hot = True).count() >= 3 :
+            featured_posts = list(Post.objects.filter(hot = True))
+            featured_jobs = random.sample(featured_posts,3)
+        elif Post.objects.filter(hot = True).count() >= 2 :
             featured_posts = list(Post.objects.filter(hot = True))
             featured_jobs = random.sample(featured_posts,2)
+        elif Post.objects.filter(hot = True).count() >= 1 :
+            featured_posts = list(Post.objects.filter(hot = True))
+            featured_jobs = random.sample(featured_posts,1)
+        else :
+            featured_jobs = ''    
             
         posts = Post.objects.filter(poster_id=request.user.id)
         if Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)).count() >= 6 :
             profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
             profiles = random.sample(profilex,6)
-        else : 
+        elif Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)).count() >= 3 : 
             profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
             profiles = random.sample(profilex,3)
+        elif Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)).count() >= 1 : 
+            profilex = list(Profile.objects.filter(Q(vip=True) | Q(sta=True) | Q(prem=True)))
+            profiles = random.sample(profilex,1)
+        else : 
+            profiles = ''
 
         filter = JobFilter(request.GET, queryset=posts)
         posts = filter.qs
