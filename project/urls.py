@@ -1,6 +1,6 @@
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path , include 
-import os 
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -18,7 +18,7 @@ urlpatterns += i18n_patterns(
     path('',include('user.urls')),
 )
 
-
-
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+
