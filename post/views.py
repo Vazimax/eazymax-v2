@@ -111,7 +111,7 @@ def contact(request):
             subject,
             comments,
             email,
-            ['tvazimax@gmail.com'],
+            ['eazymax.v2@gmail.com'],
         )
 
         context = {
