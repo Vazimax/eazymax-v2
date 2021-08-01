@@ -131,22 +131,18 @@
               <div class="job-overview-inner">
                 <ul>
                   <li>
-                    <i class="icon-material-outline-business-center"></i>
                     <span>{% trans "Poster" %}</span>
                     <h3><a href="{% url 'profile' object.poster.id %}"><i class="fa fa-user"></i> {{object.poster}}</a></h3>
                   </li>
                   <li>
-                    <i class="icon-material-outline-location-on"></i>
                     <span>{% trans "Location" %}</span>
                     <h5><i class="fas fa-map-marker-alt"></i>{% trans "Tangier , Morocco" %}</h5>
                   </li>
                   <li>
-                    <i class="icon-material-outline-access-time"></i>
                     <span>{% trans "Date Posted" %}</span>
                     <h5><i class="fas fa-clock"></i> {{object.date_posted|date:"F d, Y"}}</h5>
                   </li>
                   <li>
-                    <i class="icon-material-outline-access-time"></i>
                     <span>{% trans "Category" %}</span>
                     <h5><i class="fa fa-wrench"></i> {{object.category}}</h5>
                   </li>
