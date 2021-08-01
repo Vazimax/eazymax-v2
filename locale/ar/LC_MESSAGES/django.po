@@ -1292,7 +1292,7 @@ msgstr "عما تبحث ؟"
 
 #: .\post\forms.py:9
 msgid "post title"
-msgstr "العنوان"
+msgstr "عنوان الوظيفة"
 
 #: .\post\forms.py:10
 msgid "description"
