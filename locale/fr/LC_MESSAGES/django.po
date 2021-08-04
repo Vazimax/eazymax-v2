@@ -1451,7 +1451,7 @@ msgstr "Maroc , Tanger"
 #: .\post\templates\home.html:17
 msgid "Hire experts or be hired for any job, any time"
 msgstr ""
-"Embauchez des experts ou obtenez un emploi dans n'importe quel emploi à tout "
+"Embauchez des experts ou faites-vous embaucher à n'importe quel poste, à tout "
 "moment"
 
 #: .\post\templates\home.html:19
