@@ -179,7 +179,7 @@ def jobs(request):
     filter = JobFilter(request.GET, queryset=posts)
     posts = filter.qs
 
-    paginator = Paginator(posts, 9)
+    paginator = Paginator(posts, 10)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
