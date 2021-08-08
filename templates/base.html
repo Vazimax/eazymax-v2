@@ -56,7 +56,9 @@
 
     {% endblock %}
     
-    {% include 'parts/footer.html' %}
+    {% block footer %}
+    	{% include 'parts/footer.html' %}
+	{% endblock %}
 
     <!-- Scripts
 ================================================== -->
