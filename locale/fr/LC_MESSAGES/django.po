@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-29 20:46+0100\n"
+"POT-Creation-Date: 2021-08-10 14:27+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1330,7 +1330,7 @@ msgstr "Accueil"
 msgid "About Us"
 msgstr "À  propos de nous"
 
-#: .\post\templates\about_us.html:39
+#: .\post\templates\about_us.html:40
 msgid ""
 "EazyMax is a new startup ,  It allows you to find electricians, "
 "housekeepers, painters and so on, also any worker can post a job there and "
@@ -1339,12 +1339,13 @@ msgid ""
 "by making a startup called Eazymax. "
 msgstr ""
 "EazyMax est une nouvelle startup, Elle permet de trouver des électriciens, "
-"femmes de ménage, peintres et ainsi de suite, tout ouvrier peut également y poster un emploi et "
-"avoir la chance de trouver une énorme opportunité. J'ai eu l'idée quand ma mère en avait besoin "
-"un lave-vaisselle et elle n'a trouvé personne, alors j'ai décidé de résoudre ce problème "
-"en créant une startup appelée Eazymax. "
+"femmes de ménage, peintres et ainsi de suite, tout ouvrier peut également y "
+"poster un emploi et avoir la chance de trouver une énorme opportunité. J'ai "
+"eu l'idée quand ma mère en avait besoin un lave-vaisselle et elle n'a trouvé "
+"personne, alors j'ai décidé de résoudre ce problème en créant une startup "
+"appelée Eazymax. "
 
-#: .\post\templates\about_us.html:42
+#: .\post\templates\about_us.html:43
 msgid ""
 "We are doing our best to make our city Tangier (And all the cities in the "
 "future) a better place, By helping citizens getting fast and good home "
@@ -1353,7 +1354,7 @@ msgstr ""
 "En aidant les citoyens à obtenir des services à domicile rapides et de "
 "qualité et en même temps  créer de nouvelles opportunités d'emplois. "
 
-#: .\post\templates\about_us.html:45
+#: .\post\templates\about_us.html:46
 msgid ""
 "We are welcoming All respectful and well-behaved Electricians, Plumbers, "
 "painters, Carpenter, Housekeeper, etc. To work with us and get clients all "
@@ -1363,7 +1364,7 @@ msgstr ""
 "peintres, menuisier, femme de ménage, etc. Pour travailler avec nous et "
 "obtenir tous les clients autour de Tanger (Et tout le pays dans le futur) ."
 
-#: .\post\templates\about_us.html:58
+#: .\post\templates\about_us.html:59
 msgid "Social Accounts"
 msgstr "Comptes sociaux"
 
@@ -1385,27 +1386,27 @@ msgstr "Rechercher"
 msgid "Carpenters"
 msgstr "Charpentiers/Charpentières"
 
-#: .\post\templates\categories\carpenter.html:63
-#: .\post\templates\categories\dishwasher.html:63
-#: .\post\templates\categories\electrician.html:62
-#: .\post\templates\categories\painter.html:63
-#: .\post\templates\categories\plumber.html:63 .\post\templates\home.html:121
-#: .\post\templates\home.html:251 .\post\templates\jobs.html:69
+#: .\post\templates\categories\carpenter.html:62
+#: .\post\templates\categories\dishwasher.html:62
+#: .\post\templates\categories\electrician.html:61
+#: .\post\templates\categories\painter.html:62
+#: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:122
+#: .\post\templates\home.html:252 .\post\templates\jobs.html:68
 #: .\post\templates\post_detail.html:85 .\post\templates\post_detail.html:111
-#: .\post\templates\post_detail.html:141
+#: .\post\templates\post_detail.html:139
 msgid "Tangier , Morocco"
 msgstr "Tanger, Maroc"
 
-#: .\post\templates\categories\carpenter.html:77
-#: .\post\templates\categories\dishwasher.html:77
-#: .\post\templates\categories\electrician.html:76
-#: .\post\templates\categories\painter.html:77
-#: .\post\templates\categories\plumber.html:77 .\post\templates\jobs.html:83
+#: .\post\templates\categories\carpenter.html:76
+#: .\post\templates\categories\dishwasher.html:76
+#: .\post\templates\categories\electrician.html:75
+#: .\post\templates\categories\painter.html:76
+#: .\post\templates\categories\plumber.html:76 .\post\templates\jobs.html:82
 msgid "SORRY ! There is no result"
 msgstr "PARDON ! Il n'y a pas de résultat"
 
 #: .\post\templates\categories\dishwasher.html:39
-#: .\post\templates\home.html:159
+#: .\post\templates\home.html:160
 msgid "Housekeeping"
 msgstr "Entretien ménager"
 
@@ -1422,7 +1423,7 @@ msgid "Plumbers"
 msgstr "Plombiers/Plombières"
 
 #: .\post\templates\contact.html:11 .\post\templates\contact.html:17
-#: .\templates\parts\footer.html:117
+#: .\templates\parts\footer.html:111
 msgid "Contact"
 msgstr "Contact"
 
@@ -1451,8 +1452,8 @@ msgstr "Maroc , Tanger"
 #: .\post\templates\home.html:17
 msgid "Hire experts or be hired for any job, any time"
 msgstr ""
-"Embauchez des experts ou faites-vous embaucher à n'importe quel poste, à tout "
-"moment"
+"Embauchez des experts ou faites-vous embaucher à n'importe quel poste, à "
+"tout moment"
 
 #: .\post\templates\home.html:19
 msgid "Use <strong class='color'>EazyMaX</strong> to save your Time and Money"
@@ -1472,125 +1473,125 @@ msgstr "Emplois en vedette"
 msgid "Browse All Jobs"
 msgstr "Parcourir tous les emplois"
 
-#: .\post\templates\home.html:128 .\user\templates\profile.html:106
+#: .\post\templates\home.html:129 .\user\templates\profile.html:106
 msgid "View"
 msgstr "Afficher"
 
-#: .\post\templates\home.html:148
+#: .\post\templates\home.html:149
 msgid "CATEGORIES"
 msgstr "Catégories"
 
-#: .\post\templates\home.html:169
+#: .\post\templates\home.html:170
 msgid "Painter"
 msgstr "Peintre"
 
-#: .\post\templates\home.html:178
+#: .\post\templates\home.html:179
 msgid "Electrician"
 msgstr "Électricien"
 
-#: .\post\templates\home.html:187
+#: .\post\templates\home.html:188
 msgid "Plumber"
 msgstr "Plombier"
 
-#: .\post\templates\home.html:196
+#: .\post\templates\home.html:197
 msgid "Carpenter"
 msgstr "Charpentier"
 
-#: .\post\templates\home.html:215
+#: .\post\templates\home.html:216
 msgid "Special workers"
 msgstr "Travailleur spécial"
 
-#: .\post\templates\home.html:251 .\post\templates\post_detail.html:140
+#: .\post\templates\home.html:252 .\post\templates\post_detail.html:138
 msgid "Location"
 msgstr "Emplacement"
 
-#: .\post\templates\home.html:254
+#: .\post\templates\home.html:255
 msgid "View Profile"
 msgstr "emplacement"
 
-#: .\post\templates\home.html:279 .\post\templates\memberships.html:21
+#: .\post\templates\home.html:280 .\post\templates\memberships.html:21
 msgid "Membership Plans"
 msgstr "plans d'abonnement"
 
-#: .\post\templates\home.html:295 .\post\templates\memberships.html:37
+#: .\post\templates\home.html:296 .\post\templates\memberships.html:37
 #: .\post\templates\membershipsta.html:61
 msgid "Basic Plan"
 msgstr "Abonnement régulière"
 
-#: .\post\templates\home.html:298 .\post\templates\memberships.html:40
+#: .\post\templates\home.html:299 .\post\templates\memberships.html:40
 msgid "Features of Basic Plan"
 msgstr "Caractéristiques d'abonnement régulière"
 
-#: .\post\templates\home.html:300 .\post\templates\memberships.html:42
+#: .\post\templates\home.html:301 .\post\templates\memberships.html:42
 msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 2 jours </b>"
 
-#: .\post\templates\home.html:301 .\post\templates\memberships.html:43
+#: .\post\templates\home.html:302 .\post\templates\memberships.html:43
 msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>2 jours</b>"
 
-#: .\post\templates\home.html:302 .\post\templates\memberships.html:44
+#: .\post\templates\home.html:303 .\post\templates\memberships.html:44
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 2 jours</b>"
 
-#: .\post\templates\home.html:303 .\post\templates\memberships.html:45
+#: .\post\templates\home.html:304 .\post\templates\memberships.html:45
 msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x2</b>"
 
-#: .\post\templates\home.html:311 .\post\templates\memberships.html:53
+#: .\post\templates\home.html:312 .\post\templates\memberships.html:53
 msgid "Recommended"
 msgstr "Conseillé"
 
-#: .\post\templates\home.html:312 .\post\templates\membershipprem.html:62
+#: .\post\templates\home.html:313 .\post\templates\membershipprem.html:62
 #: .\post\templates\memberships.html:54
 msgid "Standard Plan"
 msgstr "Abonnement avancée"
 
-#: .\post\templates\home.html:315 .\post\templates\memberships.html:57
+#: .\post\templates\home.html:316 .\post\templates\memberships.html:57
 msgid "Features of Standard Plan"
 msgstr "Caractéristiques d'abonnement avancée"
 
-#: .\post\templates\home.html:317 .\post\templates\memberships.html:59
+#: .\post\templates\home.html:318 .\post\templates\memberships.html:59
 msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 7 jours </b>"
 
-#: .\post\templates\home.html:318 .\post\templates\memberships.html:60
+#: .\post\templates\home.html:319 .\post\templates\memberships.html:60
 msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>7 jours</b>"
 
-#: .\post\templates\home.html:319 .\post\templates\memberships.html:61
+#: .\post\templates\home.html:320 .\post\templates\memberships.html:61
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 5 jours</b>"
 
-#: .\post\templates\home.html:320 .\post\templates\memberships.html:62
+#: .\post\templates\home.html:321 .\post\templates\memberships.html:62
 msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x3</b>"
 
-#: .\post\templates\home.html:328 .\post\templates\memberships.html:70
+#: .\post\templates\home.html:329 .\post\templates\memberships.html:70
 #: .\post\templates\membershipvip.html:61
 msgid "Extended Plan"
 msgstr "Abonnement ultra avancé"
 
-#: .\post\templates\home.html:332 .\post\templates\memberships.html:74
+#: .\post\templates\home.html:333 .\post\templates\memberships.html:74
 msgid "Features of Extended Plan"
 msgstr "Caractéristiques d'abonnement ultra avancé"
 
-#: .\post\templates\home.html:334 .\post\templates\memberships.html:76
+#: .\post\templates\home.html:335 .\post\templates\memberships.html:76
 msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 10 jours </b>"
 
-#: .\post\templates\home.html:335 .\post\templates\memberships.html:77
+#: .\post\templates\home.html:336 .\post\templates\memberships.html:77
 msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>10 jours</b>"
 
-#: .\post\templates\home.html:336 .\post\templates\memberships.html:78
+#: .\post\templates\home.html:337 .\post\templates\memberships.html:78
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 10 jours</b>"
 
-#: .\post\templates\home.html:337 .\post\templates\memberships.html:79
+#: .\post\templates\home.html:338 .\post\templates\memberships.html:79
 msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 
@@ -1653,7 +1654,7 @@ msgstr "Votre paiement a été traité avec succès"
 
 #: .\post\templates\post_confirm_delete.html:16
 #: .\post\templates\post_confirm_delete.html:22
-#: .\templates\parts\footer.html:132 .\user\templates\login.html:17
+#: .\templates\parts\footer.html:126 .\user\templates\login.html:17
 #: .\user\templates\login.html:23 .\user\templates\login.html:60
 msgid "Log In"
 msgstr "Se connecter"
@@ -1694,13 +1695,19 @@ msgstr "D'autre travail"
 msgid "Job Summary"
 msgstr "Résumé de l'emploi"
 
-#: .\post\templates\post_detail.html:135
+#: .\post\templates\post_detail.html:134
 msgid "Poster"
 msgstr "Éditeur"
 
-#: .\post\templates\post_detail.html:145
+#: .\post\templates\post_detail.html:142
 msgid "Date Posted"
 msgstr "Date postée"
+
+#: .\post\templates\post_detail.html:146
+#, fuzzy
+#| msgid "category"
+msgid "Category"
+msgstr "Catégorie"
 
 #: .\post\templates\post_edit.html:16 .\post\templates\post_edit.html:22
 msgid "Edit Post"
@@ -1730,58 +1737,58 @@ msgstr "Remplir toutes les informations"
 msgid "Post"
 msgstr "Publier"
 
-#: .\templates\parts\footer.html:93
+#: .\templates\parts\footer.html:87
 msgid "Who wants a worker"
 msgstr "Qui veut un travailleur"
 
-#: .\templates\parts\footer.html:95
+#: .\templates\parts\footer.html:89
 msgid "Browse Jobs"
 msgstr "Parcourir tous les emplois"
 
-#: .\templates\parts\footer.html:103
+#: .\templates\parts\footer.html:97
 msgid "Who wants to work"
 msgstr "Qui veut travailler"
 
-#: .\templates\parts\footer.html:105
+#: .\templates\parts\footer.html:99
 msgid "Membership"
 msgstr "L'abonnement"
 
-#: .\templates\parts\footer.html:106
+#: .\templates\parts\footer.html:100
 msgid "Post a Job"
 msgstr "Publier une travail"
 
-#: .\templates\parts\footer.html:115
+#: .\templates\parts\footer.html:109
 msgid "Helpful Links"
 msgstr "Liens utiles"
 
-#: .\templates\parts\footer.html:118
+#: .\templates\parts\footer.html:112
 msgid "Privacy Policy"
 msgstr "politique de confidentialité"
 
-#: .\templates\parts\footer.html:127
+#: .\templates\parts\footer.html:121
 msgid "Account"
 msgstr "Le compte"
 
-#: .\templates\parts\footer.html:130 .\user\templates\profile_edit.html:72
+#: .\templates\parts\footer.html:124 .\user\templates\profile_edit.html:72
 msgid "My Account"
 msgstr "Mon compte"
 
-#: .\templates\parts\footer.html:140
+#: .\templates\parts\footer.html:134
 msgid "Sign Up To Post A Job"
 msgstr "Inscrivez-vous pour publier un emploi"
 
-#: .\templates\parts\footer.html:141
+#: .\templates\parts\footer.html:135
 msgid "Once you register you get allowed to post a job"
 msgstr ""
 "Une fois que vous vous êtes inscrit, vous êtes autorisé à publier un emploi"
 
-#: .\templates\parts\footer.html:142 .\templates\parts\navbar.html:132
+#: .\templates\parts\footer.html:136 .\templates\parts\navbar.html:132
 #: .\user\templates\login.html:45 .\user\templates\register.html:15
 #: .\user\templates\register.html:54
 msgid "Register"
 msgstr "S'inscrire"
 
-#: .\templates\parts\footer.html:155
+#: .\templates\parts\footer.html:149
 msgid "© 2021 <strong>EazyMax</strong>. All Rights Reserved."
 msgstr "© 2021 <strong>EazyMax</strong>. Tous les droits sont réservés."
 
@@ -1793,9 +1800,9 @@ msgstr "Trouver un travailleur"
 msgid "Contact Us"
 msgstr "Nous contacter"
 
-#: .\templates\parts\navbar.html:112 .\user\templates\profile.html:23
-#: .\user\templates\profile.html:30 .\user\templates\profile.html:58
-#: .\user\templates\profile_edit.html:23 .\user\templates\profile_edit.html:30
+#: .\templates\parts\navbar.html:112 .\user\templates\profile.html:30
+#: .\user\templates\profile.html:58 .\user\templates\profile_edit.html:23
+#: .\user\templates\profile_edit.html:30
 msgid "My posts"
 msgstr "Mes posts"
 
@@ -1926,9 +1933,13 @@ msgstr ""
 "* En ce qui concerne les clients et les travailleurs, presque tous les "
 "services EazyMax sont pour <b>GRATUIT</b> ."
 
+#: .\user\templates\profile.html:23
+msgid "Posts"
+msgstr "Publications"
+
 #: .\user\templates\profile.html:52
 msgid "Posts of"
-msgstr "Postes de"
+msgstr "Publications de"
 
 #: .\user\templates\profile.html:72
 msgid "Post Listings"
