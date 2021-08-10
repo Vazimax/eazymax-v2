@@ -1804,7 +1804,7 @@ msgstr "Nous contacter"
 #: .\user\templates\profile.html:58 .\user\templates\profile_edit.html:23
 #: .\user\templates\profile_edit.html:30
 msgid "My posts"
-msgstr "Mes posts"
+msgstr "Les posts"
 
 #: .\templates\parts\navbar.html:115 .\user\templates\profile.html:32
 #: .\user\templates\profile_edit.html:31 .\user\templates\profile_edit.html:52

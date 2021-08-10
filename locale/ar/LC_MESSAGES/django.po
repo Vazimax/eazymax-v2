@@ -1795,7 +1795,7 @@ msgstr "تواصل معنا"
 #: .\user\templates\profile.html:58 .\user\templates\profile_edit.html:23
 #: .\user\templates\profile_edit.html:30
 msgid "My posts"
-msgstr "منشوراتي"
+msgstr "المنشورات"
 
 #: .\templates\parts\navbar.html:115 .\user\templates\profile.html:32
 #: .\user\templates\profile_edit.html:31 .\user\templates\profile_edit.html:52
