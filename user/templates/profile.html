@@ -27,7 +27,7 @@
           <div class="dashboard-nav">
             <div class="dashboard-nav-inner">
               <ul data-submenu-title="Account">
-                <li class="active"><a href="{% url 'profile' user.profile.id %}"><i class="far fa-address-book"></i> {% trans 'My posts' %}</a></li>
+                <li class="active"><a href=""><i class="far fa-address-book"></i> {% trans 'My posts' %}</a></li>
                 {% if user.profile.id == profile.id %}
                   <li><a href="{% url 'profile_edit' user.profile.id %}"><i class="fas fa-cog"></i> {% trans 'Settings' %}</a></li>
                   <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> {% trans 'Logout' %}</a></li>
