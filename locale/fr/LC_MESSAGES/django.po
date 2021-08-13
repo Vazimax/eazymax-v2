@@ -1312,7 +1312,7 @@ msgstr "évaluation"
 
 #: .\post\templates\about_us.html:13
 msgid "About The StartUp"
-msgstr "à propos de la start-up"
+msgstr "À propos de la start-up"
 
 #: .\post\templates\about_us.html:18 .\post\templates\contact.html:16
 #: .\post\templates\membershipprem.html:20
@@ -1705,7 +1705,7 @@ msgstr "ajouter une note"
 
 #: .\post\templates\post_detail.html:85
 msgid "There is no feedback"
-msgstr "il n'y a pas de note"
+msgstr "Il n'y a pas de note"
 
 #: .\post\templates\post_detail.html:94
 msgid "Other Jobs"
