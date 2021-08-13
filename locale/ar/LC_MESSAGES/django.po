@@ -1304,11 +1304,11 @@ msgstr "رقم الهاتف"
 
 #: .\post\forms.py:35
 msgid "text review"
-msgstr ""
+msgstr "تعليق"
 
 #: .\post\forms.py:36
 msgid "rate"
-msgstr ""
+msgstr "التقييم"
 
 #: .\post\templates\about_us.html:13
 msgid "About The StartUp"
