@@ -32,8 +32,8 @@ class PostForm(forms.ModelForm):
         return post
 
 class ReviewForm(forms.ModelForm):
-    text = forms.CharField(widget=forms.Textarea(attrs={'style':'height:100px'}),required=False)
-    rate = forms.ChoiceField(choices=RATE_CHOICES,widget=forms.Select(),required=True)
+    text = forms.CharField(widget=forms.Textarea(attrs={'style':'height:100px'}),required=False,label= ugettext_lazy('text review'))
+    rate = forms.ChoiceField(choices=RATE_CHOICES,widget=forms.Select(),required=True,label= ugettext_lazy('rate'))
     
     class Meta:
         model = Review

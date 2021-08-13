@@ -231,10 +231,10 @@ def post_detail(request, pk):
 
     object = Post.objects.get(id=pk)
     posts = list(Post.objects.filter(hot=False))
-    # posts = random.sample(posts, 2)
+    posts = random.sample(posts, 2)
 
     featured_posts = list(Post.objects.filter(hot=True))
-    # featured_posts = random.sample(featured_posts, 2)
+    featured_posts = random.sample(featured_posts, 2)
 
     reviews = Review.objects.filter(post=object)
 

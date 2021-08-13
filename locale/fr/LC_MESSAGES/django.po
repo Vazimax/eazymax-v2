@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-10 14:27+0100\n"
+"POT-Creation-Date: 2021-08-13 12:50+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1290,17 +1290,25 @@ msgstr ""
 msgid "what are you looking for ..?"
 msgstr "Que cherche-tu ?"
 
-#: .\post\forms.py:9
+#: .\post\forms.py:11
 msgid "post title"
 msgstr "Titre"
 
-#: .\post\forms.py:10
+#: .\post\forms.py:12
 msgid "description"
 msgstr "Description"
 
-#: .\post\forms.py:11 .\user\forms.py:36
+#: .\post\forms.py:13 .\user\forms.py:36
 msgid "phone number"
 msgstr "Numéro de téléphone"
+
+#: .\post\forms.py:35
+msgid "text review"
+msgstr ""
+
+#: .\post\forms.py:36
+msgid "rate"
+msgstr ""
 
 #: .\post\templates\about_us.html:13
 msgid "About The StartUp"
@@ -1312,8 +1320,8 @@ msgstr "à propos de la start-up"
 #: .\post\templates\membershipvip.html:20 .\post\templates\order_done.html:14
 #: .\post\templates\post_confirm_delete.html:21
 #: .\post\templates\post_edit.html:21 .\post\templates\post_job.html:18
-#: .\templates\parts\navbar.html:49 .\user\templates\login.html:22
-#: .\user\templates\logout.html:19
+#: .\post\templates\review.html:21 .\templates\parts\navbar.html:49
+#: .\user\templates\login.html:22 .\user\templates\logout.html:19
 #: .\user\templates\password_change_done.html:18
 #: .\user\templates\password_change_form.html:22
 #: .\user\templates\password_change_form.html:44
@@ -1392,8 +1400,8 @@ msgstr "Charpentiers/Charpentières"
 #: .\post\templates\categories\painter.html:62
 #: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:122
 #: .\post\templates\home.html:252 .\post\templates\jobs.html:68
-#: .\post\templates\post_detail.html:85 .\post\templates\post_detail.html:111
-#: .\post\templates\post_detail.html:139
+#: .\post\templates\post_detail.html:119 .\post\templates\post_detail.html:145
+#: .\post\templates\post_detail.html:173
 msgid "Tangier , Morocco"
 msgstr "Tanger, Maroc"
 
@@ -1501,7 +1509,7 @@ msgstr "Charpentier"
 msgid "Special workers"
 msgstr "Travailleur spécial"
 
-#: .\post\templates\home.html:252 .\post\templates\post_detail.html:138
+#: .\post\templates\home.html:252 .\post\templates\post_detail.html:172
 msgid "Location"
 msgstr "Emplacement"
 
@@ -1687,29 +1695,42 @@ msgstr "Mettre à jour"
 msgid "Description"
 msgstr "Description"
 
-#: .\post\templates\post_detail.html:59
+#: .\post\templates\post_detail.html:61
+msgid "Feedbacks"
+msgstr "Évaluations"
+
+#: .\post\templates\post_detail.html:63 .\post\templates\post_detail.html:86
+msgid "Add a feedback"
+msgstr "ajouter une note"
+
+#: .\post\templates\post_detail.html:85
+msgid "There is no feedback"
+msgstr "il n'y a pas de note"
+
+#: .\post\templates\post_detail.html:94
 msgid "Other Jobs"
 msgstr "D'autre travail"
 
-#: .\post\templates\post_detail.html:130
+#: .\post\templates\post_detail.html:164
 msgid "Job Summary"
 msgstr "Résumé de l'emploi"
 
-#: .\post\templates\post_detail.html:134
+#: .\post\templates\post_detail.html:168
 msgid "Poster"
 msgstr "Éditeur"
 
-#: .\post\templates\post_detail.html:142
+#: .\post\templates\post_detail.html:176
 msgid "Date Posted"
 msgstr "Date postée"
 
-#: .\post\templates\post_detail.html:146
+#: .\post\templates\post_detail.html:180
 #, fuzzy
 #| msgid "category"
 msgid "Category"
 msgstr "Catégorie"
 
 #: .\post\templates\post_edit.html:16 .\post\templates\post_edit.html:22
+#: .\post\templates\review.html:16 .\post\templates\review.html:22
 msgid "Edit Post"
 msgstr "Modifier le post"
 
@@ -1717,7 +1738,8 @@ msgstr "Modifier le post"
 msgid "You can edit anything you want"
 msgstr "Vous pouvez modifier tout ce que vous voulez"
 
-#: .\post\templates\post_edit.html:59 .\user\templates\profile.html:108
+#: .\post\templates\post_edit.html:59 .\post\templates\review.html:51
+#: .\user\templates\profile.html:108
 msgid "Edit"
 msgstr "Éditer"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-10 14:30+0100\n"
+"POT-Creation-Date: 2021-08-13 12:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1290,17 +1290,25 @@ msgstr ""
 msgid "what are you looking for ..?"
 msgstr "عما تبحث ؟"
 
-#: .\post\forms.py:9
+#: .\post\forms.py:11
 msgid "post title"
 msgstr "عنوان الوظيفة"
 
-#: .\post\forms.py:10
+#: .\post\forms.py:12
 msgid "description"
 msgstr "الوصف"
 
-#: .\post\forms.py:11 .\user\forms.py:36
+#: .\post\forms.py:13 .\user\forms.py:36
 msgid "phone number"
 msgstr "رقم الهاتف"
+
+#: .\post\forms.py:35
+msgid "text review"
+msgstr ""
+
+#: .\post\forms.py:36
+msgid "rate"
+msgstr ""
 
 #: .\post\templates\about_us.html:13
 msgid "About The StartUp"
@@ -1312,8 +1320,8 @@ msgstr "عن الشركة الناشئة"
 #: .\post\templates\membershipvip.html:20 .\post\templates\order_done.html:14
 #: .\post\templates\post_confirm_delete.html:21
 #: .\post\templates\post_edit.html:21 .\post\templates\post_job.html:18
-#: .\templates\parts\navbar.html:49 .\user\templates\login.html:22
-#: .\user\templates\logout.html:19
+#: .\post\templates\review.html:21 .\templates\parts\navbar.html:49
+#: .\user\templates\login.html:22 .\user\templates\logout.html:19
 #: .\user\templates\password_change_done.html:18
 #: .\user\templates\password_change_form.html:22
 #: .\user\templates\password_change_form.html:44
@@ -1391,8 +1399,8 @@ msgstr "النجارين"
 #: .\post\templates\categories\painter.html:62
 #: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:122
 #: .\post\templates\home.html:252 .\post\templates\jobs.html:68
-#: .\post\templates\post_detail.html:85 .\post\templates\post_detail.html:111
-#: .\post\templates\post_detail.html:139
+#: .\post\templates\post_detail.html:119 .\post\templates\post_detail.html:145
+#: .\post\templates\post_detail.html:173
 msgid "Tangier , Morocco"
 msgstr "طنجة، المغرب"
 
@@ -1496,7 +1504,7 @@ msgstr "النجار"
 msgid "Special workers"
 msgstr "عمال خاصون"
 
-#: .\post\templates\home.html:252 .\post\templates\post_detail.html:138
+#: .\post\templates\home.html:252 .\post\templates\post_detail.html:172
 msgid "Location"
 msgstr "الموقع"
 
@@ -1677,29 +1685,42 @@ msgstr "تحديث"
 msgid "Description"
 msgstr "الوصف"
 
-#: .\post\templates\post_detail.html:59
+#: .\post\templates\post_detail.html:61
+msgid "Feedbacks"
+msgstr "التقييمات"
+
+#: .\post\templates\post_detail.html:63 .\post\templates\post_detail.html:86
+msgid "Add a feedback"
+msgstr "أضف ملاحظة"
+
+#: .\post\templates\post_detail.html:85
+msgid "There is no feedback"
+msgstr "لا توجد ملاحظة"
+
+#: .\post\templates\post_detail.html:94
 msgid "Other Jobs"
 msgstr "وظائف أخرى"
 
-#: .\post\templates\post_detail.html:130
+#: .\post\templates\post_detail.html:164
 msgid "Job Summary"
 msgstr "ملخص العمل"
 
-#: .\post\templates\post_detail.html:134
+#: .\post\templates\post_detail.html:168
 msgid "Poster"
 msgstr "الناشر"
 
-#: .\post\templates\post_detail.html:142
+#: .\post\templates\post_detail.html:176
 msgid "Date Posted"
 msgstr "تاريخ النشر"
 
-#: .\post\templates\post_detail.html:146
+#: .\post\templates\post_detail.html:180
 #, fuzzy
 #| msgid "category"
 msgid "Category"
 msgstr "نوع الوظيفة"
 
 #: .\post\templates\post_edit.html:16 .\post\templates\post_edit.html:22
+#: .\post\templates\review.html:16 .\post\templates\review.html:22
 msgid "Edit Post"
 msgstr "تعديل"
 
@@ -1707,7 +1728,8 @@ msgstr "تعديل"
 msgid "You can edit anything you want"
 msgstr "يمكنك تعديل أي شيء تريده"
 
-#: .\post\templates\post_edit.html:59 .\user\templates\profile.html:108
+#: .\post\templates\post_edit.html:59 .\post\templates\review.html:51
+#: .\user\templates\profile.html:108
 msgid "Edit"
 msgstr "تعديل"
 
