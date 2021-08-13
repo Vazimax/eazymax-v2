@@ -53,11 +53,45 @@
           <p>{{object.description}}</p>
         </div>
         <a class="apply-now-button popup-with-zoom-anim">0{{object.phone_number}} <i class="fa fa-phone"></i></a>
+        <br>
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <h2>{% trans 'Feedbacks' %}:</h2>
+        {% if reviews %}
+        <a href="{% url 'post-review' object.id %}">+ {% trans "Add a feedback" %}</a>
+        <br>
+        <br>
+          {% for review in reviews %} 
+          <br>
+              <div class="media-body">
+                <div class="well well-lg">
+                  <a class="pull-left" href="{% url 'profile' review.user.profile.id %}">
+                    <img  src="{{review.user.profile.image.url}}" width="30">
+                  </a>
+                    <p class="text-right"><i class="fas fa-clock"></i> {{review.date|date:"F d, Y"}}</p>
+                    <h5 class="media-heading text-uppercase reviews"><b>{{review.user.username}}</b></h5>
+                    <br>
+                    <a style="width: 60px;" class="button" id="reply">{{review.rate}}/5</a>
+                    <p class="media-comment">
+                      {{review.text}}
+                    </p>
+                </div>              
+              </div>
+          {% endfor %}
+        {% else %}
+        <br>
+        <h2> {% trans "There is no feedback" %} :(</h2>
+        <a href="{% url 'post-review' object.id %}">{% trans "Add a feedback" %}</a>
+        {% endif %}
+        <br>
         <hr>
         <br>
-        <div class="single-page-section">
-          <h2 class="margin-bottom-25">{% trans "Other Jobs" %} :</h2>
 
+
+        <div class="single-page-section">
+          <h2 class="margin-bottom-25">{% trans "Other Jobs" %} :</h2>  
           <!-- Listings Container -->
           <div class="listings-container grid-layout">
 

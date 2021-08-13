@@ -17,6 +17,7 @@ urlpatterns = [
     path('jobs/',jobs,name="jobs"),
     path('post_job/',post_job,name="post_job"),
     path('post/<str:pk>/',post_detail, name='post-detail'),
+    path('post/<str:pk>/review',Reviews, name='post-review'),
     path('post/<int:pk>/update/',UpdatePost,name="post-update"),
     path('post/<int:pk>/delete/', PostDeleteView.as_view(template_name='post_confirm_delete.html'), name='post-delete'),
 

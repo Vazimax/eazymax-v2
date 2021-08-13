@@ -1,18 +1,19 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.http.response import HttpResponseForbidden, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
 from django.views.generic import UpdateView, DeleteView
-from django.http.response import HttpResponseForbidden
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
+from django.contrib.auth.models import User
 from django.contrib import messages
 from datetime import datetime as dt
-from datetime import timedelta
 from django.urls import reverse
+from datetime import timedelta
+
+from .forms import PostForm , ReviewForm
+from .models import Post , Review
 from user.models import Profile
-from .forms import PostForm
-from .models import Post
 from .filters import *
 from pytz import *
 import random
@@ -230,16 +231,20 @@ def post_detail(request, pk):
 
     object = Post.objects.get(id=pk)
     posts = list(Post.objects.filter(hot=False))
-    posts = random.sample(posts, 2)
+    # posts = random.sample(posts, 2)
 
     featured_posts = list(Post.objects.filter(hot=True))
-    featured_posts = random.sample(featured_posts, 2)
+    # featured_posts = random.sample(featured_posts, 2)
+
+    reviews = Review.objects.filter(post=object)
+
 
     context = {
         'object': object,
         'posts': posts,
         'featured_posts': featured_posts,
-        'title' : 'post detail'
+        'title' : 'post detail',
+        'reviews' : reviews
     }
 
     return render(request, 'post_detail.html', context)
@@ -369,3 +374,26 @@ def painter(request):
         'filter': filter,
     }
     return render(request, 'categories/painter.html', context)
+
+@login_required
+def Reviews(request,pk):
+    post = Post.objects.get(id=pk)  
+    user = request.user
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            rate = form.save(commit=False)
+            rate.user = user
+            rate.post = post
+            rate.save()
+            return HttpResponseRedirect(reverse('post-detail',args=[pk]))
+    else :
+        form = ReviewForm()
+
+    context = {
+        'form' : form,
+        'post' : post,
+        'title' : 'Review'
+    }
+    return render(request,'review.html',context)

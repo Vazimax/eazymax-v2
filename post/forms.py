@@ -1,7 +1,9 @@
 from django.utils.translation import ugettext_lazy 
+from .models import Review , RATE_CHOICES
+from user.models import Profile
 from django import forms
 from .models import Post 
-from user.models import Profile
+
 
 import datetime , timedelta , timezones
 
@@ -29,3 +31,10 @@ class PostForm(forms.ModelForm):
             post.save()
         return post
 
+class ReviewForm(forms.ModelForm):
+    text = forms.CharField(widget=forms.Textarea(attrs={'style':'height:100px'}),required=False)
+    rate = forms.ChoiceField(choices=RATE_CHOICES,widget=forms.Select(),required=True)
+    
+    class Meta:
+        model = Review
+        fields = ('rate','text')

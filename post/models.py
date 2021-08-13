@@ -44,3 +44,21 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post-detail',kwargs={'pk':self.pk})
+
+RATE_CHOICES = [
+    (1,'1 - Terrible/فظيع'),
+    (2,'2 - Mauvais(e)/سيء'),
+    (3,'3 - Pas mal/ليس سيئا'),
+    (4,'4 - bon(ne)/جيد'),
+    (5,'5 - génial(e)/ممتاز'),
+]
+
+class Review(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    post = models.ForeignKey(Post,on_delete=models.CASCADE)
+    date = models.DateTimeField(auto_now_add=True)
+    text = models.TextField(max_length=1000,blank=True,null=True)
+    rate = models.PositiveSmallIntegerField(choices=RATE_CHOICES,blank=True)
+
+    def __str__(self):
+        return self.user.username
