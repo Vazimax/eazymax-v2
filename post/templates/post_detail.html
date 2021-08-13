@@ -83,7 +83,7 @@
         {% else %}
         <br>
         <h2> {% trans "There is no feedback" %} :(</h2>
-        <a href="{% url 'post-review' object.id %}">{% trans "Add a feedback" %}</a>
+        <a href="{% url 'post-review' object.id %}">+ {% trans "Add a feedback" %}</a>
         {% endif %}
         <br>
         <hr>

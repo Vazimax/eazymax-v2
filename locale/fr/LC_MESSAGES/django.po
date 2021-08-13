@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-13 12:50+0100\n"
+"POT-Creation-Date: 2021-08-13 13:12+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1730,7 +1730,6 @@ msgid "Category"
 msgstr "Catégorie"
 
 #: .\post\templates\post_edit.html:16 .\post\templates\post_edit.html:22
-#: .\post\templates\review.html:16 .\post\templates\review.html:22
 msgid "Edit Post"
 msgstr "Modifier le post"
 
@@ -1738,8 +1737,7 @@ msgstr "Modifier le post"
 msgid "You can edit anything you want"
 msgstr "Vous pouvez modifier tout ce que vous voulez"
 
-#: .\post\templates\post_edit.html:59 .\post\templates\review.html:51
-#: .\user\templates\profile.html:108
+#: .\post\templates\post_edit.html:59 .\user\templates\profile.html:108
 msgid "Edit"
 msgstr "Éditer"
 
@@ -1758,6 +1756,14 @@ msgstr "Remplir toutes les informations"
 #: .\post\templates\post_job.html:56
 msgid "Post"
 msgstr "Publier"
+
+#: .\post\templates\review.html:16 .\post\templates\review.html:22
+msgid "Review"
+msgstr "Évaluation"
+
+#: .\post\templates\review.html:51
+msgid "Add"
+msgstr "Ajouter"
 
 #: .\templates\parts\footer.html:87
 msgid "Who wants a worker"
