@@ -20,7 +20,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100,)
     poster = models.ForeignKey(User,related_name='job_poster',on_delete=models.CASCADE,)
     description = models.TextField(max_length=10000,null=True,blank=True,)
-    phone_number = models.IntegerField(null=True,blank=True)
+    phone_number = models.CharField(null=True,blank=True,max_length=15)
     category = models.ForeignKey(Category,related_name='categories',on_delete=models.CASCADE,)
     image = models.ImageField(upload_to=image_upload,default="jobs/default.jpg",null=True,blank=True,)
     date_posted = models.DateTimeField(auto_now=True)
