@@ -20,7 +20,7 @@
                   <li><i class="fas fa-clock"></i> {{object.date_posted|date:"F d, Y"}}</li>
                   {% if object.hot  %}<li><div  class="verified-badge-with-title">{% trans "Verified" %}</div></li>{% endif %}
                   {% if object.poster == user %}
-                        <a href="{% url 'post-update' object.id %}" style="color: white;background-color:rgb(4, 192, 4) ; padding: 3px; border-radius: 5px;">{% trans "Update" %}</a>
+                        <a href="{% url 'post-update' object.id %}" style="color: white;background-color:rgb(56, 196, 56) ; padding: 3px; border-radius: 5px;">{% trans "Update" %}</a>
                         <a href="{% url 'post-delete' object.id %}" style="color: white;background-color: red; padding: 3px; border-radius: 5px;">{% trans "Delete" %}</a>
                   {% endif %}
                 </ul>
@@ -52,12 +52,10 @@
           <h3 class="margin-bottom-25">{% trans "Description" %}</h3>
           <p>{{object.description}}</p>
         </div>
-        <a class="apply-now-button popup-with-zoom-anim">0{{object.phone_number}} <i class="fa fa-phone"></i></a>
+        <a class="apply-now-button popup-with-zoom-anim" href="tel:0{{object.phone_number}}">0{{object.phone_number}} <i class="fa fa-phone"></i></a>
         <br>
 
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        
         <h2>{% trans 'Feedbacks' %}:</h2>
         {% if reviews %}
         <a href="{% url 'post-review' object.id %}">+ {% trans "Add a feedback" %}</a>
@@ -65,18 +63,16 @@
         <br>
           {% for review in reviews %} 
           <br>
-              <div class="media-body">
+              <div  style="background-color: #E9E9E9; padding: 10px; border-radius: 15px;" class="media-body">
                 <div class="well well-lg">
                   <a class="pull-left" href="{% url 'profile' review.user.profile.id %}">
-                    <img  src="{{review.user.profile.image.url}}" width="30">
+                    <img style="border-radius: 15px;" src="{{review.user.profile.image.url}}" width="30"> <i class="fas fa-clock"></i> {{review.date|date:"F d, Y"}}
                   </a>
-                    <p class="text-right"><i class="fas fa-clock"></i> {{review.date|date:"F d, Y"}}</p>
+                  <br>
+                  <br>
                     <h5 class="media-heading text-uppercase reviews"><b>{{review.user.username}}</b></h5>
-                    <br>
                     <a style="width: 60px;" class="button" id="reply">{{review.rate}}/5</a>
-                    <p class="media-comment">
-                      {{review.text}}
-                    </p>
+                    <textarea readonly name="" id="" cols="1" rows="1">{{review.text}}</textarea>
                 </div>              
               </div>
           {% endfor %}
