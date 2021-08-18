@@ -1349,7 +1349,7 @@ msgstr ""
 "EazyMax est une nouvelle startup, Elle permet de trouver des électriciens, "
 "femmes de ménage, peintres et ainsi de suite, tout ouvrier peut également y "
 "poster un emploi et avoir la chance de trouver une énorme opportunité. J'ai "
-"eu l'idée quand ma mère en avait besoin un lave-vaisselle et elle n'a trouvé "
+"eu l'idée quand ma mère en avait besoin une femme de ménage et elle n'a trouvé "
 "personne, alors j'ai décidé de résoudre ce problème en créant une startup "
 "appelée Eazymax. "
 
