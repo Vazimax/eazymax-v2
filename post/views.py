@@ -129,7 +129,7 @@ def contact(request):
 
 def about_us(request):
 
-    return render(request, 'about_us.html',{'title':'about us'})
+    return render(request, 'about_us.html',{'title':'à propos de nous - معلومات عنا'})
 
 
 def membershipsta(request):
@@ -171,7 +171,7 @@ def order_done(request):
                         usr.update(sta=True,expiredate=ex3.strftime("%Y-%m-%d"))
 
         print(usr.sta.date)
-    return render(request, 'order_done.html',{'title':'order done'})
+    return render(request, 'order_done.html',{'title':'la demande est faite - تم الطلب'})
 
 
 def jobs(request):
@@ -187,7 +187,7 @@ def jobs(request):
     context = {
         'posts': page_obj,
         'filter': filter,
-        'title' : 'jobs'
+        'title' : 'travaux - وظائف'
     }
     return render(request, 'jobs.html', context)
 
@@ -222,7 +222,7 @@ def post_job(request):
 
     context = {
         'form': PostForm(),
-        'title' : 'post job'
+        'title' : 'publier une travail - انشر وظيفة'
     }
     return render(request, 'post_job.html', context)
 
@@ -243,7 +243,7 @@ def post_detail(request, pk):
         'object': object,
         'posts': posts,
         'featured_posts': featured_posts,
-        'title' : 'post detail',
+        'title' : 'détail de la publication - تفاصيل المنشور',
         'reviews' : reviews
     }
 
@@ -268,7 +268,7 @@ def UpdatePost(request, pk):
 
     context = {
         'form': form,
-        'title' : 'post update'
+        'title' : 'poster la mise à jour - تحديث منشور'
     }
 
     return render(request, 'post_edit.html', context)
@@ -299,7 +299,7 @@ def plumber(request):
     context = {
         'posts': page_obj,
         'filter': filter,
-        'title' : 'plumber'
+        'title' : 'plombier - اصلاح الماء'
     }
     return render(request, 'categories/plumber.html', context)
 
@@ -317,7 +317,7 @@ def electrician(request):
     context = {
         'posts': page_obj,
         'filter': filter,
-        'title' : 'electrician'
+        'title' : 'électricien - اصلاح الكهرباء'
     }
     return render(request, 'categories/electrician.html', context)
 
@@ -335,7 +335,7 @@ def dishwasher(request):
     context = {
         'posts': page_obj,
         'filter': filter,
-        'title' : 'housekeeping'
+        'title' : ' Entretien ménager - التدبير المنزلي'
     }
     return render(request, 'categories/dishwasher.html', context)
 
@@ -352,7 +352,7 @@ def carpenter(request):
 
     context = {
         'posts': page_obj,
-        'title' : 'carpenter',
+        'title' : 'charpenterie - نجارة',
         'filter': filter,
     }
     return render(request, 'categories/carpenter.html', context)
@@ -370,7 +370,7 @@ def painter(request):
 
     context = {
         'posts': page_obj,
-        'title' : 'painter',
+        'title' : 'peintre - صباغ',
         'filter': filter,
     }
     return render(request, 'categories/painter.html', context)

@@ -21,10 +21,10 @@ urlpatterns = [
     path('post/<int:pk>/update/',UpdatePost,name="post-update"),
     path('post/<int:pk>/delete/', PostDeleteView.as_view(template_name='post_confirm_delete.html'), name='post-delete'),
 
-    path('plumber/',plumber,name="plumber"),
-    path('electrician/',electrician,name="electrician"),
-    path('dishwasher/',dishwasher,name="dishwasher"),
-    path('carpenter/',carpenter,name="carpenter"),
-    path('painter/',painter,name="painter"),
+    path('plombier/',plumber,name="plumber"),
+    path('electricien/',electrician,name="electrician"),
+    path('femme_de_menage/',dishwasher,name="dishwasher"),
+    path('charpentier/',carpenter,name="carpenter"),
+    path('peintre/',painter,name="painter"),
 
 ]
