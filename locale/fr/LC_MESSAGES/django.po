@@ -1348,10 +1348,9 @@ msgid ""
 msgstr ""
 "EazyMax est une nouvelle startup, Elle permet de trouver des électriciens, "
 "femmes de ménage, peintres et ainsi de suite, tout ouvrier peut également y "
-"poster un emploi et avoir la chance de trouver une énorme opportunité. J'ai "
-"eu l'idée quand ma mère en avait besoin une femme de ménage et elle n'a trouvé "
-"personne, alors j'ai décidé de résoudre ce problème en créant une startup "
-"appelée Eazymax. "
+"poster un emploi et avoir la chance de trouver une énorme opportunité."
+" L'idée nous est venue lorsque nous avons découvert que trouver un travailleur ayant une bonne expérience et une compétence professionnelle dans la maîtrise de son travail nécessite du temps et des efforts de votre part, ainsi que pour les travailleurs, car la plupart d'entre eux perdent leur temps et leur argent pour obtenir un emploi. Nous avons donc décidé de résoudre ce problème en créant une startup appelée"
+" EazyMax. "
 
 #: .\post\templates\about_us.html:43
 msgid ""

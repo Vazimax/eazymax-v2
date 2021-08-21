@@ -232,15 +232,15 @@
 										
 										<!-- Avatar -->
 										<div class="freelancer-avatar">
-											<a href="{% url 'profile' profile.id %}-1"><img src="{{profile.image.url}}" style="margin-bottom: 8px;" alt=""></a>
+											<a href="{% url 'profile' profile.id %}"><img src="{{profile.image.url}}" style="margin-bottom: 8px;" alt=""></a>
 											<i class="fa fa-check-circle" style="font-size:25px; color: #e0c040;"></i>
 										</div>
 
 										<!-- Name -->
-										<div class="freelancer-name">
-											<h4><a href="{% url 'profile' profile.user.id %}-1">{{profile.user.username}}</a></h4>
-											<span>{{profile.category}}</span>
-										</div>
+											<div class="freelancer-name">
+												<h4><a href='{% url "profile" profile.id %}'>{{profile.user.username}}</a></h4>
+												<span>{{profile.category}}</span>
+											</div>
 									</div>
 								</div>
 								
