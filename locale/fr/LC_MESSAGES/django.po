@@ -1746,7 +1746,7 @@ msgstr "Publier une travail"
 
 #: .\post\templates\post_job.html:19
 msgid "Posting"
-msgstr "les posts"
+msgstr "Publier une travail"
 
 #: .\post\templates\post_job.html:37
 msgid "Fill Out All Information"

@@ -1736,10 +1736,8 @@ msgid "Post A Job"
 msgstr "انشر وظيفة"
 
 #: .\post\templates\post_job.html:19
-#, fuzzy
-#| msgid "Post Listings"
 msgid "Posting"
-msgstr "المنشورات"
+msgstr "انشر وظيفة"
 
 #: .\post\templates\post_job.html:37
 msgid "Fill Out All Information"
