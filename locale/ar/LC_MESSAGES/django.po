@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-13 13:13+0100\n"
+"POT-Creation-Date: 2021-08-22 11:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1347,9 +1347,11 @@ msgid ""
 "by making a startup called Eazymax. "
 msgstr ""
 ". هي شركة ناشئة جديدة EazyMax <br>  ، فهي تتيح لك العثور على كهربائيين مدبرة "
-"المنزل والصباغين وما إلى ذلك ، كما يمكن لأي عامل نشر وظيفة هناك والحصول على "
-"  فرصة للعثور على عمل.  خطرت لنا الفكرة عندما اكتشفنا ان العثور على اي عامل ذو خبرة جيدة وكفاءة مهنية في اتقان عمله يتطلب وقتا ومجهودا منك، و كذلك بالنسبة للعمال، فأغلبهم يضيعون وقتهم و مالهم من اجل الحصول على عمل. لذلك قررنا حل هذه المشكلة من خلال إنشاء شركة ناشئة تدعى  "
-" <br> Eazymax "
+"المنزل والصباغين وما إلى ذلك ، كما يمكن لأي عامل نشر وظيفة هناك والحصول "
+"على   فرصة للعثور على عمل.  خطرت لنا الفكرة عندما اكتشفنا ان العثور على اي "
+"عامل ذو خبرة جيدة وكفاءة مهنية في اتقان عمله يتطلب وقتا ومجهودا منك، و كذلك "
+"بالنسبة للعمال، فأغلبهم يضيعون وقتهم و مالهم من اجل الحصول على عمل. لذلك "
+"قررنا حل هذه المشكلة من خلال إنشاء شركة ناشئة تدعى   <br> Eazymax "
 
 #: .\post\templates\about_us.html:43
 msgid ""
@@ -1398,9 +1400,9 @@ msgstr "النجارين"
 #: .\post\templates\categories\electrician.html:61
 #: .\post\templates\categories\painter.html:62
 #: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:122
-#: .\post\templates\home.html:252 .\post\templates\jobs.html:68
-#: .\post\templates\post_detail.html:119 .\post\templates\post_detail.html:145
-#: .\post\templates\post_detail.html:173
+#: .\post\templates\home.html:251 .\post\templates\jobs.html:68
+#: .\post\templates\post_detail.html:115 .\post\templates\post_detail.html:141
+#: .\post\templates\post_detail.html:169
 msgid "Tangier , Morocco"
 msgstr "طنجة، المغرب"
 
@@ -1504,94 +1506,94 @@ msgstr "النجار"
 msgid "Special workers"
 msgstr "عمال خاصون"
 
-#: .\post\templates\home.html:252 .\post\templates\post_detail.html:172
+#: .\post\templates\home.html:251 .\post\templates\post_detail.html:168
 msgid "Location"
 msgstr "الموقع"
 
-#: .\post\templates\home.html:255
+#: .\post\templates\home.html:254
 msgid "View Profile"
 msgstr "الحساب"
 
-#: .\post\templates\home.html:280 .\post\templates\memberships.html:21
+#: .\post\templates\home.html:278 .\post\templates\memberships.html:21
 msgid "Membership Plans"
 msgstr "العضويات"
 
-#: .\post\templates\home.html:296 .\post\templates\memberships.html:37
+#: .\post\templates\home.html:294 .\post\templates\memberships.html:37
 #: .\post\templates\membershipsta.html:61
 msgid "Basic Plan"
 msgstr "العضوية العادية"
 
-#: .\post\templates\home.html:299 .\post\templates\memberships.html:40
+#: .\post\templates\home.html:297 .\post\templates\memberships.html:40
 msgid "Features of Basic Plan"
 msgstr "خصائص العضوية العادية"
 
-#: .\post\templates\home.html:301 .\post\templates\memberships.html:42
+#: .\post\templates\home.html:299 .\post\templates\memberships.html:42
 msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
 msgstr "سيتم تمييز منشورك لمدة يومين"
 
-#: .\post\templates\home.html:302 .\post\templates\memberships.html:43
+#: .\post\templates\home.html:300 .\post\templates\memberships.html:43
 msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
 msgstr "سيتم تمييز منشورك في تفاصيل المشاركة لمدة يومين"
 
-#: .\post\templates\home.html:303 .\post\templates\memberships.html:44
+#: .\post\templates\home.html:301 .\post\templates\memberships.html:44
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
 msgstr "ستصبح واحدًا من أفضل العاملين لمدة يومين"
 
-#: .\post\templates\home.html:304 .\post\templates\memberships.html:45
+#: .\post\templates\home.html:302 .\post\templates\memberships.html:45
 msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
 msgstr "2x احصل على المزيد من العملاء"
 
-#: .\post\templates\home.html:312 .\post\templates\memberships.html:53
+#: .\post\templates\home.html:310 .\post\templates\memberships.html:53
 msgid "Recommended"
 msgstr "موصى بها"
 
-#: .\post\templates\home.html:313 .\post\templates\membershipprem.html:62
+#: .\post\templates\home.html:311 .\post\templates\membershipprem.html:62
 #: .\post\templates\memberships.html:54
 msgid "Standard Plan"
 msgstr "العضوية المتقدمة"
 
-#: .\post\templates\home.html:316 .\post\templates\memberships.html:57
+#: .\post\templates\home.html:314 .\post\templates\memberships.html:57
 msgid "Features of Standard Plan"
 msgstr "خصائص العضوية المتقدمة"
 
-#: .\post\templates\home.html:318 .\post\templates\memberships.html:59
+#: .\post\templates\home.html:316 .\post\templates\memberships.html:59
 msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
 msgstr "سيتم تمييز منشورك لمدة 7 أيام"
 
-#: .\post\templates\home.html:319 .\post\templates\memberships.html:60
+#: .\post\templates\home.html:317 .\post\templates\memberships.html:60
 msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
 msgstr "سيتم تمييز منشورك في تفاصيل المشاركة لمدة 7 أيام"
 
-#: .\post\templates\home.html:320 .\post\templates\memberships.html:61
+#: .\post\templates\home.html:318 .\post\templates\memberships.html:61
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
 msgstr "ستصبح واحدًا من أفضل العاملين لمدة 5 أيام"
 
-#: .\post\templates\home.html:321 .\post\templates\memberships.html:62
+#: .\post\templates\home.html:319 .\post\templates\memberships.html:62
 msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
 msgstr "3x احصل على المزيد من العملاء"
 
-#: .\post\templates\home.html:329 .\post\templates\memberships.html:70
+#: .\post\templates\home.html:327 .\post\templates\memberships.html:70
 #: .\post\templates\membershipvip.html:61
 msgid "Extended Plan"
 msgstr "العضوية المتقدمة جدا"
 
-#: .\post\templates\home.html:333 .\post\templates\memberships.html:74
+#: .\post\templates\home.html:331 .\post\templates\memberships.html:74
 msgid "Features of Extended Plan"
 msgstr "خصائص العضوية المتقدمة جدا"
 
-#: .\post\templates\home.html:335 .\post\templates\memberships.html:76
+#: .\post\templates\home.html:333 .\post\templates\memberships.html:76
 msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
 msgstr "سيتم تمييز منشورك لمدة 10 أيام"
 
-#: .\post\templates\home.html:336 .\post\templates\memberships.html:77
+#: .\post\templates\home.html:334 .\post\templates\memberships.html:77
 msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
 msgstr "سيتم تمييز منشورك في تفاصيل المشاركة لمدة 10 أيام"
 
-#: .\post\templates\home.html:337 .\post\templates\memberships.html:78
+#: .\post\templates\home.html:335 .\post\templates\memberships.html:78
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
 msgstr "ستصبح واحدًا من أفضل العاملين لمدة 10 أيام"
 
-#: .\post\templates\home.html:338 .\post\templates\memberships.html:79
+#: .\post\templates\home.html:336 .\post\templates\memberships.html:79
 msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
 msgstr "4x احصل على المزيد من العملاء"
 
@@ -1685,35 +1687,35 @@ msgstr "تحديث"
 msgid "Description"
 msgstr "الوصف"
 
-#: .\post\templates\post_detail.html:61
+#: .\post\templates\post_detail.html:59
 msgid "Feedbacks"
 msgstr "التقييمات"
 
-#: .\post\templates\post_detail.html:63 .\post\templates\post_detail.html:86
+#: .\post\templates\post_detail.html:61 .\post\templates\post_detail.html:82
 msgid "Add a feedback"
 msgstr "أضف ملاحظة"
 
-#: .\post\templates\post_detail.html:85
+#: .\post\templates\post_detail.html:81
 msgid "There is no feedback"
 msgstr "لا توجد ملاحظة"
 
-#: .\post\templates\post_detail.html:94
+#: .\post\templates\post_detail.html:90
 msgid "Other Jobs"
 msgstr "وظائف أخرى"
 
-#: .\post\templates\post_detail.html:164
+#: .\post\templates\post_detail.html:160
 msgid "Job Summary"
 msgstr "ملخص العمل"
 
-#: .\post\templates\post_detail.html:168
+#: .\post\templates\post_detail.html:164
 msgid "Poster"
 msgstr "الناشر"
 
-#: .\post\templates\post_detail.html:176
+#: .\post\templates\post_detail.html:172
 msgid "Date Posted"
 msgstr "تاريخ النشر"
 
-#: .\post\templates\post_detail.html:180
+#: .\post\templates\post_detail.html:176
 #, fuzzy
 #| msgid "category"
 msgid "Category"
@@ -1879,8 +1881,8 @@ msgid "You're already logged in"
 msgstr "لقد قمت بتسجيل الدخول بالفعل"
 
 #: .\user\templates\login.html:58
-msgid "Forgot Password"
-msgstr "هل نسيت كلمة السر"
+msgid "Forgot Password ?"
+msgstr "هل نسيت كلمة السر ؟"
 
 #: .\user\templates\logout.html:40
 msgid "You've Logged Out"
@@ -1983,7 +1985,7 @@ msgid "We're glad that you will register"
 msgstr "يسعدنا أن تقوم بالتسجيل"
 
 #: .\user\templates\register.html:42
-msgid "Already have an account"
+msgid "Already have an account ?"
 msgstr "لدي حساب"
 
 #: .\user\templates\reset\password_reset_complete.html:14

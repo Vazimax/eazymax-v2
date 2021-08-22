@@ -41,8 +41,8 @@
 				<!-- Welcome Text -->
 				{% if not user.is_authenticated %}
 				<div class="welcome-text">
-					<h3>{% trans "We're glad to see you again" %}!</h3>
-					<span>{% trans "Don't have an account?" %} <a href="{% url 'register' %}">{% trans 'Register' %} ;)</a></span>
+					<h3>{% trans "We're glad to see you again" %}</h3>
+					<span>{% trans "Don't have an account?" %} <a href="{% url 'register' %}">{% trans 'Register' %}</a></span>
 				</div>
 				{% endif %}
 					
@@ -55,7 +55,7 @@
 					<div class="">
                         {{form|crispy}}
                     </div>
-					<a href="{% url 'password_reset' %}" class="forgot-password">{% trans 'Forgot Password' %} ?</a>
+					<a href="{% url 'password_reset' %}" class="forgot-password">{% trans 'Forgot Password ?' %}</a>
 				</form>
 				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">{% trans 'Log In' %} <i class="fas fa-sign-in-alt"></i></button>
 				{% endif %}
