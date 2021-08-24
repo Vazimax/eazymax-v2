@@ -22,10 +22,10 @@ def register(request):
                 form.save()
                 username = form.cleaned_data['username']
                 password = form.cleaned_data['password1']
-                messages.success(request,'Votre compte à été créé avec succès / لقد تم انشاء حسابك بنجاح ')
+                messages.success(request,'Votre compte à été créé avec succès, vous pouvez publier une travail maintenant / لقد تم انشاء حسابك بنجاح يمكنك نشر وظيفة الان ')
                 user = authenticate(username=username,password=password)
                 login(request,user)
-                return redirect(f'/profile/{user.profile.id-1}/edit')
+                return redirect('/post_job/')
         else : 
             form = UserRegisterForm()
 
