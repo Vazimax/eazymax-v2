@@ -215,8 +215,7 @@ def post_job(request):
                 request, "Vous avez créé un post avec succès / قمت بإنشاء منشور بنجاح")
             return redirect(f'/post/{my_form.id}')
         else:
-            messages.error(
-                request, "le numéro de téléphone n'est pas correct / رقم الهاتف غير صحيح")
+            return HttpResponseForbidden("le numéro de téléphone n'est pas correct / رقم الهاتف غير صحيح")
     else:
         form = PostForm()
 
