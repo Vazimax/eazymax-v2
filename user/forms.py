@@ -9,7 +9,7 @@ from .models import Profile
 class UserRegisterForm(UserCreationForm):
     firstname = forms.CharField(max_length="100",label= ugettext_lazy('firstname'))
     lastname = forms.CharField(max_length="100",label= ugettext_lazy('lastname'))
-    email = forms.EmailField(required=True,label= ugettext_lazy('email'))
+    email = forms.EmailField(required=False,label= ugettext_lazy('email'))
     
 
     class Meta:
