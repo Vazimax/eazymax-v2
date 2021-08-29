@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-13 13:12+0100\n"
+"POT-Creation-Date: 2021-08-29 15:14+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1298,7 +1298,7 @@ msgstr "Titre"
 msgid "description"
 msgstr "Description"
 
-#: .\post\forms.py:13 .\user\forms.py:36
+#: .\post\forms.py:13 .\user\forms.py:39
 msgid "phone number"
 msgstr "Numéro de téléphone"
 
@@ -1348,9 +1348,13 @@ msgid ""
 msgstr ""
 "EazyMax est une nouvelle startup, Elle permet de trouver des électriciens, "
 "femmes de ménage, peintres et ainsi de suite, tout ouvrier peut également y "
-"poster un emploi et avoir la chance de trouver une énorme opportunité."
-" L'idée nous est venue lorsque nous avons découvert que trouver un travailleur ayant une bonne expérience et une compétence professionnelle dans la maîtrise de son travail nécessite du temps et des efforts de votre part, ainsi que pour les travailleurs, car la plupart d'entre eux perdent leur temps et leur argent pour obtenir un emploi. Nous avons donc décidé de résoudre ce problème en créant une startup appelée"
-" EazyMax. "
+"poster un emploi et avoir la chance de trouver une énorme opportunité. "
+"L'idée nous est venue lorsque nous avons découvert que trouver un "
+"travailleur ayant une bonne expérience et une compétence professionnelle "
+"dans la maîtrise de son travail nécessite du temps et des efforts de votre "
+"part, ainsi que pour les travailleurs, car la plupart d'entre eux perdent "
+"leur temps et leur argent pour obtenir un emploi. Nous avons donc décidé de "
+"résoudre ce problème en créant une startup appelée EazyMax. "
 
 #: .\post\templates\about_us.html:43
 msgid ""
@@ -1398,9 +1402,9 @@ msgstr "Charpentiers/Charpentières"
 #: .\post\templates\categories\electrician.html:61
 #: .\post\templates\categories\painter.html:62
 #: .\post\templates\categories\plumber.html:62 .\post\templates\home.html:122
-#: .\post\templates\home.html:252 .\post\templates\jobs.html:68
-#: .\post\templates\post_detail.html:119 .\post\templates\post_detail.html:145
-#: .\post\templates\post_detail.html:173
+#: .\post\templates\home.html:251 .\post\templates\jobs.html:68
+#: .\post\templates\post_detail.html:115 .\post\templates\post_detail.html:141
+#: .\post\templates\post_detail.html:169
 msgid "Tangier , Morocco"
 msgstr "Tanger, Maroc"
 
@@ -1508,97 +1512,97 @@ msgstr "Charpentier"
 msgid "Special workers"
 msgstr "Travailleur spécial"
 
-#: .\post\templates\home.html:252 .\post\templates\post_detail.html:172
+#: .\post\templates\home.html:251 .\post\templates\post_detail.html:168
 msgid "Location"
 msgstr "Emplacement"
 
-#: .\post\templates\home.html:255
+#: .\post\templates\home.html:254
 msgid "View Profile"
 msgstr "emplacement"
 
-#: .\post\templates\home.html:280 .\post\templates\memberships.html:21
+#: .\post\templates\home.html:278 .\post\templates\memberships.html:21
 msgid "Membership Plans"
 msgstr "plans d'abonnement"
 
-#: .\post\templates\home.html:296 .\post\templates\memberships.html:37
+#: .\post\templates\home.html:294 .\post\templates\memberships.html:37
 #: .\post\templates\membershipsta.html:61
 msgid "Basic Plan"
 msgstr "Abonnement régulière"
 
-#: .\post\templates\home.html:299 .\post\templates\memberships.html:40
+#: .\post\templates\home.html:297 .\post\templates\memberships.html:40
 msgid "Features of Basic Plan"
 msgstr "Caractéristiques d'abonnement régulière"
 
-#: .\post\templates\home.html:301 .\post\templates\memberships.html:42
+#: .\post\templates\home.html:299 .\post\templates\memberships.html:42
 msgid "<b>-</b> Your post will featured for <b>2 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 2 jours </b>"
 
-#: .\post\templates\home.html:302 .\post\templates\memberships.html:43
+#: .\post\templates\home.html:300 .\post\templates\memberships.html:43
 msgid "<b>- Highlighted</b> in post detail for <b>2 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>2 jours</b>"
 
-#: .\post\templates\home.html:303 .\post\templates\memberships.html:44
+#: .\post\templates\home.html:301 .\post\templates\memberships.html:44
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>2 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 2 jours</b>"
 
-#: .\post\templates\home.html:304 .\post\templates\memberships.html:45
+#: .\post\templates\home.html:302 .\post\templates\memberships.html:45
 msgid "<b>-</b> Get <b>More CLIENTS / x2</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x2</b>"
 
-#: .\post\templates\home.html:312 .\post\templates\memberships.html:53
+#: .\post\templates\home.html:310 .\post\templates\memberships.html:53
 msgid "Recommended"
 msgstr "Conseillé"
 
-#: .\post\templates\home.html:313 .\post\templates\membershipprem.html:62
+#: .\post\templates\home.html:311 .\post\templates\membershipprem.html:62
 #: .\post\templates\memberships.html:54
 msgid "Standard Plan"
 msgstr "Abonnement avancée"
 
-#: .\post\templates\home.html:316 .\post\templates\memberships.html:57
+#: .\post\templates\home.html:314 .\post\templates\memberships.html:57
 msgid "Features of Standard Plan"
 msgstr "Caractéristiques d'abonnement avancée"
 
-#: .\post\templates\home.html:318 .\post\templates\memberships.html:59
+#: .\post\templates\home.html:316 .\post\templates\memberships.html:59
 msgid "<b>-</b> Your post will featured for <b>7 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 7 jours </b>"
 
-#: .\post\templates\home.html:319 .\post\templates\memberships.html:60
+#: .\post\templates\home.html:317 .\post\templates\memberships.html:60
 msgid "<b>- Highlighted</b> in post detail for <b>7 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>7 jours</b>"
 
-#: .\post\templates\home.html:320 .\post\templates\memberships.html:61
+#: .\post\templates\home.html:318 .\post\templates\memberships.html:61
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>5 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 5 jours</b>"
 
-#: .\post\templates\home.html:321 .\post\templates\memberships.html:62
+#: .\post\templates\home.html:319 .\post\templates\memberships.html:62
 msgid "<b>-</b> Get <b>More CLIENTS / x3</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x3</b>"
 
-#: .\post\templates\home.html:329 .\post\templates\memberships.html:70
+#: .\post\templates\home.html:327 .\post\templates\memberships.html:70
 #: .\post\templates\membershipvip.html:61
 msgid "Extended Plan"
 msgstr "Abonnement ultra avancé"
 
-#: .\post\templates\home.html:333 .\post\templates\memberships.html:74
+#: .\post\templates\home.html:331 .\post\templates\memberships.html:74
 msgid "Features of Extended Plan"
 msgstr "Caractéristiques d'abonnement ultra avancé"
 
-#: .\post\templates\home.html:335 .\post\templates\memberships.html:76
+#: .\post\templates\home.html:333 .\post\templates\memberships.html:76
 msgid "<b>-</b> Your post will featured for <b>10 DAYS</b>"
 msgstr "<b> - </b> Votre post sera marqué pendant <b> 10 jours </b>"
 
-#: .\post\templates\home.html:336 .\post\templates\memberships.html:77
+#: .\post\templates\home.html:334 .\post\templates\memberships.html:77
 msgid "<b>- Highlighted</b> in post detail for <b>10 DAYS</b>"
 msgstr ""
 "- Votre post sera marqué dans les détails de la post pendant <b>10 jours</b>"
 
-#: .\post\templates\home.html:337 .\post\templates\memberships.html:78
+#: .\post\templates\home.html:335 .\post\templates\memberships.html:78
 msgid "<b>- </b> Be one of the <b>Best Workers</b> for <b>10 DAYS</b>"
 msgstr "- Vous serez <b>l'un des Meilleurs Travailleurs pendant 10 jours</b>"
 
-#: .\post\templates\home.html:338 .\post\templates\memberships.html:79
+#: .\post\templates\home.html:336 .\post\templates\memberships.html:79
 msgid "<b>-</b> Get <b>More CLIENTS / x4</b>"
 msgstr "<b>-</b> Obtenez <b>Plus de CLIENTS / x4</b>"
 
@@ -1694,35 +1698,35 @@ msgstr "Mettre à jour"
 msgid "Description"
 msgstr "Description"
 
-#: .\post\templates\post_detail.html:61
+#: .\post\templates\post_detail.html:59
 msgid "Feedbacks"
 msgstr "Évaluations"
 
-#: .\post\templates\post_detail.html:63 .\post\templates\post_detail.html:86
+#: .\post\templates\post_detail.html:61 .\post\templates\post_detail.html:82
 msgid "Add a feedback"
 msgstr "ajouter une note"
 
-#: .\post\templates\post_detail.html:85
+#: .\post\templates\post_detail.html:81
 msgid "There is no feedback"
 msgstr "Il n'y a pas de note"
 
-#: .\post\templates\post_detail.html:94
+#: .\post\templates\post_detail.html:90
 msgid "Other Jobs"
 msgstr "D'autre travail"
 
-#: .\post\templates\post_detail.html:164
+#: .\post\templates\post_detail.html:160
 msgid "Job Summary"
 msgstr "Résumé de l'emploi"
 
-#: .\post\templates\post_detail.html:168
+#: .\post\templates\post_detail.html:164
 msgid "Poster"
 msgstr "Éditeur"
 
-#: .\post\templates\post_detail.html:176
+#: .\post\templates\post_detail.html:172
 msgid "Date Posted"
 msgstr "Date postée"
 
-#: .\post\templates\post_detail.html:180
+#: .\post\templates\post_detail.html:176
 #, fuzzy
 #| msgid "category"
 msgid "Category"
@@ -1850,17 +1854,23 @@ msgstr "Se Déconnecter"
 msgid "Login"
 msgstr "Se connecter"
 
-#: .\user\forms.py:10
+#: .\user\forms.py:11
 msgid "firstname"
 msgstr "Prénom"
 
-#: .\user\forms.py:11
+#: .\user\forms.py:12
 msgid "lastname"
 msgstr "Nom"
 
-#: .\user\forms.py:12
+#: .\user\forms.py:13
 msgid "email"
 msgstr "Email"
+
+#: .\user\forms.py:14
+#, fuzzy
+#| msgid "user"
+msgid "username"
+msgstr "utilisateur"
 
 #: .\user\models.py:23
 msgid "user"
@@ -1887,7 +1897,9 @@ msgid "You're already logged in"
 msgstr "Vous êtes déjà connecté"
 
 #: .\user\templates\login.html:58
-msgid "Forgot Password"
+#, fuzzy
+#| msgid "Forgot Password"
+msgid "Forgot Password ?"
 msgstr "Mot de passe oublié"
 
 #: .\user\templates\logout.html:40
@@ -1993,8 +2005,8 @@ msgid "We're glad that you will register"
 msgstr "Nous sommes heureux que vous vous inscriviez"
 
 #: .\user\templates\register.html:42
-msgid "Already have an account"
-msgstr "Vous avez déjà un compte"
+msgid "Already have an account ?"
+msgstr "Vous avez déjà un compte ?"
 
 #: .\user\templates\reset\password_reset_complete.html:14
 #: .\user\templates\reset\password_reset_complete.html:20
