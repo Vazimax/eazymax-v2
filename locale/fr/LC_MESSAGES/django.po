@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-29 15:14+0100\n"
+"POT-Creation-Date: 2021-09-03 06:58+0100\n"
 "PO-Revision-Date: 2021-07-22 16:02+0000\n"
 "Last-Translator: b'fsd fsda <arabic.in.ai@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1298,7 +1298,7 @@ msgstr "Titre"
 msgid "description"
 msgstr "Description"
 
-#: .\post\forms.py:13 .\user\forms.py:39
+#: .\post\forms.py:13 .\user\forms.py:36
 msgid "phone number"
 msgstr "Numéro de téléphone"
 
@@ -1375,7 +1375,11 @@ msgstr ""
 "peintres, menuisier, femme de ménage, etc. Pour travailler avec nous et "
 "obtenir tous les clients autour de Tanger (Et tout le pays dans le futur) ."
 
-#: .\post\templates\about_us.html:59
+#: .\post\templates\about_us.html:49
+msgid "Founders :"
+msgstr "Les fondateurs :"
+
+#: .\post\templates\about_us.html:63
 msgid "Social Accounts"
 msgstr "Comptes sociaux"
 
@@ -1854,23 +1858,17 @@ msgstr "Se Déconnecter"
 msgid "Login"
 msgstr "Se connecter"
 
-#: .\user\forms.py:11
+#: .\user\forms.py:10
 msgid "firstname"
 msgstr "Prénom"
 
-#: .\user\forms.py:12
+#: .\user\forms.py:11
 msgid "lastname"
 msgstr "Nom"
 
-#: .\user\forms.py:13
+#: .\user\forms.py:12
 msgid "email"
 msgstr "Email"
-
-#: .\user\forms.py:14
-#, fuzzy
-#| msgid "user"
-msgid "username"
-msgstr "utilisateur"
 
 #: .\user\models.py:23
 msgid "user"
@@ -2064,6 +2062,11 @@ msgstr "Saisir votre email pour réinitialiser votre mot de passe"
 #: .\user\templates\reset\password_reset_form.html:55
 msgid "Reset"
 msgstr "Réinitialiser"
+
+#, fuzzy
+#~| msgid "user"
+#~ msgid "username"
+#~ msgstr "utilisateur"
 
 #~ msgid ""
 #~ "EazyMax is a startup company. We are doing our best to make our city "
