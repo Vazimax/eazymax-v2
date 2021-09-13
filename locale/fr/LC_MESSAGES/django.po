@@ -1376,8 +1376,8 @@ msgstr ""
 "obtenir tous les clients autour de Tanger (Et tout le pays dans le futur) ."
 
 #: .\post\templates\about_us.html:49
-msgid "Founders :"
-msgstr "Les fondateurs :"
+msgid "Founders"
+msgstr "Les fondateurs"
 
 #: .\post\templates\about_us.html:63
 msgid "Social Accounts"

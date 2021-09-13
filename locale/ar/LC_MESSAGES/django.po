@@ -1374,7 +1374,7 @@ msgstr ""
 "(والبلاد كلها في المستقبل) "
 
 #: .\post\templates\about_us.html:49
-msgid "Founders :"
+msgid "Founders"
 msgstr "المؤسسين"
 
 #: .\post\templates\about_us.html:63
