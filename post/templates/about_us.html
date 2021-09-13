@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
-
+{% load static %}
 {% block content %}
 <!-- Spacer / End-->
     <!-- Titlebar
@@ -45,12 +45,40 @@
 				<p>
 				{% trans "We are welcoming All respectful and well-behaved Electricians, Plumbers, painters, Carpenter, Housekeeper, etc. To work with us and get clients all around Tangier ( And The whole country in the future) ." %}
 				</p>
-				
+				<hr>
 				<br>
 
-				<h2>{% trans "Founders :" %}</h2>
-				<p>- Aboubakr El Habti</p>
-				<p>- Taha helmy</p>
+				<h1>Founders :</h1>
+				<br>
+
+				<div class="row">
+					<div class="column">
+						<div class="job-listing-company-logo">
+						  <img style="width: 100px;
+						  border-radius: 50%;" src="{% static 'img/me.jfif' %}" alt="John">
+						  
+							<h2>Aboubakr El Habti</h2>
+							<p class="title"><i>Co-Founder & Developer</i></p>
+							<p><a href="https://www.linkedin.com/in/aboubakr-elhabti-117b17218/" target="__blank" class="button">Contact</a></p>
+						  
+						</div>
+					  </div>
+					</div>
+					<br>
+					<hr>
+					<div class="column">
+					  <div class="job-listing-company-logo">
+						<img style="width: 100px;
+						border-radius: 50%;" src="{% static 'img/taha.jfif' %}" alt="Mike">
+						
+						  <h2>Taha Helmy</h2>
+						  <p class="title">Co-Founder</p>
+						  <p><a href="https://www.linkedin.com/in/tahahelmy/" target="__blank" class="button">Contact</a></p>
+						
+					  </div>
+					</div>
+				  
+					
 
 	
 			</div>
