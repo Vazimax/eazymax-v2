@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-03 06:59+0100\n"
+"POT-Creation-Date: 2021-09-23 23:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1373,11 +1373,17 @@ msgstr ""
 "النجارين ، مدبرة المنزل ، إلخ ... للعمل معنا والحصول على العمل في طنجة "
 "(والبلاد كلها في المستقبل) "
 
-#: .\post\templates\about_us.html:49
+#: .\post\templates\about_us.html:51
 msgid "Founders"
 msgstr "المؤسسين"
 
-#: .\post\templates\about_us.html:63
+#: .\post\templates\about_us.html:62 .\post\templates\about_us.html:76
+#: .\post\templates\contact.html:11 .\post\templates\contact.html:17
+#: .\templates\parts\footer.html:111
+msgid "Contact"
+msgstr "تواصل معنا"
+
+#: .\post\templates\about_us.html:93
 msgid "Social Accounts"
 msgstr "الحسابات الاجتماعية"
 
@@ -1434,11 +1440,6 @@ msgstr "صَبّاغ"
 #: .\post\templates\categories\plumber.html:39
 msgid "Plumbers"
 msgstr "سباك"
-
-#: .\post\templates\contact.html:11 .\post\templates\contact.html:17
-#: .\templates\parts\footer.html:111
-msgid "Contact"
-msgstr "تواصل معنا"
 
 #: .\post\templates\contact.html:27
 msgid "Thanks"
