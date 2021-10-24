@@ -24,14 +24,15 @@ def register(request):
                 password = form.cleaned_data['password1']
                 messages.success(request,'Votre compte à été créé avec succès, vous pouvez publier une travail maintenant / لقد تم انشاء حسابك بنجاح يمكنك نشر وظيفة الان ')
                 user = authenticate(username=username,password=password)
+
                 login(request,user)
                 return redirect('/post_job/')
         else : 
             form = UserRegisterForm()
 
         context = {
+            'title' : 'Register',
             'form':form,
-            'title' : 'Register'
         }
 
         return render(request,'register.html',context)
